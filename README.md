@@ -1,1 +1,1 @@
-# FAST - Flood Structure Assessment Tool
+# FAST - Flood Assessment Structure Tool
