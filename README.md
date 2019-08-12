@@ -1,1 +1,1 @@
-# structure_flood_damage
+# FAST - Flood Structure Assessment Tool
