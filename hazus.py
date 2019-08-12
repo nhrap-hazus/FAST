@@ -61,21 +61,39 @@
 # ---------------------------------------------------------------------------
 
 # Variations between systems; some import these by default, others don't. Be explicit.
+
+#UKS - all logging statements added
+import logging
 import os,csv,sys,time,math,datetime,subprocess,numpy as np, utm
 from osgeo import gdal, osr, gdal_array
 gdal.SetCacheMax(2**30*5)
 
+
+logger = logging.getLogger('FAST')
+logger.setLevel(logging.INFO)
+#logging.basicConfig('app.log',filemode='w',format='%(name)s - %(levelname)s - %(message)s')
+handler = logging.FileHandler('../Log/app.log')
+handler.setLevel(logging.INFO)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+
 #########################################################################################################
 # Main function. Five parameters See end for main procedure.
 #########################################################################################################
-log = []
+
 def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
+    log = []#CBH
     # UDFOrig = USer-supplied UDF input file. Full pathname required
     # LUT_Dir = folder name where the Lookup table libraries reside
     # ResultsDir = Where the output file geodatabase will be created. Folder (dir) must exist, else fail
     # DepthGrids = one or more flood depth grids
     # QC_Warning = Boolean, report on informative inconsistency observations if selected, otherwise suppress them
     
+
+    logger.info('\n')
+    logger.info('Calculation FL Building & Content Losses...')
     try:
         # Measure script performance
         start_time = time.time()
@@ -86,6 +104,7 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
         with open(UDFOrig, "r+") as f:
             reader = csv.reader(f)
             field_names = next(reader)
+            #f.close()
         #########################################################################################################
         # UDF Input Attributes. The following are standard Hazus names/capitalizations.
         #########################################################################################################
@@ -255,20 +274,14 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
             print("User-supplied Inventory Cost supplied.  Will use user supplied value where specified, else use the default")
             uicost = 1
             
-        #Custom DDF assignment based on tables    
-        DDFAssign = ['SOoccupId_Occ_Xref','flBldgStructDmgFinal','flBldgContDmgFinal','flBldgInvDmgFinal','OccupancyTypes']
-        DDFTables = {}
-        for DDF in DDFAssign:
-            with open(os.path.join(LUT_Dir,DDF+'.csv'), newline='') as csvfile:
-                file = csv.DictReader(csvfile)
-                DDFTable = [row for row in file]
-                DDFTables[DDF] = DDFTable
-
+        #logger.info('Custom DDF assignment based on tables...')
+        requiredFields = [UserDefinedFltyId,OccupancyClass,Cost,Area,NumStories,FoundationType,FirstFloorHt,latitude,longitude]
+        
         # Process each depth grid specified by user
-        DGrids = DepthGrids.split(';')   # Using the interactive window, it's not a list. Make it so.
+        DGrids = DepthGrids#.split(';')   # Using the interactive window, it's not a list. Make it so.
         for dgp in DGrids:
-            print(" ")    # A formatting step to improve readability of output)
-            print( "Querying depth grid " + dgp)
+            #print(" ")    # A formatting step to improve readability of output)
+            #print( "Querying depth grid " + dgp)
     
             # Set up the Results file. Extract grid to points, add needed fields, adjust for First Floor Height.
             # Depth_in_Struc:  The adjusted flood depth
@@ -280,31 +293,41 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
             #
             # Need to strip out any periods in the depth grid file name, say, "depth100.tif", as periods are COMPLETELY UNACCEPTABLE in fgdb feature class naming
             # And if an input shapefile is specified, drop the *.shp extension. So a Texas Two Step to get a clean name
+            
             y = os.path.split(dgp)[1]
             x = UDFRoot.split('.')[0] + "_" + y.split('.')[0]
             ResultsFile = os.path.join(Resultsfgdb,x)
-            print("Writing results to " + ResultsFile)
+            #print("Writing results to " + ResultsFile)
             gridroot = y    #  Put into an attribute in the Results file. Redundant, but handy when appending multiple results files together.
     
             # Some research should go into INTERPOLATE versus NONE in the next function.
             # A cursory peek suggested Hazus-MH Flood does 'NONE' (it had a better match).
-            # So to better match to the Hazus-MH Flood results, we (for now) choose 'NONE'.
-            
+            # So to better match to the Hazus-MH Flood results, we (for now) choose 'NONE'.            
             # Process each UDF record, calculating its damage based on depth and building type.
+            
             #print("Processing depth grid "+ dgp +  " record by record")
             
             new_fields = [Depth_Grid,Depth_in_Struc,flExp,SOID,BDDF_ID,BldgDmgPct,BldgLossUSD,ContentCostUSD,CDDF_ID,ContDmgPct,ContentLossUSD,InventoryCostUSD,IDDF_ID,InvDmgPct,InventoryLossUSD,DebrisID,Debris_Fin,Debris_Struc,Debris_Found,Debris_Tot,Restor_Days_Min,Restor_Days_Max,GridName]
             field_names = field_names + new_fields
             counter = 0
             counter2 = 0
-    
-            file_out = open(os.path.join(Resultsfgdb,x+".csv"), 'w')
+            
+            recCountNonZeroDepth = 0
+            
+            invalidSOID = 0
+            
+            #file_out = open(os.path.join(Resultsfgdb,x+".csv"), 'w')
+            
+            #CBH - to display the output directory on the final message
+            outputDir = os.path.join(Resultsfgdb,x+".csv")
+            file_out = open(outputDir, 'w')
             
             raster = gdal.Open(dgp)
             
             #os.sys('gdalwarp '+dgp+' '+' C:/Users/Owner/Desktop/work.tif -t_srs "+proj=longlat +ellps=WGS84"')
             
             band = raster.GetRasterBand(1)
+            noData = band.GetNoDataValue()
             cols = raster.RasterXSize
             rows = raster.RasterYSize
             transform = raster.GetGeoTransform()
@@ -351,7 +374,11 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                 writer = csv.DictWriter(file_out, delimiter=',', lineterminator='\n', fieldnames = field_names)
                 file = csv.DictReader(csvfile)
                 for row in file:
+                    counter += 1#CBH - counter for unmatched SoccIds
                     try:
+                        #Check if any required fields are NULL
+                        #If NULL do not process the record and do not make an entry in the results file
+                        #if None in [row[rField] for rField in requiredFields]: pass
                         def getValue(name):# Get value of row from name.
                             if name != Depth_Grid:
                                 #print(name,row)
@@ -368,7 +395,8 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                                 col = int((X - xOrigin) / pixelWidth)
                                 roww = int((yOrigin - Y ) / pixelHeight)
                                 
-                                val = data[roww][col]
+                                #If incorrect depth grid used the depth is set to 0
+                                val = data[roww][col] if abs(col) < abs(cols) and abs(roww) < abs(rows) and data[roww][col] != noData else 0
                                 #val = retrieve_pixel_value((Y,X))
                                 
                                 row[name] = val
@@ -404,11 +432,11 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                         # At minimum, clean up the Occupancy Class. This sometimes has trailing spaces, due to Hazus processing quirks.
                         
                         x                = getValue(OccupancyClass)
-                        OC                = x#.strip()
+                        OC                = x.strip()
                         x                 = getValue(FoundationType)
-                        foundationType  = x#.strip()
-                        numStories         = int(getValue(NumStories))
-                        area             = int(getValue(Area))    # Used in Inventory Loss Calculation
+                        foundationType  = x.strip()
+                        numStories         = float(getValue(NumStories))
+                        area             = float(getValue(Area))    # Used in Inventory Loss Calculation
                         if CoastalZoneSupplied:
                             CoastalZoneCode = flC #getValue(flC) # Only acquire if a Coastal Zone is defined for that UDF
                             CoastalZoneCode = "" if CoastalZoneCode is None else CoastalZoneCode#.strip()
@@ -432,8 +460,8 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                         elif OC[:4] == 'RES1':
                             # If NumStories is not an integer, assume Split Level residence
                             # Also, cap it at 3.
-                            numStories = 3 if numStories > 3 else numStories
-                            somid = str(numStories) if numStories - int(numStories) == 0 else 'S'
+                            numStories = 3 if numStories > 3.0 else numStories
+                            somid = str(round(numStories)) if numStories - round(numStories) == 0 else 'S'
         
                         elif OC[:4] == 'RES2':
                             # Manuf. Housing is by definition limited to one story
@@ -441,8 +469,7 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
         
                         else:
                             # All other cases: Easy!  1-3, 4-7, 8+
-                            somid = 'H' if numStories > 6 else 'M' if numStories > 3 else 'L'
-                            
+                            somid = 'H' if numStories > 6 else 'M' if numStories > 3 else 'L'   
                         SpecificOccupId = sopre + somid + sosuf
                         setValue(SOID,SpecificOccupId)
         
@@ -451,7 +478,7 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                         # If not, then use a default multiplier, depending on OccupancyClass, per Hazus-MH Flood Technical Manual table
                         CMult =  0.5 if OC in Content_x_0p5 else 1.0 if OC in Content_x_1p0 else 1.5 if OC in Content_x_1p5 else 0
                         if uccost:
-                            xt = int(getValue(ContentCost))
+                            xt = int(float(getValue(ContentCost)))
                             xt = -1 if xt is None else xt     # Null value check. If ContentCost is NULL,use the default value
                         else:
                             xt = -1
@@ -482,11 +509,23 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                         setValue(ContentCostUSD,ccost)
                         setValue(InventoryCostUSD,icost)
         
-                        # If no depth measured for that point, set some default values for the output to clearly indicate that there is No Exposure
+                        #UKS - Negative Depth_in_Struc is OK but Negative depth from raster is not -Modified the logic to check against
+                        #rastervalue
+                        
+                        # depth measured for that point, set some default values for the output to clearly indicate that there is No Exposure
                         # and quickly move on to the next record
-                        if depth is None or depth < -500:    # Depending on Depth Grid format, the Extract_2_Point returns Null or -9999
+                        
+                        #UKS - modified the usage to depth (which is Depth_in_Struc) to rastervalue
+                        if rastervalue is None or rastervalue <= 0:    # Depending on Depth Grid format, the Extract_2_Point returns Null or -9999
                             setValue(flExp,0)    # Structure is NOT exposed.
-                            setValue(Depth_in_Struc,None)    # Default value, again emphasizing the point is not exposed. Make SummaryStats more straightforward
+                            #setValue(Depth_in_Struc,None)    # Default value, again emphasizing the point is not exposed. Make SummaryStats more straightforward
+                            
+                            #UKS - Recorded even though negative
+                            if rastervalue is None:
+                                setValue(Depth_in_Struc,0)
+                            else:
+                                setValue(Depth_in_Struc,depth)
+                            
                             setValue(BDDF_ID,0)
                             setValue(BldgDmgPct,0)
                             setValue(BldgLossUSD,0)
@@ -503,6 +542,9 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                             setValue(Debris_Tot,None)
                             setValue(Restor_Days_Min,0)
                             setValue(Restor_Days_Max,0)
+                            
+                            #UKS
+                            recCountNonZeroDepth -= 1
                         else:
                             # The UDF is exposed. Calculate Building, Content, Inventory Losses
                             setValue(flExp,1)
@@ -522,10 +564,10 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                             # At minimum, clean up the Occupancy Class. This sometimes has trailing spaces, due to Hazus processing quirks.
                             x                = getValue(OccupancyClass)
                             OC                = x
-                            x                 = getValue(FoundationType)
+                            x                 = str(getValue(FoundationType))
                             foundationType  = x
-                            numStories         = getValue(NumStories)
-                            area             = int(getValue(Area))    # Used in Inventory Loss Calculation
+                            numStories         = float(getValue(NumStories))
+                            area             = float(getValue(Area))    # Used in Inventory Loss Calculation
         
                             # Construct the strings for the LUT reference: if depth <0, use 'm'. If >0, use 'p'
                             # See the Column headings in the csv lookup tables.
@@ -598,8 +640,14 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                                 if gotcha == 0:
                                     # This should not occur
                                     print( "something wrong, no match for Specific Occupancy ID :" + SpecificOccupId + "   UDF: " + UserDefinedFltyId)
-                                    sys.exit(2)
-        
+                                    invalidSOID += 1
+                                    setValue(SOID,SpecificOccupId)#CBH
+                                    setValue(BDDF_ID,'Unmatched')#CBH
+                                    writer.writerow(row)#CBH
+                                    logger.info('Unmatched SOID: ' + SpecificOccupId + ' with userDefinedFltyId: ' + str(userDefinedFltyId))#CBH
+                                    continue
+                                    #sys.exit(2)
+                            
                             # Dictionary lookup: get damage percentage for the particular row at the particular depths
                             # The Dictionary element comes from either the Full or the Default table; common code after this point.
                             d_lower = float(ddf1[l_index])
@@ -806,16 +854,25 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                                 bsm = 'NB'   # No Basement is the default. Only override for RES1
                                 fnd = 'SG' if (foundationType == '4' or foundationType == '7') else 'FT'  # SG: Slab on Grade.  FT = ???? DEFINE THIS - FROM BBOHN.
                                 # Flood depth key varies, depending if it's a RES1/Basement.
-                                if OC == 'RES1' and foundationType == '4':
-                                    bsm = 'B'
+                                if (OC == 'RES1' or OC == 'COM6') and foundationType == '4':
+                                    #UKS - Special case handled for RES1 with FT SG
+                                    #COM6 is always NB
+                                    if OC == 'RES1':                                        
+                                        bsm = 'B'
                                     dsuf = '-8' if depth <-4 else '-4' if depth < 0 \
                                         else '0' if depth <4 else '4' if depth < 6 \
                                         else '6' if depth <8 else '8'
                                 else:  # Credit to BBohn who identified 0/1/4/8/12 as common breakpoints shared by all non-RES1-Basement
                                     dsuf = '0' if depth <1 else '1' if depth < 4 \
-                                    else '4' if depth <8 else '8' if depth < 12 else '12'
+                                    else '4' if depth <8 else '8' if depth < 12 else '12'                                    
+                                                                
+                                #RES2 - if depth in structure is negative (<0) - no losses should be produced
+                                #RES2 - if depth in structure greater than 0 but less than 1 finishes losses will be produced
+                                if OC =='RES2' and depth < 0:
+                                    dsuf = ''
+                                    
                                 debriskey = OC + bsm + fnd + dsuf
-        
+                                
                                 for lutrow in debris_lut:
                                     if lutrow['DebrisID'] == debriskey:    # This is a string match. For completeness and trailing spaces, may want to make it an integer?
                                         gotcha += 1
@@ -864,26 +921,63 @@ def flood_damage(UDFOrig, LUT_Dir, ResultsDir, DepthGrids, QC_Warning, fmap):
                         # When running multiple grids, sensitivity tests, etc, adding the gridname makes it easier to sort upon an appended dataset
                         
                         setValue(GridName,gridroot)
-                        counter += 1
-                        counter2 += 1
+                        #counter += 1 #CBH
+                        #counter2 += 1 #CBH
+
+                        recCountNonZeroDepth += 1
                         if counter == 1:
                             writer.writeheader()
                             writer.writerow(row)
                             continue
                         writer.writerow(row)
-                    except:
+                    except Exception as e:
+                        print(e)
                         writer.writerow(row)
+                        #counter += 1
                         counter2 += 1
                         continue
-        print("Program Duration:  %s seconds" %  int((time.time() - start_time)))
-        print("Total records processed: " + str(counter) + ' of ' + str(counter2) + ' records total')
-        return(True, [counter,counter2])
-
-            # Measuring the script performance
+            
+            #UKS - Sorting and logging          
+            logger.info('Loss calculations complete for the selected grid...')
+            logger.info('Sorting reults by Depth in structure...')        
+            with open(ResultsFile + '.csv', 'r', newline='') as f_input:
+                csv_input = csv.DictReader(f_input)
+                data = sorted(csv_input, key=lambda row:(abs(float(row['Depth_in_Struc']))< 0,float(row['Depth_in_Struc'])), reverse=True)
+                #f_input.close()       
+            
+            #os.unlink(ResultsFile + '.csv')
+            logger.info('Results saved into ' + ResultsFile + '.csv')
+            with open(ResultsFile + '_sorted.csv', 'w', newline='') as f_output:    
+                csv_output = csv.DictWriter(f_output, fieldnames=csv_input.fieldnames)
+                csv_output.writeheader()
+                csv_output.writerows(data)            
+       
+        
+        #logger.info('Total records processed: ' + str(counter) + ' of ' + str(counter2) + ' records total.' + 'Total records with flooding: ' + str(recCountNonZeroDepth))
+        
+            #CBH
+            #UKS - modified for complete file name on the final message box           
+            log.append([counter,counter2,recCountNonZeroDepth,invalidSOID,os.path.basename(dgp),ResultsFile + '.csv'])            
+        
+            #recCountNonZeroDepth counter logged, concatenated to the message and reset
+        message = ''   
+        for grid in log:#CBH
+            message += 'For depth-grid: ' + str(grid[4]) + '\n' + str(grid[0])+' records processed of ' + str(grid[0]) + ' records total.\n' + \
+            'Total records with flooding: ' + str(grid[2]) + '\n' + \
+            'Total number of records with unmatched Specific Occupancy IDs found: ' + \
+            str(grid[3]) +'\n File saved to: ' + os.path.join(os.path.dirname(outputDir),str(grid[5])) + '\n\n' #UKS - modified for complete file name
+                       
+            recCountNonZeroDepth = 0    
+        
+        #return(True, [counter,counter2,recCountNonZeroDepth,invalidSOID]) #UKS Commented
+        return(True, message)#CBH added
+        
+        # Measuring the script performance
     except Exception as e:
+        logger.info(e)
         print(e)
         return(False, counter)
-        
+       
 
 # This test allows the script to be used from the operating
 # system command prompt (stand-alone), in a Python IDE,
@@ -894,9 +988,9 @@ def local(spreadsheet,fmap):
     raster = fmap[-1]#[-1]
     fmap = fmap[:-1]
     cwd = os.getcwd()
-    #cwd = os.path.dirname(cwd)
+    cwd = os.path.dirname(cwd)
     outDir = os.path.dirname(spreadsheet)
-    argv = (spreadsheet,os.path.join(cwd,r"lookuptables"),outDir,os.path.join(cwd,'rasters',raster),"False",fmap)
+    argv = (spreadsheet,os.path.join(cwd,r"lookuptables"),outDir,[os.path.join(cwd,'rasters',grid) for grid in raster],"False",fmap)
     
     print(argv)
     print(fmap)

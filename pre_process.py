@@ -1,7 +1,7 @@
 import os, csv
 
 dir = os.getcwd()
-#dir = os.path.dirname(dir)
+dir = os.path.dirname(dir)
 
 def process(input,fmap):
     try:
@@ -76,6 +76,13 @@ def process(input,fmap):
                                         countie[0] = countie[0] + 1
                                         row['DDF_Validity'] = None
                                         break
+                                elif 'any' in compare:
+#                                    if int(row[NumStories]) < int(compare[1]):
+                                    value = line['SOccupId'].strip()
+                                    row[SOID] = value
+                                    countie[0] = countie[0] + 1
+                                    row['DDF_Validity'] = None
+                                    break                                        
                             elif len(compare) == 1 and line['Occupancy'].strip() == row[OCC] and int(compare) == int(row[NumStories]) and int(line['Basement']) == basement:
                                 value = line['SOccupId'].strip()
                                 row[SOID] = value

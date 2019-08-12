@@ -5,7 +5,7 @@ from os import listdir
 from os.path import isfile, join
 
 dir = os.getcwd()
-#dir = os.path.dirname(dir)
+dir = os.path.dirname(dir)
 hazardTypes = {'Riverine':'HazardR','CoastalV':'HazardCV','CoastalA':'HazardCA'}
 fields = {'OCC':'Occupancy*','NumStories':'NumStories*','FoundationType':'Foundation Type*','SOID':'SpecificOcc_ID','BDDF_ID':'BuildingDDF','CDDF_ID':'ContentDDF','IDDF_ID':'InventoryDDF','HazardType':'Hazard-Type*'}# Fields for custom inpu
 defaultFields = {'OCC':['Occupancy','Occ'], \
@@ -35,7 +35,9 @@ def runHazus():
          +'File saved to: ' + root.filename)
 
 def browse_button():
-     root.filename = filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
+     #UKS - made changes to open the File open dialog to the UDF folder where the input files are placed
+     root.filename = filedialog.askopenfilename(initialdir = os.getcwd() + "../UDF",title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
+     #root.filename = filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
      # Gets field names from input csv file and makes a list
      with open(root.filename, "r+") as f:
           reader = csv.reader(f)
@@ -95,7 +97,7 @@ def checkform():# Check validity of form entries
 
 def popupmsg(msg):
     popup = Tk()
-    popup.wm_title("Program Run")
+    popup.wm_title("FAST - Pre-Processing Complete...")
     label = Label(popup, text=msg)
     label.pack(side=LEFT)
     B1 = Button(popup, text="Okay", command = popup.destroy)
@@ -107,6 +109,9 @@ if __name__ == '__main__':
     root.csvFields = []# Input csv file fields
     root.fields = {key:''for key, value in fields.items()}
     root.valid = {}
+    #UKS - Modified Title
+    root.title("FAST - Pre-Processing....")
+    
     ents = makeform(root, fields)
     lab = Label(root, text="* indicates required field.")
     lab.pack()
