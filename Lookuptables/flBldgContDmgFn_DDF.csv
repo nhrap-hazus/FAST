@@ -1,0 +1,508 @@
+ContDmgFnId,Occupancy,Source,Description,ft04m,ft03m,ft02m,ft01m,ft00,ft01,ft02,ft03,ft04,ft05,ft06,ft07,ft08,ft09,ft10,ft11,ft12,ft13,ft14,ft15,ft16,ft17,ft18,ft19,ft20,ft21,ft22,ft23,ft24,Comment
+21,RES1 ,FIA,"one floor, no basement, Contents, A-Zone",0,0,0,0,12,25,35,36,38,41,45,50,55,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+22,RES1 ,FIA,"one floor, w/ basement, Contents, A-Zone",0,5,7,8,16,20,22,28,33,39,44,50,55,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+23,RES1 ,FIA,"two floors, no basement, Contents, A-Zone",0,0,0,0,8,11,19,23,28,33,39,44,50,54,58,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+24,RES1 ,FIA (MOD.),"two floors, w/ basement, Contents, A-Zone",0,5,7,8,16,18,25,29,33,37,42,46,52,55,58,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+25,RES1 ,FIA (MOD.),"three or more floors, no basement, Contents, A-Zone",0,0,0,0,7,15,21,22,23,25,27,30,35,40,43,45,48,50,52,54,56,58,60,60,60,60,60,60,60,NULL
+26,RES1 ,FIA (MOD.),"three or more floors, w/ basement, Contents, A-Zone",0,5,7,8,15,22,27,28,29,30,32,35,39,43,46,47,50,52,53,55,57,58,60,60,60,60,60,60,60,NULL
+27,RES1 ,FIA,"split level, no basement, Contents, A-Zone",0,0,0,0,8,11,19,23,28,33,39,44,50,54,58,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+28,RES1 ,FIA (MOD.),"split level, w/ basement, Contents, A-Zone",0,5,7,8,16,18,25,29,33,37,42,46,52,55,58,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+29,RES1 ,FIA,"one floor, no basement, Contents, V-Zone",0,0,0,0,10,17,23,29,35,40,45,50,55,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+30,RES1 ,FIA,"one floor, w/ basement, Contents, V-Zone",0,5,7,8,15,20,22,28,33,39,44,50,55,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+31,RES1 ,FIA,"two floors, no basement, Contents, V-Zone",0,0,0,0,7,9,17,22,28,33,39,44,50,54,58,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+32,RES1 ,FIA (MOD.),"two floors, w/ basement, Contents, V-Zone",0,5,7,8,15,17,23,28,33,37,42,46,52,55,58,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+33,RES1 ,FIA (MOD.),"three or more floors, no basement, Contents, V-Zone",0,0,0,0,6,11,15,19,23,26,29,32,35,41,43,45,48,50,52,54,56,58,60,60,60,60,60,60,60,NULL
+34,RES1 ,FIA (MOD.),"three or more floors, w/ basement, Contents, V-Zone",0,5,7,8,14,18,22,25,29,31,34,36,39,44,46,47,50,52,53,55,57,58,60,60,60,60,60,60,60,NULL
+35,RES1 ,FIA,"split level, no basement, Contents, V-Zone",0,0,0,0,7,9,17,22,28,33,39,44,50,54,58,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+36,RES1 ,FIA (MOD.),"split level, w/ basement, Contents, V-Zone",0,5,7,8,15,17,23,28,33,37,42,46,52,55,58,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+45,RES1 ,USACE - IWR,"one story, no basement, Contents",0,0,0,4,16,26,36,44,52,58,64,68,72,74,76,78,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+46,RES1 ,USACE - IWR,"two or more stories, no basement, Contents",0,0,0,2,10,18,24,32,38,42,48,52,56,60,64,66,70,72,72,74,74,76,76,78,78,80,80,82,82,NULL
+47,RES1 ,USACE - IWR,"split level, no basement, Contents",0,0,0,4,6,10,16,22,30,40,50,62,72,82,92,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+48,RES1 ,USACE - Chicago,"one story, no basement, Contents",0,0,0,0,12,24,33,35,37,41,45,50,55,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+49,RES1 ,USACE - Chicago,"one story, w/ basement, Contents",0,6,7,8,15,19,22,28,33,39,43,49,54,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+50,RES1 ,USACE - Chicago,"split level, no basement, Contents",0,0,0,0,2,19,32,41,47,51,53,55,56,62,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,NULL
+51,RES1 ,USACE - Chicago,"split level, w/ basement, Contents",0,0,10,15,18,31,44,52,58,61,63,64,66,69,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,NULL
+52,RES1 ,USACE - Chicago,"two story, no basement, Contents",0,0,0,0,8,11,18,23,28,33,39,44,50,54,58,62,66,70,74,78,78,78,78,78,78,78,78,78,78,NULL
+53,RES1 ,USACE - Chicago,"two story, w/ basement, Contents",0,5,6,9,11,17,22,28,33,39,44,49,55,61,64,71,76,78,79,79,79,79,79,79,79,79,79,79,79,NULL
+54,RES1 ,USACE - Galveston,"one & 1/2 story, no basement, Contents",0,0,0,0,2,22,36,45,57,66,71,77,79,82,84,86,87,89,90,91,92,92,92,93,93,93,93,93,93,NULL
+55,RES1 ,USACE - Galveston,"one story, no basement, Contents",0,0,0,0,8,42,60,71,77,82,85,86,87,88,88,88,89,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+56,RES1 ,USACE - Galveston,"two story, no basement, Contents",0,0,0,0,4,24,34,40,47,53,56,58,58,58,61,66,68,76,81,86,90,100,100,100,100,100,100,100,100,NULL
+57,RES1 ,USACE - New Orleans,"one story, Contents, fresh water, short duration",0,0,0,0,0,42,63,82,85,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,91,NULL
+58,RES1 ,USACE - New Orleans,"one story, Contents, salt water, long duration",0,0,0,0,0,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+59,RES1 ,USACE - New Orleans,"two story, Contents, fresh water, short duration",0,0,0,0,0,25,37,51,51,55,55,55,55,55,73,81,87,90,93,93,93,93,93,93,93,93,93,93,93,NULL
+60,RES1 ,USACE - New Orleans,"two story, Contents, salt water, long duration",0,0,0,0,0,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+61,RES1 ,USACE - St. Paul,"one story, Contents",0,0,0,0,0,27,44,54,63,68,73,75,78,78,78,78,78,78,78,78,78,78,78,78,78,78,78,78,78,NULL
+62,RES1 ,USACE - St. Paul,"two story, Contents",0,0,0,0,0,27,44,54,63,68,73,75,78,78,78,78,78,78,78,78,78,78,78,78,78,78,78,78,78,NULL
+63,RES1 ,USACE - Wilmington,"one & 1/2 story, pile foundation, Contents",6,7,8,9,9,21,31,43,54,67,70,73,76,78,81,82,84,85,86,87,88,100,100,100,100,100,100,100,100,NULL
+64,RES1 ,USACE - Wilmington,"one & 1/2 story, Contents",0,0,0,0,9,21,31,37,43,51,57,63,68,74,80,81,83,84,86,87,88,100,100,100,100,100,100,100,100,NULL
+65,RES1 ,USACE - Wilmington,"one & 1/2 story w/ 1/2 living area below, Contents",0,0,0,0,2,6,10,15,18,21,23,24,28,34,44,54,63,73,76,79,82,85,86,87,88,89,90,91,92,NULL
+66,RES1 ,USACE - Wilmington,"one story, pile foundation, contents",9,10,13,13,14,26,38,52,64,78,81,85,88,91,95,96,97,99,100,100,100,100,100,100,100,100,100,100,100,NULL
+67,RES1 ,USACE - Wilmington,"one story, Contents",0,0,0,0,11,24,36,43,46,52,59,66,73,80,87,88,90,92,94,96,100,100,100,100,100,100,100,100,100,NULL
+68,RES1 ,USACE - Wilmington,"one story w/ 1/2 living area below, Contents",0,0,0,0,2,11,16,20,24,28,30,32,38,46,54,63,72,82,85,89,92,95,96,97,98,98,99,100,100,NULL
+69,RES1 ,USACE - Wilmington,"one story w/ basement, Contents",10,12,13,13,20,34,48,52,64,78,81,85,88,91,95,96,98,99,100,100,100,100,100,100,100,100,100,100,100,NULL
+70,RES1 ,USACE - Wilmington,"split level, Contents",0,0,0,0,3,15,21,25,32,44,50,55,61,66,72,75,79,83,87,91,94,94,95,96,97,98,99,100,100,NULL
+71,RES1 ,USACE - Wilmington,"two story, pile foundation, contents",6,7,8,9,10,19,29,38,45,53,55,57,59,61,63,67,71,75,78,82,86,100,100,100,100,100,100,100,100,NULL
+72,RES1 ,USACE - Wilmington,"two story, Contents",0,0,0,0,7,18,26,30,40,50,52,53,55,56,58,63,68,72,77,82,86,100,100,100,100,100,100,100,100,NULL
+73,RES1 ,USACE - Wilmington,"two story w/ 1/2 living area below, Contents",0,0,0,0,1,7,10,13,15,18,19,21,25,33,40,47,54,56,59,62,65,67,71,75,79,83,87,91,95,NULL
+74,RES2 ,FIA,"Mobile Home, Contents, A-Zone",0,0,0,0,3,27,49,64,70,76,78,79,81,83,83,83,83,83,83,83,83,83,83,83,83,83,83,83,83,NULL
+75,RES2 ,FIA,"Mobile Home, Contents, V-Zone",0,0,0,0,3,27,50,65,71,76,78,79,81,83,83,83,83,83,83,83,83,83,83,83,83,83,83,83,83,NULL
+76,RES2 ,USACE - Chicago,"Mobile Home, Contents",0,0,0,0,3,27,49,64,70,76,78,79,81,83,83,83,83,83,83,83,83,83,83,83,83,83,83,83,83,NULL
+77,RES2 ,USACE - Galveston,"Mobile Home, Contents",0,0,0,0,3,23,36,43,55,66,78,86,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+78,RES2 ,USACE - New Orleans,"Mobile Home, Contents, fresh water, short duration",0,0,0,0,0,39,54,75,77,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,NULL
+79,RES2 ,USACE - New Orleans,"Mobile Home, Contents, salt water, long duration",0,0,0,0,0,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+80,RES2 ,USACE - Wilmington,"Mobile Home, Contents",0,0,0,0,6,22,32,37,50,63,74,82,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+81,RES3 ,USACE - Chicago,"Apartment Unit Grade, Contents",0,0,0,0,12,24,33,35,37,41,45,50,55,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+82,RES3 ,USACE - Chicago,"Apartment Unit Sub-Grade, Contents",0,6,7,8,15,19,22,28,33,39,43,49,54,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+83,RES3 ,USACE - Galveston,"Apartment, living area on one floor, Contents",0,0,0,0,6,34,44,55,67,77,87,97,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+84,RES3 ,USACE - Galveston,"Condominium, living area on multiple floors, Contents",0,0,0,0,4,24,34,40,47,53,56,58,58,58,61,66,68,76,81,86,91,100,100,100,100,100,100,100,100,NULL
+85,RES4 ,USACE - Galveston,"Average hotel/motel, Contents (Equipment/Inventory)",0,0,0,0,0,11,19,25,29,34,39,44,49,56,65,74,82,88,98,98,98,98,98,98,98,98,98,98,98,NULL
+86,RES4 ,USACE - Galveston,"Hotel, contents (Equipment)",0,0,0,0,0,11,22,28,33,37,41,44,46,49,54,60,69,81,100,100,100,100,100,100,100,100,100,100,100,NULL
+87,RES4 ,USACE - Galveston,"Motel Unit, contents (Inventory)",0,0,0,0,0,10,16,21,25,30,36,43,52,63,76,88,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+88,RES5 ,USACE - Galveston,"Average institutional dormitory, contents",0,0,0,0,0,38,60,73,81,88,94,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RES6 default
+89,RES6 ,USACE - Galveston,"Nursing Home, contents (Equipment)",0,0,0,0,0,38,60,73,81,88,94,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+90,COM1 ,USACE - Galveston,Average retail trade contents (Inventory/Equipment),0,0,0,0,2,26,42,56,68,78,83,85,87,88,89,90,91,92,92,92,93,93,94,94,94,94,94,94,94,NULL
+91,COM1 ,USACE - Galveston,"Antique, contents (Inventory)",0,0,0,0,20,75,78,85,90,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+92,COM1 ,USACE - Galveston,"Appliance Sales, contents (Equipment)",0,0,0,0,0,15,16,28,58,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+93,COM1 ,USACE - Galveston,"Appliance Sales, contents (Inventory)",0,0,0,0,0,83,91,94,95,97,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+94,COM1 ,USACE - Galveston,"Large Auto Dealer, contents (Inventory)",0,0,0,0,20,50,90,95,98,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+95,COM1 ,USACE - Galveston,"Bait Stand, contents (Inventory)",0,0,0,0,0,3,7,11,16,22,29,36,44,52,60,69,79,88,100,100,100,100,100,100,100,100,100,100,100,NULL
+96,COM1 ,USACE - Galveston,"Bakery, contents (Equipment)",0,0,0,0,14,35,70,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+97,COM1 ,USACE - Galveston,"Bakery, contents (Inventory)",0,0,0,0,55,65,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+98,COM1 ,USACE - Galveston,"Boat Sales/Service, contents (Equipment)",0,0,0,0,0,8,41,65,83,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,NULL
+99,COM1 ,USACE - Galveston,"Boat Sales/Service, contents (Inventory)",0,0,0,0,13,24,43,82,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+100,COM1 ,USACE - Galveston,"Book Store, contents (Inventory)",0,0,0,0,0,7,14,21,27,35,42,49,57,65,73,82,92,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+101,COM1 ,USACE - Galveston,"Camera Store, contents (Inventory)",0,0,0,0,0,18,33,65,88,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+102,COM1 ,USACE - Galveston,"Carpet and Paint Shop, contents (Equipment)",0,0,0,0,0,30,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+103,COM1 ,USACE - Galveston,"Carpet and Paint Shop, contents (Inventory)",0,0,0,0,0,20,40,60,80,95,97,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+104,COM1 ,USACE - Galveston,"Mens Clothing, contents (Equipment)",0,0,0,0,0,32,41,60,78,94,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+105,COM1 ,USACE - Galveston,"Mens Clothing, contents (Inventory)",0,0,0,0,6,37,50,75,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+106,COM1 ,USACE - Galveston,"Crafts, contents (Equipment)",0,0,0,0,0,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+107,COM1 ,USACE - Galveston,"Crafts, contents (Inventory)",0,0,0,0,0,20,30,50,70,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+108,COM1 ,USACE - Galveston,"Chain Drug Store, contents (Inventory)",0,0,0,0,0,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+109,COM1 ,USACE - Galveston,"Fabric Store, contents (Equipment)",0,0,0,0,0,20,30,40,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+110,COM1 ,USACE - Galveston,"Fabric Store, contents (Inventory)",0,0,0,0,0,15,30,50,75,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+111,COM1 ,USACE - Galveston,"Feed Store, contents (Equipment)",0,0,0,0,0,0,0,0,0,0,0,0,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+112,COM1 ,USACE - Galveston,"Feed Store, contents (Inventory)",0,0,0,0,0,0,0,0,15,15,15,15,25,25,25,25,50,50,50,50,75,75,100,100,100,100,100,100,100,NULL
+113,COM1 ,USACE - Galveston,"Florist, contents (Equipment)",0,0,0,0,0,49,60,75,78,79,82,85,89,93,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+114,COM1 ,USACE - Galveston,"Florist, contents (Inventory)",0,0,0,0,0,50,85,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+115,COM1 ,USACE - Galveston,"Fruit Stand, contents (Inventory)",0,0,0,0,0,45,80,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+116,COM1 ,USACE - Galveston,"Large Furniture Store, contents (Inventory)",0,0,0,0,20,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+117,COM1 ,USACE - Galveston,"Gas/Butane Supply, contents (Equipment)",0,0,0,0,0,25,46,65,75,81,86,90,94,96,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+118,COM1 ,USACE - Galveston,"Gift Shop, contents (Inventory)",0,0,0,0,0,54,63,75,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+119,COM1 ,USACE - Galveston,"Greenhouse, contents (Equipment)",0,0,0,0,0,17,34,50,66,80,92,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+120,COM1 ,USACE - Galveston,"Greenhouse, contents (Inventory)",0,0,0,0,0,66,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+121,COM1 ,USACE - Galveston,"Small Grocery, contents (Equipment)",0,0,0,0,0,0,20,20,20,20,20,40,40,40,40,40,40,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+122,COM1 ,USACE - Galveston,"Small Grocery, contents (Inventory)",0,0,0,0,0,20,35,50,65,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+123,COM1 ,USACE - Galveston,"Medium Grocery, contents (Equipment)",0,0,0,0,4,80,90,93,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+124,COM1 ,USACE - Galveston,"Medium Grocery, contents (Inventory)",0,0,0,0,4,22,44,74,96,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+125,COM1 ,USACE - Galveston,"Gun Shop, contents (Equipment)",0,0,0,0,0,15,30,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+126,COM1 ,USACE - Galveston,"Gun Shop, contents (Inventory)",0,0,0,0,0,22,39,58,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+127,COM1 ,USACE - Galveston,"Hardware, contents (Equipment)",0,0,0,0,0,8,12,20,29,40,50,59,67,75,84,92,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+128,COM1 ,USACE - Galveston,"Hardware, contents (Inventory)",0,0,0,0,8,33,52,70,75,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+129,COM1 ,USACE - Galveston,"Hobby Shop, contents (Equipment)",0,0,0,0,0,56,87,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+130,COM1 ,USACE - Galveston,"Hobby Shop, contents (Inventory)",0,0,0,0,0,25,49,64,77,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+131,COM1 ,USACE - Galveston,"Lawnmower, contents (Equipment)",0,0,0,0,0,3,24,46,57,65,72,79,86,91,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+132,COM1 ,USACE - Galveston,"Lawnmower, contents (Inventory)",0,0,0,0,0,10,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+133,COM1 ,USACE - Galveston,"Liquor Store, contents (Equipment)",0,0,0,0,0,2,4,9,16,84,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+134,COM1 ,USACE - Galveston,"Liquor Store, contents (Inventory)",0,0,0,0,0,20,40,60,81,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+135,COM1 ,USACE - Galveston,"Meat Market, contents (Equipment)",0,0,0,0,0,78,81,84,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+136,COM1 ,USACE - Galveston,"Meat Market, contents (Inventory)",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+137,COM1 ,USACE - Galveston,"Motorcycle Dealer, contents (Equipment)",0,0,0,0,0,30,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+138,COM1 ,USACE - Galveston,"Motorcycle Dealer, contents (Inventory)",0,0,0,0,0,25,45,65,85,85,85,85,85,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+139,COM1 ,USACE - Galveston,"Music Center, contents (Equipment)",0,0,0,0,0,40,52,72,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+140,COM1 ,USACE - Galveston,"Music Center, contents (Inventory)",0,0,0,0,0,66,72,75,80,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+141,COM1 ,USACE - Galveston,"Plant Nursery, contents (Equipment)",0,0,0,0,0,4,4,8,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+142,COM1 ,USACE - Galveston,"Plant Nursery, contents (Inventory)",0,0,0,0,0,5,20,79,88,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+143,COM1 ,USACE - Galveston,"Paint Store, contents (Equipment)",0,0,0,0,0,0,20,25,30,35,40,45,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+144,COM1 ,USACE - Galveston,"Paint Store, contents (Inventory)",0,0,0,0,0,0,20,40,60,70,73,76,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+145,COM1 ,USACE - Galveston,"Pawn Shop, contents (Equipment)",0,0,0,0,0,0,0,0,0,40,60,70,70,70,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+146,COM1 ,USACE - Galveston,"Pawn Shop, contents (Inventory)",0,0,0,0,0,20,40,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+147,COM1 ,USACE - Galveston,"Remnant Shop, contents (Equipment)",0,0,0,0,0,0,40,40,40,40,40,40,40,40,40,40,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+148,COM1 ,USACE - Galveston,"Remnant Shop, contents (Inventory)",0,0,0,0,0,0,20,40,60,80,90,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+149,COM1 ,USACE - Galveston,"Service Station, contents (Equipment)",0,0,0,0,0,6,39,59,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+150,COM1 ,USACE - Galveston,"Service Station, contents (Inventory)",0,0,0,0,0,25,42,62,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+151,COM1 ,USACE - Galveston,"Shoe Repair, contents (Equipment)",0,0,0,0,0,10,20,28,38,41,44,47,47,47,47,47,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+152,COM1 ,USACE - Galveston,"Shoe Repair, contents (Inventory)",0,0,0,0,0,10,23,35,48,60,74,87,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+153,COM1 ,USACE - Galveston,"Toy Store, contents (Inventory)",0,0,0,0,10,20,40,70,85,90,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+154,COM1 ,USACE - Galveston,"Tractor Sales, contents (Equipment)",0,0,0,0,0,2,4,18,28,36,44,48,52,56,60,65,70,74,79,84,88,93,97,100,100,100,100,100,100,NULL
+155,COM1 ,USACE - Galveston,"Tractor Sales, contents (Inventory)",0,0,0,0,0,6,17,29,44,59,70,77,81,84,88,92,95,99,100,100,100,100,100,100,100,100,100,100,100,NULL
+156,COM1 ,USACE - Galveston,"Trailer Sales, contents (Inventory)",0,0,0,0,0,18,37,60,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+157,COM1 ,USACE - Galveston,"Trophy Shop, contents (Equipment)",0,0,0,0,0,23,35,38,56,60,60,60,60,60,61,62,64,66,68,71,76,84,100,100,100,100,100,100,100,NULL
+158,COM1 ,USACE - Galveston,"Trophy Shop, contents (Inventory)",0,0,0,0,0,1,5,12,31,66,82,92,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+159,COM1 ,USACE - Galveston,"Upholstery Shop, contents (Equipment)",0,0,0,0,0,10,10,10,10,10,30,35,40,45,50,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+160,COM1 ,USACE - Galveston,"Upholstery Shop, contents (Inventory)",0,0,0,0,0,25,30,40,45,50,53,56,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+161,COM1 ,USACE - Galveston,"Used Appliances/Cloth, contents (Equipment)",0,0,0,0,0,20,40,50,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+162,COM1 ,USACE - Galveston,"Used Appliances/Cloth, contents (Inventory)",0,0,0,0,0,25,35,40,50,60,80,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+163,COM1 ,USACE - Galveston,"Used Furniture, contents (Equipment)",0,0,0,0,0,0,0,0,20,40,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+164,COM1 ,USACE - Galveston,"Used Furniture, contents (Inventory)",0,0,0,0,0,0,10,30,45,65,80,80,85,85,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+165,COM1 ,USACE - Galveston,"Vacuum Cleaner Sales, contents (Equipment)",0,0,0,0,0,0,20,25,30,35,40,40,40,60,60,60,60,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+166,COM1 ,USACE - Galveston,"Vacuum Cleaner Sales, contents (Inventory)",0,0,0,0,0,70,80,90,95,97,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+167,COM1 ,USACE - Galveston,"Video Games, contents (Equipment)",0,0,0,0,0,5,10,20,30,45,60,60,60,60,60,60,60,60,60,75,75,100,100,100,100,100,100,100,100,NULL
+168,COM1 ,USACE - Galveston,"Video Games, contents (Inventory)",0,0,0,0,0,25,50,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+169,COM1 ,USACE - New Orleans,"Bakery, contents, salt water, long duration",0,0,0,0,0,98,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+170,COM1 ,USACE - New Orleans,"Bakery, contents, fresh water, short duration",0,0,0,0,0,33,74,81,85,88,96,96,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+171,COM1 ,USACE - New Orleans,"Candy Store, contents, salt water, long duration",0,0,0,0,0,98,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+172,COM1 ,USACE - New Orleans,"Candy Store, contents, fresh water, short duration",0,0,0,0,0,33,74,81,85,88,96,96,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+173,COM1 ,USACE - New Orleans,"Clothing Store, contents, salt water, long duration",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+174,COM1 ,USACE - New Orleans,"Clothing Store, contents, fresh water, short duration",0,0,0,0,0,35,48,54,54,55,55,55,55,55,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+175,COM1 ,USACE - New Orleans,"Convenience Store, contents, salt water, long duration",0,0,0,0,0,98,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+176,COM1 ,USACE - New Orleans,"Convenience Store, contents, fresh water, short duration",0,0,0,0,0,33,74,81,85,88,96,96,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+177,COM1 ,USACE - New Orleans,"Department Store, contents, salt water, long duration",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+178,COM1 ,USACE - New Orleans,"Department Store, contents, fresh water, short duration",0,0,0,0,0,35,48,54,54,55,55,55,55,55,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+179,COM1 ,USACE - New Orleans,"Furniture Store, contents, salt water, long duration",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+180,COM1 ,USACE - New Orleans,"Furniture Store, contents, fresh water, short duration",0,0,0,0,0,35,48,54,54,55,55,55,55,55,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+181,COM1 ,USACE - New Orleans,"Gas Stations, contents, salt water, long duration",0,0,0,0,0,98,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+182,COM1 ,USACE - New Orleans,"Gas Stations, contents, fresh water, short duration",0,0,0,0,0,33,74,81,85,88,96,96,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+183,COM1 ,USACE - New Orleans,"Large Grocery, contents, salt water, long duration",0,0,0,0,0,98,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+184,COM1 ,USACE - New Orleans,"Large Grocery, contents, fresh water, short duration",0,0,0,0,0,33,74,81,85,88,96,96,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+185,COM1 ,USACE - New Orleans,"Neighborhood Grocery, contents, salt water, long duration",0,0,0,0,0,98,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+186,COM1 ,USACE - New Orleans,"Neighborhood Grocery, contents, fresh water, short duration",0,0,0,0,0,33,74,81,85,88,96,96,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+187,COM1 ,USACE - New Orleans,"Home Repair Store, contents, salt water, long duration",0,0,0,0,0,88,88,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+188,COM1 ,USACE - New Orleans,"Home Repair Store, contents, fresh water, short duration",0,0,0,0,0,17,45,60,65,86,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,NULL
+189,COM1 ,USACE - New Orleans,"Liquor Store, contents, salt water, long duration",0,0,0,0,0,98,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+190,COM1 ,USACE - New Orleans,"Liquor Store, contents, fresh water, short duration",0,0,0,0,0,33,74,81,85,88,96,96,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+191,COM1 ,USACE - New Orleans,"Shoe Store, contents, salt water, long duration",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+192,COM1 ,USACE - New Orleans,"Shoe Store, contents, fresh water, short duration",0,0,0,0,0,35,48,54,54,55,55,55,55,55,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+193,COM1 ,USACE - New Orleans,"Wine Store, contents, salt water, long duration",0,0,0,0,0,98,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+194,COM1 ,USACE - New Orleans,"Wine Store, contents, fresh water, short duration",0,0,0,0,0,33,74,81,85,88,96,96,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+195,COM2 ,USACE - Galveston,"Average wholesale trade, Contents",0,0,0,0,3,16,27,36,49,57,63,69,72,76,80,82,84,86,87,87,88,89,89,89,89,89,89,89,89,NULL
+196,COM2 ,USACE - Galveston,"Auto Parts, contents (Inventory)",0,0,0,0,0,18,30,59,70,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+197,COM2 ,USACE - Galveston,"Auto Parts/Mufflers, contents (Inventory)",0,0,0,0,0,10,20,40,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+198,COM2 ,USACE - Galveston,"Heavy Equipment Storage, contents (Equipment)",0,0,0,0,14,17,20,23,25,29,35,38,42,51,63,77,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+199,COM2 ,USACE - Galveston,"Food Warehouse, contents (Inventory)",0,0,0,0,0,25,40,55,70,85,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+200,COM2 ,USACE - Galveston,"Highway Material Storage, contents (Equipment)",0,0,0,0,0,5,5,10,10,25,25,50,50,50,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,NULL
+201,COM2 ,USACE - Galveston,"Jewelry, contents (Inventory)",0,0,0,0,0,7,15,24,33,39,45,51,56,61,65,70,74,79,83,87,92,95,96,96,96,96,96,96,96,NULL
+202,COM2 ,USACE - Galveston,"Lumber Yard, contents (Inventory)",0,0,0,0,0,20,30,45,60,75,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+203,COM2 ,USACE - Galveston,"Medical Supplies, contents (Equipment)",0,0,0,0,0,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+204,COM2 ,USACE - Galveston,"Medical Supplies, contents (Inventory)",0,0,0,0,0,11,20,27,35,43,50,57,65,73,80,88,96,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+205,COM2 ,USACE - Galveston,"Municipal Storage Warehouse, contents (Equipment)",0,0,0,0,0,28,40,58,75,75,75,75,75,75,75,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+206,COM2 ,USACE - Galveston,"Municipal Storage Warehouse, contents (Inventory)",0,0,0,0,0,11,16,19,21,23,28,35,47,67,85,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+207,COM2 ,USACE - Galveston,"Paper Products Warehouse, contents (Equipment)",0,0,0,0,0,22,42,58,75,87,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+208,COM2 ,USACE - Galveston,"Paper Products Warehouse, contents (Inventory)",0,0,0,0,0,17,27,36,44,52,59,67,73,80,90,98,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+209,COM2 ,USACE - Galveston,"Safety Equipment, contents (Equipment)",0,0,0,0,0,12,25,37,50,62,75,87,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+210,COM2 ,USACE - Galveston,"Safety Equipment, contents (Inventory)",0,0,0,0,0,12,25,37,50,62,75,85,93,97,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+211,COM2 ,USACE - Galveston,"Sporting Goods, contents (Equipment)",0,0,0,0,0,0,0,0,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+212,COM2 ,USACE - Galveston,"Sporting Goods, contents (Inventory)",0,0,0,0,0,20,30,50,53,55,57,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+213,COM2 ,USACE - Galveston,"Sporting Goods Warehouse, contents (Equipment)",0,0,0,0,0,35,50,63,75,87,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+214,COM2 ,USACE - Galveston,"Sporting Goods Warehouse, contents (Inventory)",0,0,0,0,0,35,50,63,75,87,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+215,COM2 ,USACE - Galveston,"Storage - Chemicals, contents (Equipment)",0,0,0,0,0,10,15,20,25,35,45,55,65,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,NULL
+216,COM2 ,USACE - Galveston,"Storage - Chemicals, contents (Inventory)",0,0,0,0,0,15,20,30,40,50,60,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+217,COM2 ,USACE - Galveston,"Storage - Machine Parts, contents (Inventory)",0,0,0,0,0,20,30,40,50,50,50,75,75,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+218,COM2 ,USACE - Galveston,"T.V. Station, contents (Equipment)",0,0,0,0,0,3,9,9,9,9,11,13,15,18,22,26,30,35,43,54,70,95,100,100,100,100,100,100,100,NULL
+219,COM2 ,USACE - Galveston,"T.V. Repair, contents (Equipment)",0,0,0,0,7,10,11,13,16,21,27,34,42,52,63,74,86,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+220,COM2 ,USACE - Galveston,"T.V. Repair, contents (Inventory)",0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+221,COM2 ,USACE - Galveston,"Trailer Parts, contents (Equipment)",0,0,0,0,0,0,0,0,0,0,0,0,0,50,50,50,50,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+222,COM2 ,USACE - Galveston,"Trailer Parts, contents (Inventory)",0,0,0,0,0,0,8,16,28,32,40,43,46,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+223,COM2 ,USACE - Galveston,"Warehouse, contents (Inventory)",0,0,0,0,0,11,16,19,21,23,28,35,47,67,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+224,COM2 ,USACE - Galveston,"Beer Warehouse, contents (Equipment)",0,0,0,0,0,25,40,55,70,85,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+225,COM2 ,USACE - Galveston,"Beer Warehouse, contents (Inventory)",0,0,0,0,0,20,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+226,COM2 ,USACE - Galveston,"Bottled Gases Warehouse, contents (Equipment)",0,0,0,0,0,0,0,0,25,35,50,50,50,60,60,60,60,60,75,75,75,75,75,75,75,75,75,75,75,NULL
+227,COM2 ,USACE - Galveston,"Bottled Gases Warehouse, contents (Inventory)",0,0,0,0,0,10,10,10,10,10,10,20,20,20,20,20,20,30,30,30,30,30,30,30,30,30,30,30,30,NULL
+228,COM2 ,USACE - Galveston,"Cement Warehouse, contents (Inventory)",0,0,0,0,0,20,40,60,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+229,COM2 ,USACE - Galveston,"Detergents Warehouse, contents (Equipment)",0,0,0,0,0,5,10,15,20,25,35,35,50,50,50,50,50,50,60,60,60,60,60,60,60,60,60,60,60,NULL
+230,COM2 ,USACE - Galveston,"Detergents Warehouse, contents (Inventory)",0,0,0,0,0,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+231,COM2 ,USACE - Galveston,"Heavy Machinery Warehouse, contents (Equipment)",0,0,0,0,0,5,11,17,20,23,25,29,35,42,51,63,77,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+232,COM2 ,USACE - Galveston,"Heavy Machinery Warehouse, contents (Inventory)",0,0,0,0,0,10,25,25,35,40,50,75,75,75,75,75,75,85,85,90,90,90,90,90,90,90,90,90,90,NULL
+233,COM2 ,USACE - Galveston,"Petroleum Warehouse, contents (Equipment)",0,0,0,0,0,0,0,0,25,35,50,50,50,50,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+234,COM2 ,USACE - Galveston,"Petroleum Warehouse, contents (Inventory)",0,0,0,0,0,0,0,10,20,40,60,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+235,COM2 ,USACE - Galveston,"Western Auto, contents (Equipment)",0,0,0,0,0,6,8,16,59,65,70,73,77,81,84,87,90,93,96,100,100,100,100,100,100,100,100,100,100,NULL
+236,COM2 ,USACE - Galveston,"Western Auto, contents (Inventory)",0,0,0,0,0,23,50,75,87,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+237,COM2 ,USACE - New Orleans,"Warehouse, contents, salt water, long duration",0,0,0,0,0,53,70,80,96,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,NULL
+238,COM2 ,USACE - New Orleans,"Warehouse, contents, fresh water, short duration",0,0,0,0,0,19,31,40,45,49,54,58,63,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,NULL
+239,COM2 ,USACE - St. Paul,"Warehouse, contents, fresh water",0,0,0,0,15,31,43,53,61,67,71,73,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,NULL
+240,COM3 ,USACE - Galveston,"Average personal/repair services, Contents (Invetory)",0,0,0,0,4,29,46,67,79,85,91,92,92,93,94,96,96,97,97,98,98,98,98,98,98,98,98,98,98,NULL
+241,COM3 ,USACE - Galveston,"Auto Repair, contents (Equipment)",0,0,0,0,0,30,56,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+242,COM3 ,USACE - Galveston,"Auto Repair, contents (Inventory)",0,0,0,0,50,80,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+243,COM3 ,USACE - Galveston,"Auto Service, contents (Inventory)",0,0,0,0,10,40,60,85,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+244,COM3 ,USACE - Galveston,"Barber Shop, contents (Equipment)",0,0,0,0,22,29,37,48,62,78,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,NULL
+245,COM3 ,USACE - Galveston,"Barber Shop, contents (Inventory)",0,0,0,0,0,15,50,75,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+246,COM3 ,USACE - Galveston,"Beauty Shop, contents (Equipment)",0,0,0,0,0,70,87,94,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+247,COM3 ,USACE - Galveston,"Beauty Shop, contents (Inventory)",0,0,0,0,0,18,31,50,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+248,COM3 ,USACE - Galveston,"Boat Service, contents (Equipment)",0,0,0,0,0,8,12,20,29,40,50,59,67,75,84,92,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+249,COM3 ,USACE - Galveston,"Boat Service, contents (Inventory)",0,0,0,0,8,33,52,70,75,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+250,COM3 ,USACE - Galveston,"Car Wash, contents (Equipment)",0,0,0,0,0,10,25,40,50,60,75,75,75,75,75,75,75,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+251,COM3 ,USACE - Galveston,"Car Wash, contents (Inventory)",0,0,0,0,0,25,50,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+252,COM3 ,USACE - Galveston,"Cemetary Complex, contents (Equipment)",0,0,0,0,0,29,34,76,88,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,NULL
+253,COM3 ,USACE - Galveston,"Cemetary Complex, contents (Inventory)",0,0,0,0,0,92,96,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+254,COM3 ,USACE - Galveston,"Cleaners, contents (Equipment)",0,0,0,0,0,10,30,50,75,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+255,COM3 ,USACE - Galveston,"Cleaners-substation, contents (Equipment)",0,0,0,0,0,4,10,75,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+256,COM3 ,USACE - Galveston,"Cleaners-substation, contents (Inventory)",0,0,0,0,0,49,75,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+257,COM3 ,USACE - Galveston,"Private Day Care, contents (Equipment)",0,0,0,0,0,20,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+258,COM3 ,USACE - Galveston,"Private Day Care, contents (Inventory)",0,0,0,0,0,25,50,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+259,COM3 ,USACE - Galveston,"Funeral Home, contents (Inventory)",0,0,0,0,0,10,30,60,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+260,COM3 ,USACE - Galveston,"Laundry, contents (Equipment)",0,0,0,0,0,5,10,13,16,19,22,27,33,40,47,56,65,74,84,94,100,100,100,100,100,100,100,100,100,NULL
+261,COM3 ,USACE - Galveston,"Photo Studio, contents (Equipment)",0,0,0,0,0,10,10,10,10,10,60,60,60,60,60,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+262,COM3 ,USACE - Galveston,"Photo Studio, contents (Inventory)",0,0,0,0,0,0,0,80,80,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+263,COM3 ,USACE - Galveston,"Truck Mfg & Sales, contents (Equipment)",0,0,0,0,0,65,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+264,COM3 ,USACE - Galveston,"Truck Mfg & Sales, contents (Inventory)",0,0,0,0,0,34,50,57,65,71,76,80,88,89,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+265,COM3 ,USACE - Galveston,"Washateria, contents (Equipment)",0,0,0,0,0,20,55,78,83,86,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+266,COM3 ,USACE - New Orleans,"Auto Repair, contents, salt water, long duration",0,0,0,0,0,88,88,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+267,COM3 ,USACE - New Orleans,"Auto Repair, contents, fresh water, short duration",0,0,0,0,0,17,45,60,65,86,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,NULL
+268,COM3 ,USACE - New Orleans,"Barber Shop, contents, salt water, long duration",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+269,COM3 ,USACE - New Orleans,"Barber Shop, contents, fresh water, short duration",0,0,0,0,0,35,48,54,54,55,55,55,55,55,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+270,COM3 ,USACE - New Orleans,"Beauty Salon, contents, salt water, long duration",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+271,COM3 ,USACE - New Orleans,"Beauty Salon, contents, fresh water, short duration",0,0,0,0,0,35,48,54,54,55,55,55,55,55,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+272,COM3 ,USACE - New Orleans,"Funeral Home, contents, salt water, long duration",0,0,0,0,0,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+273,COM3 ,USACE - New Orleans,"Funeral Home, contents, fresh water, short duration",0,0,0,0,0,26,46,94,97,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+274,COM3 ,USACE - New Orleans,"Laundromat, contents, salt water, long duration",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+275,COM3 ,USACE - New Orleans,"Laundromat, contents, fresh water, short duration",0,0,0,0,0,35,48,54,54,55,55,55,55,55,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+276,COM3 ,USACE - New Orleans,"Reupholstery, contents, salt water, long duration",0,0,0,0,0,88,88,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+277,COM3 ,USACE - New Orleans,"Reupholstery, contents, fresh water, short duration",0,0,0,0,0,17,45,60,65,86,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,NULL
+278,COM3 ,USACE - New Orleans,"Watch Repair, contents, salt water, long duration",0,0,0,0,0,88,88,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+279,COM3 ,USACE - New Orleans,"Watch Repair, contents, fresh water, short duration",0,0,0,0,0,17,45,60,65,86,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,94,NULL
+280,COM4 ,USACE - Galveston,"Average Prof/Tech services, Contents (Equipment/Inventory)",0,0,0,0,2,18,25,35,43,49,52,55,57,58,60,65,67,68,69,70,71,71,72,72,72,72,72,72,72,NULL
+281,COM4 ,USACE - Galveston,"Airport, contents (Equipment)",0,0,0,0,0,5,10,10,10,10,10,10,10,10,10,50,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+282,COM4 ,USACE - Galveston,"Airport, contents (Inventory)",0,0,0,0,0,30,40,48,55,75,78,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+283,COM4 ,USACE - Galveston,"Boat Stalls, contents (Equipment)",0,0,0,0,0,3,6,8,11,13,15,17,19,21,22,24,25,27,28,29,31,32,33,34,35,36,37,38,39,NULL
+284,COM4 ,USACE - Galveston,"Boat Storage, contents (Inventory)",0,0,0,0,1,4,7,12,18,24,32,40,48,54,58,63,66,68,70,70,70,70,70,70,70,70,70,70,70,NULL
+285,COM4 ,USACE - Galveston,"Business, contents (Inventory)",0,0,0,0,0,2,6,10,15,19,24,28,33,38,44,49,55,62,69,78,86,95,100,100,100,100,100,100,100,NULL
+286,COM4 ,USACE - Galveston,"Import Sales, contents (Equipment)",0,0,0,0,0,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+287,COM4 ,USACE - Galveston,"Import Sales, contents (Inventory)",0,0,0,0,0,60,65,70,75,80,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+288,COM4 ,USACE - Galveston,"Large Commercial Office, contents (Equipment)",0,0,0,0,0,16,21,24,25,26,28,31,36,42,50,71,84,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+289,COM4 ,USACE - Galveston,"Real Estate Office, contents (Equipment)",0,0,0,0,0,1,9,42,75,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+290,COM4 ,USACE - Galveston,"Real Estate Office, contents (Inventory)",0,0,0,0,25,43,63,70,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+291,COM4 ,USACE - Galveston,"Transport Comapny, contents (Equipment)",0,0,0,0,0,60,75,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+292,COM4 ,USACE - Galveston,"Utility Company, contents (Equipment)",0,0,0,0,0,0,0,0,10,20,30,40,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+293,COM4 ,USACE - Galveston,"Utility Company, contents (Inventory)",0,0,0,0,0,1,1,5,7,10,11,12,13,14,15,15,16,16,16,16,16,16,16,16,16,16,16,16,16,NULL
+294,COM4 ,USACE - Galveston,"Water Supply, contents (Equipment)",0,0,0,0,0,0,0,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,NULL
+295,COM4 ,USACE - New Orleans,"Accounting Firm, contents, salt water, long duration",0,0,0,0,0,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+296,COM4 ,USACE - New Orleans,"Accounting Firm, contents, fresh water, short duration",0,0,0,0,0,26,46,94,97,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+297,COM4 ,USACE - New Orleans,"Legal Office, contents, salt water, long duration",0,0,0,0,0,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+298,COM4 ,USACE - New Orleans,"Legal Office, contents, fresh water, short duration",0,0,0,0,0,26,46,94,97,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+299,COM4 ,USACE - New Orleans,"Real Estate Office, contents, salt water, long duration",0,0,0,0,0,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+300,COM4 ,USACE - New Orleans,"Real Estate Office, contents, fresh water, short duration",0,0,0,0,0,26,46,94,97,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+301,COM4 ,USACE - New Orleans,"Utility Company, contents, salt water, long duration",0,0,0,0,0,60,60,60,60,60,60,60,60,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+302,COM4 ,USACE - New Orleans,"Utility Company, contents, fresh water, short duration",0,0,0,0,0,5,18,50,50,52,58,58,58,58,58,59,69,70,70,79,79,79,79,79,79,79,79,79,79,NULL
+303,COM4 ,USACE - St. Paul,"Professional, contents, fresh water",0,0,0,0,15,31,43,53,61,67,71,73,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,NULL
+304,COM5 ,USACE - Galveston,"Bank, Contents",0,0,0,0,0,50,74,83,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+305,COM5 ,USACE - Galveston,"Bank, Contents (Equipment)",0,0,0,0,0,50,60,70,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+306,COM5 ,USACE - Galveston,"Bank, Contents (Inventory)",0,0,0,0,0,50,87,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+307,COM5 ,USACE - New Orleans,"Bank, Contents, salt water, long duration",0,0,0,0,0,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+308,COM5 ,USACE - New Orleans,"Bank, Contents, fresh water, short duration",0,0,0,0,0,26,46,94,97,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+309,COM6 ,USACE - Galveston,"Hospital, Contents",0,0,0,0,0,0,0,10,20,30,65,72,78,85,95,95,95,95,96,96,96,96,96,96,96,96,96,96,96,NULL
+310,COM6 ,USACE - Galveston,"Hospital, contents (Equipment)",0,0,0,0,0,0,0,20,30,40,50,60,70,80,95,95,95,95,96,96,96,96,96,96,96,96,96,96,96,NULL
+311,COM6 ,USACE - Galveston,"Hospital, contents (Inventory)",0,0,0,0,0,0,0,0,10,20,80,83,86,89,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+312,COM7 ,USACE - Galveston,"Average Medical Offic/Clinic, Contents (Equipment/Inventory)",0,0,0,0,0,28,51,60,63,67,71,72,74,77,81,86,92,94,97,99,100,100,100,100,100,100,100,100,100,NULL
+313,COM7 ,USACE - Galveston,"Doctor's Office, contents (Equipment)",0,0,0,0,0,7,12,15,16,18,22,27,34,43,57,75,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+314,COM7 ,USACE - Galveston,"Dentist's Office, contents (Equipment)",0,0,0,0,0,25,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+315,COM7 ,USACE - Galveston,"Dentist's Office, contents (Inventory)",0,0,0,0,0,21,40,55,70,85,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+316,COM7 ,USACE - Galveston,"Chiropractic Clinic, contents (Equipment)",0,0,0,0,0,6,30,30,30,31,32,35,38,42,47,54,62,72,84,95,100,100,100,100,100,100,100,100,100,NULL
+317,COM7 ,USACE - Galveston,"X-Ray Service, contents (Inventory)",0,0,0,0,0,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+318,COM7 ,USACE - New Orleans,"Medical Office, contents, salt water, long duration",0,0,0,0,0,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+319,COM7 ,USACE - New Orleans,"Medical Office, contents, fresh water, short duration",0,0,0,0,0,26,46,94,97,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+320,COM7 ,USACE - New Orleans,"Dentist's Office, contents, salt water, long duration",0,0,0,0,0,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+321,COM7 ,USACE - New Orleans,"Dentist's Office, contents, fresh water, short duration",0,0,0,0,0,26,46,94,97,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+322,COM8 ,USACE - Galveston,"Average Entertainment/Recreation, Contents (Equipment/Inventory)",0,0,0,0,13,45,55,64,73,77,80,82,83,85,87,89,90,91,92,93,94,95,96,96,96,96,96,96,96,NULL
+323,COM8 ,USACE - Galveston,"Fishing Party Boat, contents (Equipment)",0,0,0,0,0,24,24,24,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,NULL
+324,COM8 ,USACE - Galveston,"Fishing Party Boat, contents (Inventory)",0,0,0,0,40,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+325,COM8 ,USACE - Galveston,"Bowling Alley, contents (Equipment)",0,0,0,0,0,17,22,25,27,27,28,30,32,35,39,45,51,58,67,76,86,96,100,100,100,100,100,100,100,NULL
+326,COM8 ,USACE - Galveston,"Country Club, contents (Equipment)",0,0,0,0,38,41,44,47,52,56,62,67,74,80,87,94,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+327,COM8 ,USACE - Galveston,"Country Club, contents (Inventory)",0,0,0,0,0,12,19,27,34,42,48,55,62,68,73,78,84,89,94,100,100,100,100,100,100,100,100,100,100,NULL
+328,COM8 ,USACE - Galveston,"Physical Fitness, contents (Equipment)",0,0,0,0,0,25,45,75,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+329,COM8 ,USACE - Galveston,"Private Pool, contents (Equipment)",0,0,0,0,0,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+330,COM8 ,USACE - Galveston,"Private Club, contents (Equipment)",0,0,0,0,0,40,45,49,52,55,59,63,68,74,85,90,95,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+331,COM8 ,USACE - Galveston,"Private Club, contents (Inventory)",0,0,0,0,0,10,21,28,35,41,47,54,62,71,83,95,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+332,COM8 ,USACE - Galveston,"Radio Station, contents (Equipment)",0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+333,COM8 ,USACE - Galveston,"Recreation Facilities, contents (Equipment)",0,0,0,0,0,5,10,20,30,45,60,60,60,60,60,60,60,60,60,75,75,100,100,100,100,100,100,100,100,NULL
+334,COM8 ,USACE - Galveston,"Recreation Facilities, contents (Inventory)",0,0,0,0,0,25,50,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+335,COM8 ,USACE - Galveston,"Tavern, contents (Equipment)",0,0,0,0,36,62,73,88,97,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+336,COM8 ,USACE - Galveston,"Tavern, contents (Inventory)",0,0,0,0,42,53,78,92,97,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+337,COM8 ,USACE - Galveston,"Telephone Exchange, contents (Equipment)",0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+338,COM8 ,USACE - Galveston,YMCA - Contents (Inventory),0,0,0,0,0,25,33,33,33,33,33,33,33,33,33,35,35,35,36,36,37,37,38,38,39,39,40,40,40,NULL
+339,COM8 ,USACE - Galveston,"Cafeteria Restaurant, contents (Equipment)",0,0,0,0,0,40,57,70,71,75,82,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+340,COM8 ,USACE - Galveston,"Cafeteria Restaurant, contents (Inventory)",0,0,0,0,0,73,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+341,COM8 ,USACE - Galveston,"Drive-In Restaurant, contents (Equipment)",0,0,0,0,0,82,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+342,COM8 ,USACE - Galveston,"Drive-In Restaurant, contents (Inventory)",0,0,0,0,0,52,60,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+343,COM8 ,USACE - New Orleans,"Bowling Alley, contents, salt water, long duration",0,0,0,0,0,83,88,93,94,94,94,94,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+344,COM8 ,USACE - New Orleans,"Bowling Alley, contents, fresh water, short duration",0,0,0,0,0,28,61,81,89,90,92,92,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+345,COM8 ,USACE - New Orleans,"Fast Food Restaurant, contents, salt water, long duration",0,0,0,0,0,83,88,93,94,94,94,94,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+346,COM8 ,USACE - New Orleans,"Fast Food Restaurant, contents, fresh water, short duration",0,0,0,0,0,28,61,81,89,90,92,92,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+347,COM8 ,USACE - New Orleans,"Full-Service Restaurant, contents, salt water, long duration",0,0,0,0,0,83,88,93,94,94,94,94,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+348,COM8 ,USACE - New Orleans,"Full-Service Restaurant, contents, fresh water, short duration",0,0,0,0,0,28,61,81,89,90,92,92,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+349,COM8 ,USACE - New Orleans,"Lounge, contents, salt water, long duration",0,0,0,0,0,83,88,93,94,94,94,94,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+350,COM8 ,USACE - New Orleans,"Lounge, contents, fresh water, short duration",0,0,0,0,0,28,61,81,89,90,92,92,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+351,COM8 ,USACE - St. Paul,"Recreation, contents, fresh water",0,0,0,0,15,31,43,53,61,67,71,73,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,NULL
+352,COM9 ,USACE - Galveston,"Theater, Contents (Equipment)",0,0,0,0,0,4,6,8,9,10,12,17,22,30,41,57,66,73,79,84,90,97,98,100,100,100,100,100,100,NULL
+353,COM9 ,USACE - Galveston,"Private Hall, contents, (Equipment)",0,0,0,0,0,5,8,10,12,14,18,24,32,44,60,85,95,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+354,COM9 ,USACE - Galveston,"Indoor Theater, contents, (Equipment)",0,0,0,0,0,3,4,5,6,6,6,9,12,16,22,28,37,46,57,68,80,93,95,100,100,100,100,100,100,NULL
+355,COM9 ,USACE - New Orleans,"Movie Theater, contents, salt water, long duration",0,0,0,0,0,83,88,93,94,94,94,94,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+356,COM9 ,USACE - New Orleans,"Movie Theater, contents, fresh water, short duration",0,0,0,0,0,28,61,81,89,90,92,92,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,NULL
+357,COM10,USACE - Galveston,"Garage, Contents (Inventory)",0,0,0,0,0,11,17,20,23,25,29,35,42,51,63,77,93,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+358,IND1 ,USACE - Galveston,"Average Heavy Industrial, Contents (Equipment/Inventory)",0,0,0,0,0,15,24,34,41,47,52,57,60,63,64,66,68,69,72,73,73,73,74,74,74,74,75,75,75,NULL
+359,IND1 ,USACE - Galveston,"Boiler Building, contents (Equipment)",0,0,0,0,0,5,10,10,10,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,NULL
+360,IND1 ,USACE - Galveston,"Cabinet Shop Mfg, contents (Equipment)",0,0,0,0,0,20,25,30,35,40,45,50,55,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,NULL
+361,IND1 ,USACE - Galveston,"Cabinet Shop Mfg, contents (Inventory)",0,0,0,0,0,2,4,8,10,11,12,13,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,NULL
+362,IND1 ,USACE - Galveston,"Concrete Mfg, contents (Equipment)",0,0,0,0,0,15,50,51,53,54,55,55,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,NULL
+363,IND1 ,USACE - Galveston,"Door Mfg, contents (Equipment)",0,0,0,0,0,10,25,45,70,80,90,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+364,IND1 ,USACE - Galveston,"Door Mfg, contents (Inventory)",0,0,0,0,0,20,40,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+365,IND1 ,USACE - Galveston,"Engine Room, contents (Equipment)",0,0,0,0,0,20,25,30,35,40,45,50,55,65,65,65,65,65,75,75,75,75,75,75,75,75,75,75,75,NULL
+366,IND1 ,USACE - Galveston,"Fabrication Shop, contents (Inventory)",0,0,0,0,0,10,20,30,40,50,60,70,75,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+367,IND1 ,USACE - Galveston,"Heat Exchanger Mfg, contents (Equipment)",0,0,0,0,0,12,22,32,40,46,52,55,58,60,63,71,80,85,91,96,100,100,100,100,100,100,100,100,100,NULL
+368,IND1 ,USACE - Galveston,"Heat Exchanger Mfg, contents (Inventory)",0,0,0,0,0,11,15,17,19,21,23,24,26,28,29,32,34,36,38,39,41,43,45,47,49,51,53,55,57,NULL
+369,IND1 ,USACE - Galveston,"Lock Shop, contents (Equipment)",0,0,0,0,0,8,12,20,29,40,50,59,67,75,84,92,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+370,IND1 ,USACE - Galveston,"Lock Shop, contents (Inventory)",0,0,0,0,8,33,52,70,75,88,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+371,IND1 ,USACE - Galveston,"Lumber Mill, contents (Equipment)",0,0,0,0,0,0,0,0,0,20,20,20,20,20,20,20,20,20,65,65,65,65,65,65,65,65,65,65,65,NULL
+372,IND1 ,USACE - Galveston,"Heavy Machine Shop, contents (Equipment)",0,0,0,0,0,8,16,24,33,41,49,58,66,74,82,91,98,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+373,IND1 ,USACE - Galveston,"Heavy Machine Shop, contents (Inventory)",0,0,0,0,0,2,5,10,15,20,25,30,40,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+374,IND1 ,USACE - Galveston,"Light Machine Shop, contents (Inventory)",0,0,0,0,0,8,12,18,27,35,42,42,42,55,55,55,65,65,70,70,70,70,70,70,70,70,70,70,70,NULL
+375,IND1 ,USACE - Galveston,"Metal Coatings Serv, contents (Equipment)",0,0,0,0,0,32,50,63,75,87,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+376,IND1 ,USACE - Galveston,"Metal Coatings Serv., contents (Inventory)",0,0,0,0,0,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+377,IND1 ,USACE - Galveston,"Pipe Threader Facility, contents (Equipment)",0,0,0,0,0,25,25,50,50,50,50,75,75,75,75,90,90,90,100,100,100,100,100,100,100,100,100,100,100,NULL
+378,IND1 ,USACE - Galveston,"Pressure Test Facility, contents (Equipment)",0,0,0,0,0,20,20,25,25,30,30,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,NULL
+379,IND1 ,USACE - Galveston,"Metal Recycling, contents (Inventory)",0,0,0,0,0,0,0,10,20,20,20,40,40,40,40,40,40,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+380,IND1 ,USACE - Galveston,"Machine Research Lab, contents (Equipment)",0,0,0,0,0,20,25,30,35,40,42,44,46,48,50,50,50,55,55,55,55,55,55,55,55,55,55,55,55,NULL
+381,IND1 ,USACE - Galveston,"Machine Research Lab, contents (Inventory)",0,0,0,0,0,20,40,60,80,85,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+382,IND1 ,USACE - Galveston,"Scale Bldg, contents (Equipment)",0,0,0,0,0,0,5,15,25,40,50,75,85,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+383,IND1 ,USACE - Galveston,"Welding-Machine, contents (Equipment)",0,0,0,0,0,1,6,15,18,20,21,22,24,27,30,33,37,41,45,49,54,59,63,68,72,76,80,84,88,NULL
+384,IND2 ,USACE - Galveston,"Average Light Industrial, Contents (Equipment/Inventory)",0,0,0,0,0,9,23,35,44,52,58,62,65,68,70,73,74,77,78,78,79,80,80,80,80,81,81,81,81,NULL
+385,IND2 ,USACE - Galveston,"Battery Mfg, contents (Equipment)",0,0,0,0,0,10,20,30,40,60,80,80,80,80,80,80,80,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+386,IND2 ,USACE - Galveston,"Battery Mfg, contents (Inventory)",0,0,0,0,0,10,10,15,15,20,20,25,25,30,30,30,30,40,40,40,50,50,50,50,50,50,50,50,50,NULL
+387,IND2 ,USACE - Galveston,"Control Bldg, contents (Equipment)",0,0,0,0,0,0,0,25,50,75,75,85,85,90,90,90,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+388,IND2 ,USACE - Galveston,"Electronic Equip Mfg, contents (Equipment)",0,0,0,0,0,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+389,IND2 ,USACE - Galveston,"Electronic Equip Mfg, contents (Inventory)",0,0,0,0,0,25,40,55,70,85,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+390,IND2 ,USACE - Galveston,"Frame Shop, contents (Inventory)",0,0,0,0,0,16,45,80,88,93,95,98,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+391,IND2 ,USACE - Galveston,"Furniture Mfg, contents (Equipment)",0,0,0,0,0,0,0,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,NULL
+392,IND2 ,USACE - Galveston,"Furniture Mfg, contents (Inventory)",0,0,0,0,0,0,40,50,60,70,80,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+393,IND2 ,USACE - Galveston,"Instrument Mfg, contents (Equipment)",0,0,0,0,0,7,13,20,27,34,42,48,57,71,80,85,93,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+394,IND2 ,USACE - Galveston,"Instrument Mfg, contents (Inventory)",0,0,0,0,0,30,50,61,73,82,90,97,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+395,IND2 ,USACE - Galveston,"Leather Goods Mfg, contents (Equipment)",0,0,0,0,0,3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,NULL
+396,IND2 ,USACE - Galveston,"Leather Goods Mfg, contents (Inventory)",0,0,0,0,0,7,12,16,20,23,26,27,29,30,30,36,39,41,44,46,49,51,54,57,60,63,66,69,72,NULL
+397,IND2 ,USACE - Galveston,"Industrial Loading Dock, contents (Equipment)",0,0,0,0,0,0,0,0,10,10,25,40,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+398,IND2 ,USACE - Galveston,"Industrial Loading Dock, contents (Inventory)",0,0,0,0,0,10,10,10,10,10,10,10,20,20,20,20,20,30,30,30,40,40,40,40,40,40,40,40,40,NULL
+399,IND2 ,USACE - Galveston,"Locker Bldg, contents (Inventory)",0,0,0,0,5,25,55,75,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+400,IND2 ,USACE - Galveston,"Maint Bldg-Mfg Facilility, contents (Equipment)",0,0,0,0,0,10,15,20,25,35,45,45,45,45,50,50,50,55,55,55,60,60,60,60,60,60,60,60,60,NULL
+401,IND2 ,USACE - Galveston,"Newspaper Print Plant, contents (Equipment)",0,0,0,0,0,5,8,11,13,16,20,25,31,39,48,59,70,82,95,100,100,100,100,100,100,100,100,100,100,NULL
+402,IND2 ,USACE - Galveston,"Newspaper Sales Office, contents (Equipment)",0,0,0,0,0,4,9,18,33,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+403,IND2 ,USACE - Galveston,"Newspaper Sales Office, contents (Inventory)",0,0,0,0,0,17,46,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+404,IND2 ,USACE - Galveston,"Manuf Facility Office, contents (Equipment)",0,0,0,0,0,0,10,20,30,40,50,60,70,80,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+405,IND2 ,USACE - Galveston,"Manuf Facility Office, contents (Inventory)",0,0,0,0,0,0,16,21,30,40,45,50,60,75,85,90,90,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+406,IND2 ,USACE - Galveston,"Commercial Printing, contents (Equipment)",0,0,0,0,0,0,30,30,30,30,30,30,30,30,30,50,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+407,IND2 ,USACE - Galveston,"Commercial Printing, contents (Inventory)",0,0,0,0,0,10,35,50,70,73,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,NULL
+408,IND3 ,USACE - Galveston,"Average Food/Drugs/Chemicals, Contents (Equipment/Inventory)",0,0,0,0,2,20,41,51,62,67,71,73,76,78,79,82,83,84,86,87,87,88,88,88,88,88,88,88,88,NULL
+409,IND3 ,USACE - Galveston,"Chemical Plant, contents (Equipment)",0,0,0,0,0,38,44,52,92,92,92,92,92,92,92,92,92,92,92,92,92,92,92,92,92,92,92,92,92,NULL
+410,IND3 ,USACE - Galveston,"Chemical Plant, contents (Inventory)",0,0,0,0,0,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+411,IND3 ,USACE - Galveston,"Chemical Plant Bonding, contents (Equipment)",0,0,0,0,0,0,0,38,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,NULL
+412,IND3 ,USACE - Galveston,"Chemical Plant Bonding, contents (Inventory)",0,0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+413,IND3 ,USACE - Galveston,"Chemical refinery, contents (Equipment)",0,0,0,0,0,4,45,60,75,90,93,96,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+414,IND3 ,USACE - Galveston,"Chemical refinery, contents (Inventory)",0,0,0,0,0,30,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+415,IND3 ,USACE - Galveston,"Deodorizer Bldg-Chemical, contents (Equipment)",0,0,0,0,0,10,15,20,20,20,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,NULL
+416,IND3 ,USACE - Galveston,"Deodorizer Bldg-Chem, contents (Inventory)",0,0,0,0,0,25,50,75,75,90,90,90,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+417,IND3 ,USACE - Galveston,"Feed Mill, contents (Equipment)",0,0,0,0,0,0,0,0,0,30,30,30,30,30,30,30,30,30,80,80,80,80,80,80,80,80,80,80,80,NULL
+418,IND3 ,USACE - Galveston,"Feed Mill, contents (Inventory)",0,0,0,0,0,0,0,0,20,22,24,26,28,30,30,30,30,30,30,50,55,60,60,60,60,60,60,60,60,NULL
+419,IND3 ,USACE - Galveston,"Food Processor, contents (Equipment)",0,0,0,0,0,20,27,33,40,50,60,70,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+420,IND3 ,USACE - Galveston,"Food Processor, contents (Inventory)",0,0,0,0,50,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+421,IND3 ,USACE - Galveston,"Chemical Laboratory, contents (Equipment)",0,0,0,0,0,25,25,50,50,60,70,80,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+422,IND3 ,USACE - Galveston,"Chemical Laboratory, contents (Inventory)",0,0,0,0,0,43,60,60,60,60,70,70,80,80,90,90,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+423,IND3 ,USACE - Galveston,"Detergent Manuf. Facility, contents (Equipment)",0,0,0,0,0,16,21,24,25,26,28,31,36,42,50,71,84,86,86,86,86,86,86,86,86,86,86,86,86,NULL
+424,IND3 ,USACE - Galveston,"Detergent Manuf. Facility, contents (Inventory)",0,0,0,0,0,25,40,55,70,85,90,90,90,90,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+425,IND3 ,USACE - Galveston,"Meat Packing, contents (Equipment)",0,0,0,0,0,30,30,30,70,75,85,90,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,NULL
+426,IND3 ,USACE - Galveston,"Meat Packing, contents (Inventory)",0,0,0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+427,IND3 ,USACE - Galveston,"Detergent Mixer Bldg, contents (Equipment)",0,0,0,0,0,0,10,20,25,25,25,25,25,35,35,45,45,55,55,55,55,55,55,55,55,55,55,55,55,NULL
+428,IND3 ,USACE - Galveston,"Detergent Mixer Bldg, contents (Inventory)",0,0,0,0,0,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+429,IND3 ,USACE - Galveston,"Plastic Mfg, contents (Equipment)",0,0,0,0,0,17,30,40,50,60,70,80,90,97,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+430,IND3 ,USACE - Galveston,"Plastic Mfg, contents (Inventory)",0,0,0,0,0,17,30,40,47,55,62,67,72,77,80,92,99,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+431,IND3 ,USACE - Galveston,"Caustic Materials Refinery, contents (Equipment)",0,0,0,0,0,38,50,75,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+432,IND3 ,USACE - Galveston,"Caustic Materials Refinery, contents (Inventory)",0,0,0,0,0,0,0,10,20,30,30,40,40,50,50,60,60,70,70,80,80,90,90,100,100,100,100,100,100,NULL
+433,IND4 ,USACE - Galveston,"Average Metals/Minerals Processing, Contents (Equipment/Inventory)",0,0,0,0,15,20,26,31,37,40,44,48,53,56,57,60,62,63,63,63,64,65,65,65,65,65,65,65,65,NULL
+434,IND4 ,USACE - Galveston,"Foundry, contents (Equipment)",0,0,0,0,10,17,24,29,34,38,43,45,50,58,62,67,70,75,78,82,82,82,82,82,82,82,82,82,82,NULL
+435,IND4 ,USACE - Galveston,"Foundry, contents (Inventory)",0,0,0,0,11,16,19,21,23,28,35,47,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+436,IND4 ,USACE - Galveston,"Lead Refinery, contents (Equipment)",0,0,0,0,0,10,20,30,40,50,60,70,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+437,IND4 ,USACE - Galveston,"Lead Refinery, contents (Inventory)",0,0,0,0,0,16,21,30,40,45,50,60,75,85,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+438,IND4 ,USACE - Galveston,"Sand & Gravel, contents (Equipment)",0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,10,15,15,15,15,15,15,15,15,NULL
+439,IND4 ,USACE - Galveston,"Sand & Gravel, contents (Inventory)",0,0,0,0,0,1,3,6,10,13,16,19,24,27,30,45,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+440,IND4 ,USACE - Galveston,"Sheet Metal, contents (Equipment)",0,0,0,0,0,0,17,24,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,NULL
+441,IND4 ,USACE - Galveston,"Sheet Metal, contents (Inventory)",0,0,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+442,IND5 ,USACE - Galveston,"Average High Technology, contents (Equipment/Inventory)",0,0,0,0,2,20,41,51,62,67,71,73,76,78,79,82,83,84,86,87,87,88,88,88,88,88,88,88,88,IND3 default
+443,IND6 ,USACE - Galveston,"Average Construction, contents (Equipment/Inventory)",0,0,0,0,0,20,35,47,56,59,66,69,71,72,78,79,80,80,81,81,81,82,82,82,83,83,83,83,83,NULL
+444,IND6 ,USACE - Galveston,"Carpet Tile Flooring, contents (Equipment)",0,0,0,0,0,25,42,54,65,75,85,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+445,IND6 ,USACE - Galveston,"Carpet Tile Flooring, contents (Inventory)",0,0,0,0,0,70,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+446,IND6 ,USACE - Galveston,"Contractor Roofing, contents (Equipment)",0,0,0,0,0,15,27,36,43,48,50,50,50,50,50,51,51,51,52,52,52,52,53,53,53,54,54,54,55,NULL
+447,IND6 ,USACE - Galveston,"Contractor Roofing, contents (Inventory)",0,0,0,0,0,10,20,27,36,43,48,53,57,59,60,66,69,72,76,79,83,86,90,93,97,100,100,100,100,NULL
+448,IND6 ,USACE - Galveston,"Contractor-Electric, contents (Equipment)",0,0,0,0,0,0,10,10,10,10,40,40,40,40,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+449,IND6 ,USACE - Galveston,"Pier Drilling Co, contents (Equipment)",0,0,0,0,0,20,23,39,55,55,56,56,57,57,57,57,57,57,57,57,57,57,57,57,57,57,57,57,57,NULL
+450,IND6 ,USACE - Galveston,"Plumbing Co, contents (Equipment)",0,0,0,0,0,30,45,55,63,70,76,82,87,92,98,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+451,IND6 ,USACE - Galveston,"Plumbing Co, contents (Inventory)",0,0,0,0,0,14,25,35,44,53,61,69,77,85,93,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+452,IND6 ,USACE - Galveston,"Sandblasting Co, contents (Equipment)",0,0,0,0,0,15,45,68,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,NULL
+453,IND6 ,USACE - Galveston,"Water Well Service, contents (Equipment)",0,0,0,0,0,0,25,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,NULL
+454,IND6 ,USACE - New Orleans,"Carpeting Service, contents, salt water, long duration",0,0,0,0,0,53,70,80,96,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,NULL
+455,IND6 ,USACE - New Orleans,"Carpeting Service, contents, fresh water, short duration",0,0,0,0,0,19,31,40,45,49,54,58,63,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,NULL
+456,IND6 ,USACE - New Orleans,"Heating & Air Conditioning Service, contents, salt water, long duration",0,0,0,0,0,53,70,80,96,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,NULL
+457,IND6 ,USACE - New Orleans,"Heating & Air Conditioning Service, contents, fresh water, short duration",0,0,0,0,0,19,31,40,45,49,54,58,63,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,NULL
+458,IND6 ,USACE - New Orleans,"Plumbing Services, contents, salt water, long duration",0,0,0,0,0,53,70,80,96,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,97,NULL
+459,IND6 ,USACE - New Orleans,"Plumbing Services, contents, fresh water, short duration",0,0,0,0,0,19,31,40,45,49,54,58,63,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,NULL
+460,AGR1 ,USACE - Galveston,"Average Agriculture, Contents (Equipment/Inventory)",0,0,0,0,6,20,43,58,65,66,66,67,70,75,76,76,76,77,77,77,78,78,78,79,79,79,79,80,80,NULL
+461,AGR1 ,USACE - Galveston,"Dairy Processing, contents (Equipment)",0,0,0,0,0,0,25,50,50,50,50,50,60,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,NULL
+462,AGR1 ,USACE - Galveston,"Dairy Processing, contents (Inventory)",0,0,0,0,0,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+463,AGR1 ,USACE - Galveston,"Horse Stalls, contents (Equipment)",0,0,0,0,0,3,6,8,11,13,15,17,19,21,22,24,25,27,28,29,31,32,33,34,34,36,37,38,39,NULL
+464,AGR1 ,USACE - Galveston,"Veterinary Clinic, contents (Equipment)",0,0,0,0,25,50,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+465,AGR1 ,USACE - New Orleans,"Veterinary Office, contents, salt water, long duration",0,0,0,0,0,99,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+466,AGR1 ,USACE - New Orleans,"Veterinary Office, contents, fresh water, short duration",0,0,0,0,0,26,46,94,97,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,NULL
+467,REL1 ,USACE - Galveston,"Church, contents",0,0,0,0,10,52,72,85,92,95,98,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+468,REL1 ,USACE - Galveston,"Church, contents (Equipment)",0,0,0,0,10,75,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+469,REL1 ,USACE - Galveston,"Church, contents (Inventory)",0,0,0,0,10,28,54,70,84,90,95,97,99,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+470,REL1 ,USACE - New Orleans,"Civic Association, contents, salt water, long duration",0,0,0,0,0,60,60,60,60,60,60,60,60,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+471,REL1 ,USACE - New Orleans,"Civic Association, contents, fresh water, short duration",0,0,0,0,0,5,18,50,50,52,58,58,58,58,58,59,69,70,70,79,88,97,100,100,100,100,100,100,100,NULL
+472,GOV1 ,USACE - Galveston,"Average Govt Services, contents (Equipment)",0,0,0,0,0,30,59,74,83,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+473,GOV1 ,USACE - Galveston,"City Hall, contents (Equipment)",0,0,0,0,0,35,75,85,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+474,GOV1 ,USACE - Galveston,"Post Office, contents (Equipment)",0,0,0,0,0,25,43,63,70,80,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+475,GOV1 ,USACE - New Orleans,"Government Facility, contents, salt water, long duration",0,0,0,0,0,60,60,60,60,60,60,60,60,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+476,GOV1 ,USACE - New Orleans,"Government Facility, contents, fresh water, short duration",0,0,0,0,0,5,18,50,50,52,58,58,58,58,58,59,69,70,70,79,88,97,100,100,100,100,100,100,100,NULL
+477,GOV2 ,USACE - Galveston,"Average emergency response, contents (Equipment/Inventory)",0,0,0,0,0,8,20,38,55,70,81,89,98,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+478,GOV2 ,USACE - Galveston,"Fire Station, contents (Inventory)",0,0,0,0,0,10,25,50,75,91,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+479,GOV2 ,USACE - Galveston,"Police Station, contents (Equipment)",0,0,0,0,0,5,15,25,35,48,62,78,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+480,EDU1 ,USACE - Galveston,"Average School, contents (Equipment/Inventory)",0,0,0,0,0,27,38,53,64,68,70,72,75,79,83,88,94,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+481,EDU1 ,USACE - Galveston,"Commercial School, contents (Equipment)",0,0,0,0,0,18,26,30,33,35,39,44,50,58,66,76,88,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+482,EDU1 ,USACE - Galveston,"Library, contents (Inventory)",0,0,0,0,0,35,50,75,95,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+483,EDU1 ,USACE - New Orleans,"Elementary School, contents, salt water, long duration",0,0,0,0,0,60,60,60,60,60,60,60,60,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+484,EDU1 ,USACE - New Orleans,"Elementary School, contents, fresh water, short duration",0,0,0,0,0,5,18,50,50,52,58,58,58,58,58,59,69,70,70,79,88,97,100,100,100,100,100,100,100,NULL
+485,EDU2 ,USACE - Galveston,"Average College/University, Contents (Equipment/Inventory)",0,0,0,0,0,27,38,53,64,68,70,72,75,79,83,88,94,100,100,100,100,100,100,100,100,100,100,100,100,EDU1 default
+486,EDU2 ,USACE - New Orleans,"College, contents, salt water, long duration",0,0,0,0,0,60,60,60,60,60,60,60,60,60,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,NULL
+487,EDU2 ,USACE - New Orleans,"College, contents, fresh water, short duration",0,0,0,0,0,5,18,50,50,52,58,58,58,58,58,59,69,70,70,79,88,97,100,100,100,100,100,100,100,NULL
+488,RES1 ,BCAR - Jan 2011,"all floors, slab - no basement, Coastal A or V Zone",0,0,0,0,10,30,45,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+489,RES3A,BCAR - Jan 2011,"1to2 Stories, slab - no basement, Coastal A or V Zone",0,0,0,0,10,30,45,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+490,RES3B,BCAR - Jan 2011,"1to2 Stories, slab - no basement, Coastal A or V Zone",0,0,0,0,10,30,45,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+491,RES1 ,BCAR - Jan 2011,"all floors, Wall 2ft - no basement, Coastal A or V Zone",0,0,0,0,20,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+492,RES3A,BCAR - Jan 2011,"1to2 Stories, Wall 2ft - no basement, Coastal A or V Zone",0,0,0,0,20,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+493,RES3B,BCAR - Jan 2011,"1to2 Stories, Wall 2ft - no basement, Coastal A or V Zone",0,0,0,0,20,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+494,RES1 ,BCAR - Jan 2011,"all floors, Wall 3ft - no basement, Coastal A or V Zone",0,0,0,10,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+495,RES3A,BCAR - Jan 2011,"1to2 Stories, Wall 3ft - no basement, Coastal A or V Zone",0,0,0,10,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+496,RES3B,BCAR - Jan 2011,"1to2 Stories, Wall 3ft - no basement, Coastal A or V Zone",0,0,0,10,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+497,RES2 ,BCAR - Jan 2011,"Manufactured Home (Mobile), Structure, Coastal A or V Zone",0,0,0,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+498,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Open)+2ft - no basement, Coastal A or V Zone",0,0,0,0,45,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+499,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+2ft - no basement, Coastal A or V Zone",0,0,0,0,45,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+500,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+2ft - no basement, Coastal A or V Zone",0,0,0,0,45,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+501,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Open)+4ft - no basement, Coastal A or V Zone",0,0,0,35,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+502,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+4ft - no basement, Coastal A or V Zone",0,0,0,35,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+503,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+4ft - no basement, Coastal A or V Zone",0,0,0,35,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+504,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Open)+6ft - no basement, Coastal A or V Zone",0,0,30,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+505,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+6ft - no basement, Coastal A or V Zone",0,0,30,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+506,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+6ft - no basement, Coastal A or V Zone",0,0,30,90,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+507,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Open)+8ft - no basement, Coastal A or V Zone",0,25,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+508,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+8ft - no basement, Coastal A or V Zone",0,25,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+509,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+8ft - no basement, Coastal A or V Zone",0,25,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+510,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Open)+10ft - no basement, Coastal A or V Zone",25,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+511,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+10ft - no basement, Coastal A or V Zone",25,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+512,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+10ft - no basement, Coastal A or V Zone",25,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+513,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Open)+12ft - no basement, Coastal A or V Zone",65,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+514,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+12ft - no basement, Coastal A or V Zone",65,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+515,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Open)+12ft - no basement, Coastal A or V Zone",65,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+516,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Obstr)+2ft - no basement, Coastal A or V Zone",0,0,2,3,48,93,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+517,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+2ft - no basement, Coastal A or V Zone",0,0,2,3,48,93,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+518,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+2ft - no basement, Coastal A or V Zone",0,0,2,3,48,93,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+519,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Obstr)+4ft - no basement, Coastal A or V Zone",2,3,3,38,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+520,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+4ft - no basement, Coastal A or V Zone",2,3,3,38,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+521,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+4ft - no basement, Coastal A or V Zone",2,3,3,38,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+522,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Obstr)+6ft - no basement, Coastal A or V Zone",3,3,33,93,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+523,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+6ft - no basement, Coastal A or V Zone",3,3,33,93,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+524,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+6ft - no basement, Coastal A or V Zone",3,3,33,93,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+525,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Obstr)+8ft - no basement, Coastal A or V Zone",3,28,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+526,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+8ft - no basement, Coastal A or V Zone",3,28,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+527,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+8ft - no basement, Coastal A or V Zone",3,28,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+528,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Obstr)+10ft - no basement, Coastal A or V Zone",28,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+529,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+10ft - no basement, Coastal A or V Zone",28,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+530,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+10ft - no basement, Coastal A or V Zone",28,78,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+531,RES1 ,BCAR - Jan 2011,"all floors, Elevated (Obstr)+12ft - no basement, Coastal A or V Zone",68,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+532,RES3A,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+12ft - no basement, Coastal A or V Zone",68,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+533,RES3B,BCAR - Jan 2011,"1to2 Stories, Elevated (Obstr)+12ft - no basement, Coastal A or V Zone",68,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,RAMPP Inserted
+534,RES3 ,USACE - Chicago,"Apartment Unit Grade, Contents",0,0,0,0,12,24,33,35,37,41,45,50,55,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,NULL
+535,RES1 ,BCAR - Jan 2011,"one story, w/ basement, Contents (B14)",0,0,11,13,16,19,22,25,27,30,32,35,36,38,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,RAMPP Inserted

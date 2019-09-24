@@ -1,0 +1,9 @@
+# ignore files
+*.ipynb
+
+# ignore folders
+.ipynb_checkpoints/
+.vscode/
+__pycache__/
+_Python_env
+GDAL

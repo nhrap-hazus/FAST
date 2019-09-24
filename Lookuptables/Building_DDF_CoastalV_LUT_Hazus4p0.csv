@@ -1,0 +1,65 @@
+Occupancy,SpecificOccupId,Source,Description,Stories,Comment,m4,m3,m2,m1,p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,DDF_ID,Basement,HazardRiverine,HazardCV,HazardCA,SortOrder
+RES1,R11N,BCAR - Jan 2011,"all floors, slab - no basement, Coastal A or V Zone",1 Story,RAMPP Inserted,0,0,0,0,12,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,658,,,1,1,101
+RES1,R11B,FIA (MOD.),"one floor, w/ basement, Structure, V-Zone",1 Story,,7,7,10,14,17,21,29,34,38,43,47,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,114,1,,1,1,102
+RES1,R12N,FIA,"two floors, no basement, Structure, V-Zone",2 Story,,0,0,0,0,5,9,13,18,20,22,24,26,30,34,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,115,,,1,,103
+RES1,R12B,FIA (MOD.),"two floors, w/ basement, Structure, V-Zone",2 Story,,4,4,8,14,17,24,26,29,34,39,44,50,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,116,1,,1,,104
+RES1,R13N,FIA,"three or more floors, no basement, Structure, V-Zone",3 Story,,0,0,0,0,4,8,12,17,19,22,24,25,30,35,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,117,,,1,,105
+RES1,R13B,FIA (MOD.),"three or more floors, w/ basement, Structure, V-Zone",3 Story,,3,3,6,10,11,14,20,25,31,36,38,41,44,47,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,118,1,,1,,106
+RES1,R1SN,BCAR - Jan 2011,"all floors, slab - no basement, Coastal A or V Zone",Split Level,RAMPP Inserted,0,0,0,0,12,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,658,,,1,1,107
+RES1,R1SB,FIA (MOD.),"split level, w/ basement, Structure, V-Zone",Split Level,,6,6,6,14,15,24,27,30,35,41,44,48,52,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,120,1,,1,,108
+RES2,R21N,BCAR - Jan 2011,"Manufactured Home (Mobile), Structure, Coastal A or V Zone",1 Story,RAMPP Inserted,0,0,15,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,667,,,1,1,109
+RES2,R21B,FIA,"Mobile home, structure, V-Zone",1 Story,,0,0,0,0,8,45,64,74,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,190,1,,1,,110
+RES3A,R3A1N,BCAR - Jan 2011,"1to2 Stories, slab - no basement, Coastal A or V Zone",1to2 Stories,RAMPP Inserted,0,0,0,0,12,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,659,,,1,1,211
+RES3A,R3A1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,212
+RES3A,R3A3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,213
+RES3A,R3A3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,214
+RES3A,R3A5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,215
+RES3A,R3A5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,216
+RES3B,R3B1N,BCAR - Jan 2011,"1to2 Stories, slab - no basement, Coastal A or V Zone",1to2 Stories,RAMPP Inserted,0,0,0,0,12,25,50,75,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,660,,,1,1,217
+RES3B,R3B1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,218
+RES3B,R3B3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,219
+RES3B,R3B3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,220
+RES3B,R3B5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,221
+RES3B,R3B5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,222
+RES3C,R3C1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,223
+RES3C,R3C1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,224
+RES3C,R3C3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,225
+RES3C,R3C3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,226
+RES3C,R3C5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,227
+RES3C,R3C5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,228
+RES3D,R3D1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,229
+RES3D,R3D1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,230
+RES3D,R3D3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,231
+RES3D,R3D3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,232
+RES3D,R3D5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,233
+RES3D,R3D5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,234
+RES3E,R3E1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,235
+RES3E,R3E1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,236
+RES3E,R3E3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,237
+RES3E,R3E3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,238
+RES3E,R3E5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,239
+RES3E,R3E5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,240
+RES3F,R3F1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,241
+RES3F,R3F1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,242
+RES3F,R3F3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,243
+RES3F,R3F3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,244
+RES3F,R3F5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,245
+RES3F,R3F5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,246
+RES4,R4LN,USACE - Galveston,"Average Hotel & Motel, structure",Low Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,,1,1,1,337
+RES4,R4LB,USACE - Galveston,"Average Hotel & Motel, structure",Low Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,1,1,1,1,338
+RES4,R4MN,USACE - Galveston,"Average Hotel & Motel, structure",Mid Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,,1,1,1,339
+RES4,R4MB,USACE - Galveston,"Average Hotel & Motel, structure",Mid Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,1,1,1,1,340
+RES4,R4HN,USACE - Galveston,"Average Hotel & Motel, structure",High Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,,1,1,1,341
+RES4,R4HB,USACE - Galveston,"Average Hotel & Motel, structure",High Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,1,1,1,1,342
+RES5,R5LN,USACE - Galveston,"Nursing Home, structure",Low Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,,1,1,1,343
+RES5,R5LB,USACE - Galveston,"Nursing Home, structure",Low Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,1,1,1,1,344
+RES5,R5MN,USACE - Galveston,"Nursing Home, structure",Mid Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,,1,1,1,345
+RES5,R5MB,USACE - Galveston,"Nursing Home, structure",Mid Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,1,1,1,1,346
+RES5,R5HN,USACE - Galveston,"Nursing Home, structure",High Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,,1,1,1,347
+RES5,R5HB,USACE - Galveston,"Nursing Home, structure",High Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,1,1,1,1,348
+RES6,R6LN,USACE - Galveston,"Nursing Home, structure",Low Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,,1,1,1,349
+RES6,R6LB,USACE - Galveston,"Nursing Home, structure",Low Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,1,1,1,1,350
+RES6,R6MN,USACE - Galveston,"Nursing Home, structure",Mid Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,,1,1,1,351
+RES6,R6MB,USACE - Galveston,"Nursing Home, structure",Mid Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,1,1,1,1,352
+RES6,R6HN,USACE - Galveston,"Nursing Home, structure",High Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,,1,1,1,353
+RES6,R6HB,USACE - Galveston,"Nursing Home, structure",High Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,1,1,1,1,354
