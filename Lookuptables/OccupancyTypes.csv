@@ -1,0 +1,34 @@
+Occupancy,Category,Description,CategoryId
+AGR1 ,Agriculture         ,Agriculture                                                                                         ,OCCU_CL             
+COM1 ,Commercial          ,Retail Trade                                                                                        ,OCCU_CL             
+COM10,Commercial          ,Parking                                                                                             ,OCCU_CL             
+COM2 ,Commercial          ,Wholesale Trade                                                                                     ,OCCU_CL             
+COM3 ,Commercial          ,Personal and Repair Services                                                                        ,OCCU_CL             
+COM4 ,Commercial          ,Professional/Technical Services                                                                     ,OCCU_CL             
+COM5 ,Commercial          ,Banks                                                                                               ,OCCU_CL             
+COM6 ,Commercial          ,Hospital                                                                                            ,OCCU_CL             
+COM7 ,Commercial          ,Medical Office/Clinic                                                                               ,OCCU_CL             
+COM8 ,Commercial          ,Entertainment & Recreation                                                                          ,OCCU_CL             
+COM9 ,Commercial          ,Theaters                                                                                            ,OCCU_CL             
+EDU1 ,Education           ,Grade Schools                                                                                       ,OCCU_CL             
+EDU2 ,Education           ,Colleges/Universities                                                                               ,OCCU_CL             
+GOV1 ,Government          ,General Services                                                                                    ,OCCU_CL             
+GOV2 ,Government          ,Emergency Response                                                                                  ,OCCU_CL             
+IND1 ,Industrial          ,Heavy                                                                                               ,OCCU_CL             
+IND2 ,Industrial          ,Light                                                                                               ,OCCU_CL             
+IND3 ,Industrial          ,Food/Drugs/Chemicals                                                                                ,OCCU_CL             
+IND4 ,Industrial          ,Metals/Minerals Processing                                                                          ,OCCU_CL             
+IND5 ,Industrial          ,High Technology                                                                                     ,OCCU_CL             
+IND6 ,Industrial          ,Construction                                                                                        ,OCCU_CL             
+REL1 ,Religion            ,Churches and Other Non-profit Org.                                                                  ,OCCU_CL             
+RES1 ,Single Family       ,Single Family Dwelling                                                                              ,OCCU_CL             
+RES2 ,Residential         ,Manuf.  Housing                                                                                     ,OCCU_CL             
+RES3A,Residential         ,Duplex                                                                                              ,OCCU_CL             
+RES3B,Residential         ,Triplex / Quads                                                                                     ,OCCU_CL             
+RES3C,Residential         ,Multi-dwellings (5 to 9 units)                                                                      ,OCCU_CL             
+RES3D,Residential         ,Multi-dwellings (10 to 19 units)                                                                    ,OCCU_CL             
+RES3E,Residential         ,Multi-dwellings (20 to 49 units)                                                                    ,OCCU_CL             
+RES3F,Residential         ,Multi-dwellings (50+ units)                                                                         ,OCCU_CL             
+RES4 ,Residential         ,Temporary Lodging                                                                                   ,OCCU_CL             
+RES5 ,Residential         ,Institutional Dormitory                                                                             ,OCCU_CL             
+RES6 ,Residential         ,Nursing Home                                                                                        ,OCCU_CL             
