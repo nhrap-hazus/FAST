@@ -1,12 +1,11 @@
 @echo off
 
-cd ..\
+rem cd ..\
 
-SET PATH=%cd%\python_env
-SET PATH=%cd%\GDAL;%PATH%
-SET GDAL_DATA=%PATH%;%cd%\GDAL\gdal-data
-SET GDAL_DRIVER_PATH=%PATH%;%cd%\GDAL\gdalplugins
+rem SET PATH=%cd%\python_env
+rem SET PATH=%cd%\GDAL;%PATH%
+rem SET GDAL_DATA=%PATH%;%cd%\GDAL\gdal-data
+rem SET GDAL_DRIVER_PATH=%PATH%;%cd%\GDAL\gdalplugins
 
-cd python_env
-
-python gui_process.py && exit
+rem cd python_env
+conda activate hazus_env && start python gui_process.py && exit

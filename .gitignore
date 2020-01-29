@@ -6,4 +6,6 @@
 .vscode/
 __pycache__/
 _Python_env
-GDAL
+GDAL/
+UDF/
+rasters/*

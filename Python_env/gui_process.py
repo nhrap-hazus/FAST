@@ -39,10 +39,12 @@ def browse_button():
      root.filename = filedialog.askopenfilename(initialdir = os.getcwd() + "../../UDF",title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
      #root.filename = filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
      # Gets field names from input csv file and makes a list
-     with open(root.filename, "r+") as f:
-          reader = csv.reader(f)
-          root.csvFields = next(reader)
-     print(root.filename,root.csvFields)
+     
+     if root.filename != '': 
+         with open(root.filename, "r+") as f:
+              reader = csv.reader(f)
+              root.csvFields = next(reader)
+         print(root.filename,root.csvFields)
 
 def makeform(root, fields):# Assemble and format the fields to map from the list of fields
     entries = {}
