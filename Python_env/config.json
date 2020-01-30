@@ -37,7 +37,7 @@
   "dev": {
     "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-dev/hazus/master/hazus/__init__.py",
     "repoZipfileUrl": "https://github.com/nhrap-dev/FAST/archive/FAST.zip",
-    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/FAST/__init__.py"
+    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/FAST/Python_env/__init__.py"
   },
   "proxies": {
     "fema": "http://proxy.apps.dhs.gov:80"

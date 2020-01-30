@@ -5,8 +5,19 @@ import sys
 import requests
 import pkg_resources
 import json
-with open('./Python_env/config.json') as configFile:
-    config = json.load(configFile)
+
+cwdName = os.getcwd()
+if (cwdName.find('Python_env')== -1): #If it did not find Python_env in the path of the current working directory
+    #cwdName = os.path.dirname(cwdName)
+    # print(cwdName)
+    initFolderStr = os.path.join(cwdName ,'Python_env\__init__.py')
+    # print(initFolderStr)
+    with open(os.path.join(cwdName,'Python_env\config.json')) as configFile:
+        config = json.load(configFile) 
+else:
+    initFolderStr = './__init__.py'
+    with open('./config.json') as configFile:
+        config = json.load(configFile)       
 
 release = config['release']
 
@@ -73,7 +84,7 @@ def checkForHazusUpdates():
         except:
             os.environ["HTTP_PROXY"] = config.proxies.fema
             os.environ["HTTPS_PROXY"] = config.proxies.fema
-            req = requests.get(config['hazusInitUrl'], timeout=0.3)
+            req = requests.get(config[release]['hazusInitUrl'], timeout=0.3)
         newestVersion = parseVersionFromInit(req.text)
         if newestVersion != installedVersion:
             messageBox = ctypes.windll.user32.MessageBoxW
@@ -88,17 +99,23 @@ def checkForHazusUpdates():
 
 def checkForToolUpdates():
     try:
-        with open('__init__.py') as init:
+        # print(initFolderStr)
+        with open(initFolderStr) as init:
             text = init.readlines()
+            # print(text)
             textBlob = ''.join(text)
+            # print(textBlob)
             installedVersion = parseVersionFromInit(textBlob)
+            # print(installedVersion)
         try:
-            req = requests.get(config['toolInitUrl'], timeout=0.3)
+            req = requests.get(config[release]['toolInitUrl'], timeout=0.3)
         except:
             os.environ["HTTP_PROXY"] = config.proxies.fema
             os.environ["HTTPS_PROXY"] = config.proxies.fema
-            req = requests.get(config['toolInitUrl'], timeout=0.3)
+            req = requests.get(config[release]['toolInitUrl'], timeout=0.3)
+        # print(req.text)
         newestVersion = parseVersionFromInit(req.text)
+        # print(newestVersion)
         if newestVersion != installedVersion:
             messageBox = ctypes.windll.user32.MessageBoxW
             returnValue = messageBox(None,"A newer version of the tool was found. Would you like to install it now?","Hazus",0x40 | 0x4)
@@ -106,9 +123,9 @@ def checkForToolUpdates():
                 print('updating tool')
                 updateTool()
         else:
-            print('Tool is up to date. You are fine!')
+            print('Tool is up to date.')
     except:
-        print('Something broke, we dont know and cant help')
+        print('Something broke, go get a coffee!!')
 
 def updateTool():
     from distutils.dir_util import copy_tree

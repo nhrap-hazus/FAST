@@ -3,6 +3,7 @@ from Python_env.manage import internetConnected, checkForHazusUpdates, checkForT
 if internetConnected():
      checkForHazusUpdates()
      checkForToolUpdates()
+     # print('test')
 from tkinter import *
 from tkinter import filedialog
 import os, csv
@@ -13,10 +14,10 @@ from os.path import isfile, join
 from hazus.flood import UDF
 
 dir = os.getcwd()
-print(dir)
+# print(dir)
 if (dir.find('Python_env')!= -1):
      dir = os.path.dirname(dir)
-print(dir)
+# print(dir)
 cwd = os.path.join(dir,'rasters')# Default raster directory
 #cwd = 'C:\\_Repositories\\FAST\\rasters'
 hazardTypes = {'Riverine':'HazardRiverine','CoastalV':'V','CoastalA':'CAE'}
@@ -64,7 +65,7 @@ defaultFields = {'OCC':['Occupancy','Occ'],
 
 def runHazus():
      entries = []
-     print(fields)
+     # print(fields)
      entries.extend(root.fields.values())
      #entries.append(ents['Hazard-Type*'].get(ents['Hazard-Type*'].curselection()))
      """
@@ -74,8 +75,8 @@ def runHazus():
           #else:
                 #entries.append([fields[num],ents[fields[num]].get()])
      """
-     print(entries)
-     print(root.filename)
+     # print(entries)
+     # print(root.filename)
      #UKS 1/21/2020 - RTC CR 34227 
      runUDF = UDF()
      haz = runUDF.local(root.filename, entries)# Run the Hazus script with input from user using the GUI
