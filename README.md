@@ -22,6 +22,6 @@ Please refer to the Help folder for the case studies for Minot,ND and NYC,NY
 
 ## Contact
 
-Issues can be reported through the repository on Github (https://github.com/nhrap-dev)
+Issues can be reported through the repository on Github (https://github.com/nhrap-dev/FAST/issues)
 
 For questions contact us at hazus-support@riskmapcds.com
