@@ -1,6 +1,6 @@
 @echo off
 
-
+rem cd ..\
 
 rem SET PATH=%cd%\python_env
 rem SET PATH=%cd%\GDAL;%PATH%
