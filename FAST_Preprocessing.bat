@@ -1,2 +1,2 @@
-cd python_env
-start /min gui_process.bat
+REM cd python_env
+start /min .\python_env\gui_process.bat

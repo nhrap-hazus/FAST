@@ -8,4 +8,4 @@ rem SET GDAL_DATA=%PATH%;%cd%\GDAL\gdal-data
 rem SET GDAL_DRIVER_PATH=%PATH%;%cd%\GDAL\gdalplugins
 
 rem cd python_env
-conda activate hazus_env && start python gui_process.py && exit
+conda activate hazus_env && start python .\python_env\gui_process.py && exit

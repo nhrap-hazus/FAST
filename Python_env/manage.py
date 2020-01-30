@@ -73,7 +73,7 @@ def checkForHazusUpdates():
         except:
             os.environ["HTTP_PROXY"] = config.proxies.fema
             os.environ["HTTPS_PROXY"] = config.proxies.fema
-            req = requests.get(config[release]['hazusInitUrl'], timeout=0.3)
+            req = requests.get(config['hazusInitUrl'], timeout=0.3)
         newestVersion = parseVersionFromInit(req.text)
         if newestVersion != installedVersion:
             messageBox = ctypes.windll.user32.MessageBoxW
@@ -93,11 +93,11 @@ def checkForToolUpdates():
             textBlob = ''.join(text)
             installedVersion = parseVersionFromInit(textBlob)
         try:
-            req = requests.get(config[release]['toolInitUrl'], timeout=0.3)
+            req = requests.get(config['toolInitUrl'], timeout=0.3)
         except:
             os.environ["HTTP_PROXY"] = config.proxies.fema
             os.environ["HTTPS_PROXY"] = config.proxies.fema
-            req = requests.get(config[release]['toolInitUrl'], timeout=0.3)
+            req = requests.get(config['toolInitUrl'], timeout=0.3)
         newestVersion = parseVersionFromInit(req.text)
         if newestVersion != installedVersion:
             messageBox = ctypes.windll.user32.MessageBoxW
@@ -106,16 +106,16 @@ def checkForToolUpdates():
                 print('updating tool')
                 updateTool()
         else:
-            print('Tool is up to date')
+            print('Tool is up to date. You are fine!')
     except:
-        print('Something broke')
+        print('Something broke, we dont know and cant help')
 
 def updateTool():
     from distutils.dir_util import copy_tree
     from shutil import rmtree
     from io import BytesIO
     from zipfile import ZipFile
-    r = requests.get(config[release]['repoZipfileUrl'])
+    r = requests.get(config['repoZipfileUrl'])
     z = ZipFile(BytesIO(r.content))
     os.getcwd()
     z.extractall()
