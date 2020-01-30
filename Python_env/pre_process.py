@@ -1,3 +1,4 @@
+#This has the logic for the GUI for the pre-processing sub tool for FAST
 import os, csv
 
 dir = os.getcwd()
