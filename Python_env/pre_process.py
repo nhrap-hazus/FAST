@@ -1,9 +1,16 @@
 #This has the logic for the GUI for the pre-processing sub tool for FAST
+#This check's for tool updates
+from Python_env.manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
+if internetConnected():
+     checkForHazusUpdates()
+     checkForToolUpdates()
 import os, csv
 
 dir = os.getcwd()
-dir = os.path.dirname(dir)
-
+if (dir.find('Python_env')!= -1):
+     dir = os.path.dirname(dir)
+# dir = os.path.dirname(dir)
+# print(dir)
 def process(input,fmap):
     try:
         output = input.split('.')[0]+'_pre_processed.csv'
@@ -15,10 +22,12 @@ def process(input,fmap):
         IDDF_ID = IDDF_ID if IDDF_ID != '' else 'IDDF_ID'
         
         LUT_Dir = os.path.join(dir,'lookuptables')
-        
+        # print(LUT_Dir)
         DDFAssign = ['SOoccupId_Occ_Xref','flBldgStructDmgFinal','flBldgContDmgFinal','flBldgInvDmgFinal','OccupancyTypes']
         DDFTables = {}
         for DDF in DDFAssign:
+            # test = os.path.join(LUT_Dir,DDF+'.csv')
+            # print(test)
             with open(os.path.join(LUT_Dir,DDF+'.csv'), newline='') as csvfile:
                 file = csv.DictReader(csvfile)
                 DDFTable = [row for row in file]
@@ -90,9 +99,6 @@ def process(input,fmap):
                                 countie[0] = countie[0] + 1
                                 row['DDF_Validity'] = None
                                 break
-                            
-                            
-                   
                                 
                     if row.get(BDDF_ID) == None and BDDF_ID != '':
                         for line in DDFTables['flBldgStructDmgFinal']:

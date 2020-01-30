@@ -1,8 +1,8 @@
 from tkinter import *
 from tkinter import filedialog
-import pre_process,os, csv
 from os import listdir
 from os.path import isfile, join
+import pre_process,os, csv
 
 dir = os.getcwd()
 dir = os.path.dirname(dir)
@@ -18,21 +18,19 @@ defaultFields = {'OCC':['Occupancy','Occ'], \
 
 def runHazus():
      entries = []
-     # print(fields)
-     entries.extend(root.fields.values())
-     
-     # print(entries)
+     entries.extend(root.fields.values())     
      haz = pre_process.process(root.filename, entries)# Run the Hazus script with input from user using the GUI
 
      print('Pre-Process RUN',haz,entries)
-     if haz[0]: popupmsg(str(haz[1][0])+' records sucessfully processed of ' + str(haz[1][1]) + ' records total.\n' \
-         +str(haz[2][1])+' Building DDFs assigned.\n' \
-         +str(haz[2][2])+' Content DDFs assigned.\n' \
-         +str(haz[2][3])+' Inventory DDFs assigned.\n' \
-         +str(haz[4][1])+' Building DDFs checked and '+str(haz[3][1])+' found valid.\n' \
-         +str(haz[4][2])+' Content DDFs checked and '+str(haz[3][2])+' found valid.\n' \
-         +str(haz[4][3])+' Inventory DDFs checked and '+str(haz[3][3])+' found valid.\n' \
-         +'File saved to: ' + root.filename)
+     if haz[0]: popupmsg(str(haz[1][0]) + ' records sucessfully processed of ' 
+          + str(haz[1][1]) + ' records total.\n' \
+          +str(haz[2][1])+' Building DDFs assigned.\n' \
+          +str(haz[2][2])+' Content DDFs assigned.\n' \
+          +str(haz[2][3])+' Inventory DDFs assigned.\n' \
+          +str(haz[4][1])+' Building DDFs checked and '+str(haz[3][1])+' found valid.\n' \
+          +str(haz[4][2])+' Content DDFs checked and '+str(haz[3][2])+' found valid.\n' \
+          +str(haz[4][3])+' Inventory DDFs checked and '+str(haz[3][3])+' found valid.\n' \
+          +'File saved to: ' + root.filename)
 
 def browse_button():
      #UKS - made changes to open the File open dialog to the UDF folder where the input files are placed
