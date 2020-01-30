@@ -1,3 +1,9 @@
+#***********************THIS IS OBSOLETE******************************************
+#THIS IS THE ODLER PYTHON FILE THAT HAD THE LOGIC FOR FLOOD LOSS CALCULATION
+#THIS IS NOW MERGED INTO THE hazPy LIBRARY. THE PYTHON ENVIRONMENT AND THE LOSS CALCULATION 
+#WILL NOW BE MANAGED UNDER hazPy/flood/UDF class
+#***********************THIS IS OBSOLETE******************************************
+
 # DOGAMI ArcGIS Python Script Alternative to the Hazus-MH Flood Model for User-Defined Facilities
 #
 # This script is published as part of Oregon Department of Geology and Mineral Industries Open-File Report OFR O-18-04,
