@@ -18,10 +18,10 @@ defaultFields = {'OCC':['Occupancy','Occ'], \
 
 def runHazus():
      entries = []
-     print(fields)
+     # print(fields)
      entries.extend(root.fields.values())
      
-     print(entries)
+     # print(entries)
      haz = pre_process.process(root.filename, entries)# Run the Hazus script with input from user using the GUI
 
      print('Pre-Process RUN',haz,entries)
