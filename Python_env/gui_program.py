@@ -90,7 +90,10 @@ def runHazus():
 
 def browse_button():
      #UKS - File open dialog changes
-     root.filename = filedialog.askopenfilename(initialdir = os.getcwd() + "../../UDF",title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
+     initialdir = os.getcwd()
+     if (initialdir.find('Python_env')!= -1):
+          initialdir = os.path.dirname(initialdir)    
+     root.filename = filedialog.askopenfilename(initialdir = os.path.join(initialdir ,'UDF'),title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
      # Gets field names from input csv file and makes a list
      if root.filename != '':
          with open(root.filename, "r+") as f:
