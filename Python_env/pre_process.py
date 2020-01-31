@@ -1,9 +1,3 @@
-#This has the logic for the GUI for the pre-processing sub tool for FAST
-#This check's for tool updates
-from Python_env.manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
-if internetConnected():
-     checkForHazusUpdates()
-     checkForToolUpdates()
 import os, csv
 
 dir = os.getcwd()

@@ -1,5 +1,5 @@
 #This check's for tool updates
-from Python_env.manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
+from manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
 if internetConnected():
      checkForHazusUpdates()
      checkForToolUpdates()
