@@ -1,3 +1,5 @@
+REM - OBSOLETE because the gui_process.py is now called from the FAST_PreProcess_run.py so that the check for the tool
+REM - is fired before the UI libraries are loaded 
 @echo off
 
 rem cd ..\

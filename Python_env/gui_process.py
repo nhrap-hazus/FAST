@@ -1,9 +1,3 @@
-#This has the logic for the GUI for the pre-processing sub tool for FAST
-#This check's for tool updates
-from manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
-if internetConnected():
-     checkForHazusUpdates()
-     checkForToolUpdates()
 from tkinter import *
 from tkinter import filedialog
 from os import listdir

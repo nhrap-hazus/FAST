@@ -1,9 +1,3 @@
-#This check's for tool updates
-from manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
-if internetConnected():
-     checkForHazusUpdates()
-     checkForToolUpdates()
-     # print('test')
 from tkinter import *
 from tkinter import filedialog
 import os, csv
