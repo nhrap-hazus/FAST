@@ -5,7 +5,8 @@ from os.path import isfile, join
 import pre_process,os, csv
 
 dir = os.getcwd()
-dir = os.path.dirname(dir)
+if (dir.find('Python_env')!= -1):
+     dir = os.path.dirname(dir)
 hazardTypes = {'Riverine':'HazardR','CoastalV':'HazardCV','CoastalA':'HazardCA'}
 fields = {'OCC':'Occupancy*','NumStories':'NumStories*','FoundationType':'Foundation Type*','SOID':'SpecificOcc_ID','BDDF_ID':'BuildingDDF','CDDF_ID':'ContentDDF','IDDF_ID':'InventoryDDF','HazardType':'Hazard-Type*'}# Fields for custom inpu
 defaultFields = {'OCC':['Occupancy','Occ'], \

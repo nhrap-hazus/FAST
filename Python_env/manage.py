@@ -5,6 +5,7 @@ import sys
 import requests
 import pkg_resources
 import json
+import socket
 
 cwdName = os.getcwd()
 if (cwdName.find('Python_env')== -1): #If it did not find Python_env in the path of the current working directory
@@ -100,6 +101,7 @@ def update():
         condaInstallHazus()
 
 def checkForHazusUpdates():
+    messageBox = ctypes.windll.user32.MessageBoxW
     try:
         pkg_resources.get_distribution('hazus')
         installedVersion = pkg_resources.get_distribution('hazus').version
@@ -110,7 +112,6 @@ def checkForHazusUpdates():
             req = requests.get(config[release]['hazusInitUrl'], timeout=0.5)
         newestVersion = parseVersionFromInit(req.text)
         if newestVersion != installedVersion:
-            messageBox = ctypes.windll.user32.MessageBoxW
             returnValue = messageBox(None,"A newer version of the Hazus Python package was found. Would you like to install it now?","Hazus",0x1000 | 0x4)
             if returnValue == 6:
                 print('updating hazus')
@@ -121,6 +122,7 @@ def checkForHazusUpdates():
         installHazus()
 
 def checkForToolUpdates():
+    messageBox = ctypes.windll.user32.MessageBoxW
     try:
         with open('__init__.py') as init:
             text = init.readlines()
@@ -131,10 +133,8 @@ def checkForToolUpdates():
         except:
             setProxies()
             req = requests.get(config[release]['toolInitUrl'], timeout=0.5)
-
         newestVersion = parseVersionFromInit(req.text)
         if newestVersion != installedVersion:
-            messageBox = ctypes.windll.user32.MessageBoxW
             returnValue = messageBox(None,"A newer version of the tool was found. Would you like to install it now?","Hazus",0x1000 | 0x4)
             if returnValue == 6:
                 print('updating tool')
@@ -142,25 +142,27 @@ def checkForToolUpdates():
         else:
             print('Tool is up to date')
     except:
-        messageBox = ctypes.windll.user32.MessageBoxW
         messageBox(0, 'Unable to check for tool updates. If this error persists, contact hazus-support@riskmapcds.com for assistance.',"Hazus", 0x1000)
 
 def updateTool():
+    messageBox = ctypes.windll.user32.MessageBoxW
     try:
         from distutils.dir_util import copy_tree
         from shutil import rmtree
         from io import BytesIO
         from zipfile import ZipFile
-        r = requests.get(config[release]['repoZipfileUrl'])
+        try:
+            r = requests.get(config[release]['repoZipfileUrl'])
+        except:
+            setProxies()
+            r = requests.get(config[release]['repoZipfileUrl'])
         z = ZipFile(BytesIO(r.content))
-        os.getcwd()
         z.extractall()
         fromDirectory  = z.namelist()[0]
         toDirectory = './'
         copy_tree(fromDirectory, toDirectory)
         rmtree(fromDirectory)
-        messageBox = ctypes.windll.user32.MessageBoxW
-        messageBox(0, 'Update successful! I hope that was quick enough for you.',"Hazus", 0x1000)
+        messageBox(0, 'Tools was successfully updated! I hope that was quick enough for you.',"Hazus", 0x1000)
     except:
         messageBox(0, 'The tool update failed. If this error persists, contact hazus-support@riskmapcds.com for assistance.',"Hazus", 0x1000)
 
@@ -175,13 +177,22 @@ def parseVersionFromInit(textBlob):
     return version
 
 def internetConnected():
+    # http://zetcode.com/python/socket/
     print('Checking for internet connection')
+    socket.setdefaulttimeout(0.5)
     try: 
         try:
-            requests.get('http://google.com', timeout=0.4)
+            # try with normal connections
+            hostname = 'google.com'
+            host = socket.gethostbyname(hostname)
         except:
-            setProxies()
-            requests.get('http://google.com', timeout=0.4)
+            # adds DHS proxies and retries
+            print('retrying with proxies')
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                host = "proxy.apps.dhs.gov" #proxy server IP
+                port = 80            #proxy server port
+                s.connect((host , port))
+                s.sendall(b"GET / HTTP/1.1\r\nHost: www.google.com\r\nAccept: text/html\r\nConnection: close\r\n\r\n")
         print('Found connection')
         return True
     except:
