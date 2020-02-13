@@ -1,5 +1,5 @@
 try:
-    from src.manage.manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
+    from src.manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
         
     if internetConnected():
         checkForHazusUpdates()
