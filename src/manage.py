@@ -6,7 +6,7 @@ import requests
 import pkg_resources
 import json
 import socket
-import numpy
+
 try:
     with open('./src/config.json') as configFile:
         config = json.load(configFile)
