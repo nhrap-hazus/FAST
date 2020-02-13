@@ -41,5 +41,6 @@
   },
   "proxies": {
     "fema": "http://proxy.apps.dhs.gov:80"
-  }
+  },
+  "test": "testvalue"
 }
