@@ -6,8 +6,6 @@ import requests
 import pkg_resources
 import json
 import socket
-
-
 try:
     with open('./src/config.json') as configFile:
         config = json.load(configFile)
