@@ -17,4 +17,4 @@ jobs:
         rm -rf manage
         git add .
         git commit -m "update manage.py"
-        git push
+        git push || ls
