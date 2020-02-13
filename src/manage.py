@@ -128,7 +128,6 @@ def checkForHazusUpdates():
 
 def checkForToolUpdates():
     messageBox = ctypes.windll.user32.MessageBoxW
-    breakpoint()
     try:
         with open(tool_version_local) as init:
             text = init.readlines()
