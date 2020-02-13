@@ -2,4 +2,4 @@ REM cd python_env - not needed because we are changing the directory while activ
 REM start /min .\python_env\gui_program.bat
 REM start /min python .\python_env\FAST_run.py
 REM A single & sign executes the first command and moves forwards regardless
-conda activate hazus_env & start /min python .\python_env\FAST_run.py && exit
+call conda activate hazus_env & start /min python .\python_env\FAST_run.py && exit

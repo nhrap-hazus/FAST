@@ -10,4 +10,4 @@
     :author: Ujvala K Sharma; ujvalak_in@yahoo.com, Ujvala K Sharma; usharma@niyamit.com
 """
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
