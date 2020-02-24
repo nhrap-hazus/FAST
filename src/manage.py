@@ -120,6 +120,7 @@ def checkForHazusUpdates():
         if newestVersion != installedVersion:
             returnValue = messageBox(None,"A newer version of " + python_package + " was found. Would you like to install it now?","Hazus",0x1000 | 0x4)
             if returnValue == 6:
+                messageBox(0, 'Hazus updates are installing. We will let you know when its done!',"Hazus", 0x1000)
                 condaInstallHazus()
         else:
             print(python_package + ' is up to date')
