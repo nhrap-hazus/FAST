@@ -1,16 +1,21 @@
 from tkinter import *
 from tkinter import filedialog
-import hazus,os, csv
+import os, csv
 #import matplotlib.pyplot as plt
 #import pandas as pd
 from os import listdir
 from os.path import isfile, join
+from hazus.flood import UDF
 
 dir = os.getcwd()
-dir = os.path.dirname(dir)
+# print(dir)
+if (dir.find('Python_env')!= -1):
+     dir = os.path.dirname(dir)
+# print(dir)
 cwd = os.path.join(dir,'rasters')# Default raster directory
+#cwd = 'C:\\_Repositories\\FAST\\rasters'
 hazardTypes = {'Riverine':'HazardRiverine','CoastalV':'V','CoastalA':'CAE'}
-rasters = [f for f in listdir(cwd) if isfile(join(cwd, f)) and f.endswith(('.tif','.tiff','.nc'))]# Search rasters folder for all .tif files and make a listprint('Rasters selection ',rasters)
+rasters = [f for f in listdir(cwd) if isfile(join(cwd, f)) and f.endswith(('.tif','.tiff','.nc'))] #Search rasters folder for all .tif files and make a listprint('Rasters selection ',rasters)
 #hazardTypes = {'Riverine':'HazardR','CoastalA':'HazardCA','CoastalB':'HazardCV'}
 #fields = ['Occupancy*','NumStories*','SpecificOcc_ID','BuildingDDF','ContentDDF','InventoryDDF','Hazard-Type*']# Fields for custom input
 fields = {'UserDefinedFltyId':'User Defined Flty Id*',
@@ -54,7 +59,7 @@ defaultFields = {'OCC':['Occupancy','Occ'],
 
 def runHazus():
      entries = []
-     print(fields)
+     # print(fields)
      entries.extend(root.fields.values())
      #entries.append(ents['Hazard-Type*'].get(ents['Hazard-Type*'].curselection()))
      """
@@ -64,22 +69,31 @@ def runHazus():
           #else:
                 #entries.append([fields[num],ents[fields[num]].get()])
      """
-     print(entries)
-     haz = hazus.local(root.filename, entries)# Run the Hazus script with input from user using the GUI
+     # print(entries)
+     # print(root.filename)
+     #UKS 1/21/2020 - RTC CR 34227 
+     runUDF = UDF()
+     haz = runUDF.local(root.filename, entries)# Run the Hazus script with input from user using the GUI
+     #haz = hazus.local(root.filename, entries)# Run the Hazus script with input from user using the GUI
      print('Run Hazus',haz,entries)
      
-     if haz[0]:popupmsg(haz[1])
-     
-     else: popupmsg('Processing Failed. See log for details.')
+     if haz[0]:
+          popupmsg(haz[1])
+     else:
+          popupmsg('Processing Failed. See log for details.')
 
 def browse_button():
      #UKS - File open dialog changes
-     root.filename = filedialog.askopenfilename(initialdir = os.getcwd() + "../../UDF",title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
+     initialdir = os.getcwd()
+     if (initialdir.find('Python_env')!= -1):
+          initialdir = os.path.dirname(initialdir)    
+     root.filename = filedialog.askopenfilename(initialdir = os.path.join(initialdir ,'UDF'),title = "Select file",filetypes = (("csv files","*.csv"),("all files","*.*")))# Gets input csv file from user
      # Gets field names from input csv file and makes a list
-     with open(root.filename, "r+") as f:
-          reader = csv.reader(f)
-          root.csvFields = next(reader)
-     print(root.filename,root.csvFields)
+     if root.filename != '':
+         with open(root.filename, "r+") as f:
+              reader = csv.reader(f)
+              root.csvFields = next(reader)
+         print(root.filename,root.csvFields)
 
 def makeform(root, fields):# Assemble and format the fields to map from the list of fields
     entries = {}
