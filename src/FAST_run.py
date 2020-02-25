@@ -1,15 +1,15 @@
 try:
-    from src.manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
-        
+    from manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
+
     if internetConnected():
         checkForHazusUpdates()
         checkForToolUpdates()
 
     from subprocess import check_call
     try:
-        check_call('conda activate hazus_env && python .\Python_env\gui_process.py', shell=True)
+        check_call('conda activate hazus_env && python .\Python_env\gui_program.py', shell=True)
     except:
-        check_call('activate hazus_env && python .\Python_env\gui_process.py', shell=True)
+        check_call('activate hazus_env && python .\Python_env\gui_program.py', shell=True)
 except: 
     import ctypes
     messageBox = ctypes.windll.user32.MessageBoxW
