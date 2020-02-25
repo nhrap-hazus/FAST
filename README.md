@@ -8,7 +8,7 @@ The Flood Assessment Structure Tool is used to analyze site-specific flood losse
 
 2. Double-click "FAST.bat" (under the FAST folder). if you already have a pre-processed dataset or select "FAST_Preprocessing.bat" if you need to prepare one.
 
-3. If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.bat" again
+3. FAST will install the Hazus Python Library (HazPy) if not all ready installed. (Please refer to Requirements to see dendencies for HazPy and follow the guidelines)
 
 4. Place your input .csv file in the "UDF" folder under your install. Place your rasters (.tiff) under the "rasters" folder under your install.
 
@@ -16,7 +16,7 @@ The Flood Assessment Structure Tool is used to analyze site-specific flood losse
 
 ## Requirements
 
-The Flood Assessment Structure Tool comes as a pre-packaged tool with the required environment and sample datasets for HI and ND. This is a python based tool and uses GDAL libraries to process the GIS data. It does not require ArcGIS or Hazus pre-installed.  
+The Flood Assessment Structure Tool requires Anaconda as a pre-requisite to setup HazPy. Please follow the link to set up Ananconda - https://fema-ftp-snapshot.s3.amazonaws.com/Hazus/hazpy/build/html/index.html and then download FAST which will automatically set up the HazPy environment. This is a python based tool and uses GDAL libraries to process the GIS data. It does not require ArcGIS or Hazus pre-installed.  
 
 ## Documentation
 
