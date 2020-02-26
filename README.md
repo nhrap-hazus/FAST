@@ -24,9 +24,9 @@ Download Anaconda for Python 3
 
 Complete the installation. During installation, make sure the following options are checked:
 
- [checkbox:checked] Add Anaconda to my PATH environment variable
- [checkbox:checked] Register Anaconda as my default Python
- [checkbox:checked] Install Anaconda for local user, rather than all users
+ checkbox:checked Add Anaconda to my PATH environment variable
+ checkbox:checked Register Anaconda as my default Python
+ checkbox:checked Install Anaconda for local user, rather than all users
  
  The Hazus Python Library is installed/updated automatically when the tool is used by flollowing the steps mentioned above.
 
