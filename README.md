@@ -16,7 +16,17 @@ The Flood Assessment Structure Tool is used to analyze site-specific flood losse
 
 ## Requirements
 
-The Flood Assessment Structure Tool comes as a pre-packaged tool with the required environment and sample datasets for HI and ND. This is a python based tool and uses GDAL libraries to process the GIS data. It does not require ArcGIS or Hazus pre-installed.  
+The Flood Assessment Structure Tool requires Anaconda to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-nhrap.s3.amazonaws.com/Hazus/Python/build/html/index.html
+
+Go to https://www.anaconda.com/distribution/
+
+Download Anaconda for Python 3
+
+Complete the installation. During installation, make sure the following options are checked:
+
+ Add Anaconda to my PATH environment variable
+ Register Anaconda as my default Python
+ Install Anaconda for local user, rather than all users
 
 ## Documentation
 
