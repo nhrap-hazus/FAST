@@ -14,7 +14,7 @@ The Flood Assessment Structure Tool is used to analyze site-specific flood losse
 
 ## Requirements
 
-The Flood Assessment Structure Tool requires Anaconda and the Hazus Python Library to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-nhrap.s3.amazonaws.com/Hazus/Python/build/html/index.html
+The Flood Assessment Structure Tool requires Anaconda to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-nhrap.s3.amazonaws.com/Hazus/Python/build/html/index.html
 
 Go to https://www.anaconda.com/distribution/
 
@@ -25,12 +25,11 @@ Complete the installation. During installation, make sure the following options 
  - [x] Add Anaconda to my PATH environment variable
  - [x] Register Anaconda as my default Python
  - [x] Install Anaconda for local user, rather than all users
- 
- The Hazus Python Library is installed/updated automatically when the tool is used by following the steps mentioned above.
 
 ## Documentation
 
-Please refer to the Help folder for the case studies for Minot,ND and NYC,NY
+Please refer to the Help folder for the case studies for Minot,ND and NYC,NY. 
+FAST is based on the Hazus Python Library which is installed/updated automatically when the tool is used.
 
 ## Contact
 
