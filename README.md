@@ -4,11 +4,11 @@ The Flood Assessment Structure Tool is used to analyze site-specific flood losse
 
 ## To Use
 
-1. Download zip folder of tool from GitHub, unzip it. Rename the base folder to FAST (from FAST-FAST or FAST-master)
+1. Download zip folder of tool from GitHub, unzip it. Rename the base folder to FAST (from FAST-master)
 
-2. Double-click "FAST.bat" (under the FAST folder). if you already have a pre-processed dataset or select "FAST_Preprocessing.bat" if you need to prepare one.
+2. Double-click "FAST.bat" (under the FAST-master folder), if you already have a pre-processed dataset. If not, please select "FAST_Preprocessing.bat" to prepare one.
 
-3. If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.bat" again
+3. If you don't have the Hazus Python Library already installed, follow the prompt to install, then double-click "FAST.bat" again
 
 4. Place your input .csv file in the "UDF" folder under your install. Place your rasters (.tiff) under the "rasters" folder under your install.
 
@@ -16,7 +16,7 @@ The Flood Assessment Structure Tool is used to analyze site-specific flood losse
 
 ## Requirements
 
-The Flood Assessment Structure Tool requires Anaconda to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-nhrap.s3.amazonaws.com/Hazus/Python/build/html/index.html
+The Flood Assessment Structure Tool requires Anaconda and the Hazus Python Library to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-nhrap.s3.amazonaws.com/Hazus/Python/build/html/index.html
 
 Go to https://www.anaconda.com/distribution/
 
@@ -24,9 +24,11 @@ Download Anaconda for Python 3
 
 Complete the installation. During installation, make sure the following options are checked:
 
- Add Anaconda to my PATH environment variable
- Register Anaconda as my default Python
- Install Anaconda for local user, rather than all users
+ # [checkbox:checked] Add Anaconda to my PATH environment variable
+ # [checkbox:checked] Register Anaconda as my default Python
+ # [checkbox:checked] Install Anaconda for local user, rather than all users
+ 
+ The Hazus Python Library is installed/updated automatically when the tool is used by flollowing the steps mentioned above.
 
 ## Documentation
 
