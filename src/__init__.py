@@ -2,7 +2,6 @@
 """
     FAST 
     ~~~~~
-
     FEMA & DOGAMI built tool to analyze site-specific flood losses.
 
     :copyright: © 2019 by FEMA's Natural Hazards and Risk Assesment Program.
