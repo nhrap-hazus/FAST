@@ -28,11 +28,11 @@
       }
     }
   },
-  "release": "dev",
+  "release": "prod",
   "prod": {
     "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/hazus/master/hazus/__init__.py",
     "repoZipfileUrl": "https://github.com/nhrap-hazus/FAST/archive/master.zip",
-    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/FAST/src/__init__.py"
+    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/FAST/master/src/__init__.py"
   },
   "dev": {
     "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-dev/hazus/master/hazus/__init__.py",
