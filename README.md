@@ -11,7 +11,7 @@ Sample building data for Honolulu, HI are included in the "UDF" folder.
 **Must have Anaconda Python 3.7 installed. Please read requirements**
 
 1. Download zip folder from GitHub, unzip. Rename unzipped folder from "FAST-master" to "FAST".
-[!(https://raw.githubusercontent.com/nhrap-hazus/FAST/master/Images/Step1.png)]
+![Philadelphia's Magic Gardens. This place was so cool!](Images/Step1.png "Philadelphia's Magic Gardens")
 
 2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.
 
