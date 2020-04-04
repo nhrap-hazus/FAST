@@ -41,7 +41,7 @@ Follow the steps below to run FAST. To ensure .py files run when double-clicked:
 1. Right-click the .py file and go to Properties. 
 2. Under the "General" tab next to "Opens With", make sure "python.exe" is selected. If not, click "Change" and select "python.exe" from your Python installation directory.
 
-**Must have Anaconda Python 3.7 installed. Please read requirements**
+**Must have Anaconda Python 3.7 installed. Please read requirements.**
 
 1. Download zip folder from GitHub, unzip. Rename unzipped folder from "FAST-master" to "FAST".
 
