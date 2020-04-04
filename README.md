@@ -36,34 +36,29 @@ For questions contact us at hazus-support@riskmapcds.com
 
 ## To Use
 
-Follow the steps below to run FAST. To ensure .py files run when double-clicked:
+Follow the steps below to run FAST. To ensure .py files run when double-clicked, right-click the .py file and go to Properties. Under the "General" tab next to "Opens With", make sure "python.exe" is selected. If not, click "Change" and select "python.exe" from your Python installation directory.
 
-1. Right-click the .py file and go to Properties. 
-2. Under the "General" tab next to "Opens With", make sure "python.exe" is selected. If not, click "Change" and select "python.exe" from your Python installation directory.
-
-**Must have Anaconda Python 3.7 installed. Please read requirements.**
-
-1. Download zip folder from GitHub, unzip. Rename unzipped folder from "FAST-master" to "FAST".
+**1. Download zip folder from GitHub, unzip. Rename unzipped folder from "FAST-master" to "FAST".
 
 ![Download FAST](Images/Step1.png "Download FAST")
 
-2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.
+**2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.
 
 ![Store input data](Images/Step2.png "Store input data")
 
-3. Double-click "FAST.py" If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.py" again.
+**3. Double-click "FAST.py" If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.py" again.
 *To review the default assignment of damage functions prior to running FAST, double-click "FAST-Preprocessing.py" and supply your building data. Damage function parameters can be edited using the DDF spreadsheets in the "Lookuptables" subfolder.*
 
 ![Open FAST](Images/Step3.png "Open FAST")
 
-4. Click "Browse to Inventory Input (.csv)" to select your formatted building data.
+**4. Click "Browse to Inventory Input (.csv)" to select your formatted building data.
 
 ![Supply building data](Images/Step4.png "Supply building data")
 
-5. Select "Riverine", "CoastalA", or "CoastalV" from the "Coastal Flooding Attribute" window according to your analysis requirements. Select a flood depth dataset from the "Depth Grid" window.
+**5. Select "Riverine", "CoastalA", or "CoastalV" from the "Coastal Flooding Attribute" window according to your analysis requirements. Select a flood depth dataset from the "Depth Grid" window.
 
 ![Select flood type and flood data](Images/Step5.png "Select flood type and flood data")
 
-6. Click "Execute". Review the summary window after FAST finishes to confirm data were analyzed.
+**6. Click "Execute". Review the summary window after FAST finishes to confirm data were analyzed.
 
-![Run FAST](Images/Step6.png "Run FAST")
+![Run FAST](Images/Step6.jpg "Run FAST")
