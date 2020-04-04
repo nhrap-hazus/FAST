@@ -10,34 +10,6 @@ FAST is developed using the Hazus Python Library, HazPy. HazPy tools automatical
 
 The Hazus Team would like to thank the Oregon Department of Geology and Mineral Industries for developing an early version of this tool: https://www.oregongeology.org/pubs/ofr/O-18-04/O-18-04_user_guide.pdf
 
-## To Use
-
-Follow the steps below to run FAST. To ensure .py files run when double-clicked:
-
-1. Right-click the .py file and go to Properties. 
-2. Under the "General" tab next to "Opens With", make sure "python.exe" is selected. If not, click "Change" and select "python.exe" from your Python installation directory.
-
-**Must have Anaconda Python 3.7 installed. Please read requirements**
-
-1. Download zip folder from GitHub, unzip. Rename unzipped folder from "FAST-master" to "FAST".
-![Download FAST](Images/Step1.png "Download FAST")
-
-2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.
-![Store input data](Images/Step2.png "Store input data")
-
-3. Double-click "FAST.py" If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.py" again.
-*To review the default assignment of damage functions prior to running FAST, double-click "FAST-Preprocessing.py" and supply your building data. Damage function parameters can be edited using the DDF spreadsheets in the "Lookuptables" subfolder.*
-![Open FAST](Images/Step3.png "Open FAST")
-
-4. Click "Browse to Inventory Input (.csv)" to select your formatted building data.
-![Supply building data](Images/Step4.png "Supply building data")
-
-5. Select "Riverine", "CoastalA", or "CoastalV" from the "Coastal Flooding Attribute" window according to your analysis requirements. Select a flood depth dataset from the "Depth Grid" window.
-![Select flood type and flood data](Images/Step5.png "Select flood type and flood data")
-
-6. Click "Execute". Review the summary window after FAST finishes to confirm data were analyzed.
-![Run FAST](Images/Step6.png "Run FAST")
-
 ## Requirements
 
 The Flood Assessment Structure Tool requires Anaconda to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-nhrap.s3.amazonaws.com/Hazus/Python/build/html/index.html
@@ -61,3 +33,37 @@ Please see the Help folder for building data guidance, FAST case study informati
 Issues can be reported through the repository on Github: https://github.com/nhrap-dev/FAST/issues
 
 For questions contact us at hazus-support@riskmapcds.com
+
+## To Use
+
+Follow the steps below to run FAST. To ensure .py files run when double-clicked:
+
+1. Right-click the .py file and go to Properties. 
+2. Under the "General" tab next to "Opens With", make sure "python.exe" is selected. If not, click "Change" and select "python.exe" from your Python installation directory.
+
+**Must have Anaconda Python 3.7 installed. Please read requirements**
+
+1. Download zip folder from GitHub, unzip. Rename unzipped folder from "FAST-master" to "FAST".
+
+![Download FAST](Images/Step1.png "Download FAST")
+
+2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.
+
+![Store input data](Images/Step2.png "Store input data")
+
+3. Double-click "FAST.py" If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.py" again.
+*To review the default assignment of damage functions prior to running FAST, double-click "FAST-Preprocessing.py" and supply your building data. Damage function parameters can be edited using the DDF spreadsheets in the "Lookuptables" subfolder.*
+
+![Open FAST](Images/Step3.png "Open FAST")
+
+4. Click "Browse to Inventory Input (.csv)" to select your formatted building data.
+
+![Supply building data](Images/Step4.png "Supply building data")
+
+5. Select "Riverine", "CoastalA", or "CoastalV" from the "Coastal Flooding Attribute" window according to your analysis requirements. Select a flood depth dataset from the "Depth Grid" window.
+
+![Select flood type and flood data](Images/Step5.png "Select flood type and flood data")
+
+6. Click "Execute". Review the summary window after FAST finishes to confirm data were analyzed.
+
+![Run FAST](Images/Step6.png "Run FAST")
