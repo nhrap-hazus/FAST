@@ -19,11 +19,9 @@ Sample building data for Honolulu, HI are included in the "UDF" folder.
 
 4. Click "Browse to Inventory Input (.csv)" to select your formatted building data.
 
-5. Select "Riverine", "CoastalA", or "CoastalV" from the "Coastal Flooding Attribute" window according to your analysis requirements.
+5. Select "Riverine", "CoastalA", or "CoastalV" from the "Coastal Flooding Attribute" window according to your analysis requirements. Select a flood depth dataset from the "Depth Grid" window.
 
-6. Select a flood depth dataset from the "Depth Grid" window.
-
-7. Click "Execute"
+6. Click "Execute"
 
 ## Requirements
 
