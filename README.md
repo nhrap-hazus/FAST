@@ -6,7 +6,7 @@ Building data must be formatted as a .csv file according to the specifications o
 
 Sample building data for Honolulu, HI are included in the "UDF" folder.
 
-FAST is developed using the Hazus Python Library, HazPy. HazPy tools automatically check for updates each time they are opened. Hazus Python Library documentation is found here: https://github.com/nhrap-hazus/hazus
+FAST is developed using the Hazus Python Package, HazPy. HazPy tools automatically check for updates each time they are opened. Hazus Python Package documentation is found here: https://github.com/nhrap-hazus/hazus
 
 The Hazus Team would like to thank the Oregon Department of Geology and Mineral Industries for developing an early version of this tool: https://www.oregongeology.org/pubs/ofr/O-18-04/O-18-04_user_guide.pdf
 
