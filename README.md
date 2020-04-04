@@ -2,7 +2,7 @@
 
 The Hazus Flood Assessment Structure Tool (FAST) calculates building-level flood impacts with user-provided building and flood depth data. FAST uses the Hazus Flood model methodology to assign depth damage functions to buildings according to their occupancy type, first floor elevation, foundation type, and number of stories. Flood depth is then extracted at every building and used as a depth damage function parameter to calculate flood losses in dollars. Flood-generated debris is estimated using building area in square feet. For more information about how FAST cacluates flood impacts, please refer to the Hazus Flood Technical Manual: https://www.fema.gov/media-library-data/20130726-1820-25045-8292/hzmh2_1_fl_tm.pdf
 
-Building data must be formatted as a .csv file according to the specifications outlined here: Flood depth data must be formatted as a .tiff raster.
+Building data must be formatted as a .csv file according to the specifications outlined here: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTBuildingData.pdf Flood depth data must be formatted as a .tiff raster.
 
 Sample building data for Honolulu, HI are included in the "UDF" folder.
 
@@ -42,7 +42,8 @@ Follow the steps below to run FAST. To ensure .py files run when double-clicked,
 
 ![Download FAST](Images/Step1.png "Download FAST")
 
-**2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.**
+**2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.
+*Guidance for formatting building data can be found here: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTBuildingData.pdf***
 
 ![Store input data](Images/Step2.png "Store input data")
 
