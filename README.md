@@ -1,30 +1,43 @@
-# FAST - Flood Assessment Structure Tool
+# Hazus Flood Assessment Structure Tool
 
-The Flood Assessment Structure Tool is used to analyze site-specific flood losses.
+The Hazus Flood Assessment Structure Tool (FAST) calculates building-level flood impacts with user-provided building and flood depth data. FAST uses the Hazus Flood model methodology to assign depth damage functions to buildings according to their occupancy type, first floor elevation, foundation type, and number of stories. Flood depth is then extracted at every building and used as a depth damage function parameter to calculate flood losses in dollars. Flood-generated debris is estimated using building area in square feet. For more information about how FAST cacluates flood impacts, please refer to the Hazus Flood Technical Manual: 
+
+Building data must be formatted as a .csv file according to the specifications outlined here: Flood depth data must be formatted as a .tiff raster.
+
+Sample building data for Honolulu, HI are included in the "UDF" folder.
 
 ## To Use
 
-1. Download zip folder of tool from GitHub, unzip it. Rename the base folder to FAST (from FAST-master)
+**Must have Anaconda Python 3.7 installed. Please read requirements**
 
-2. Double-click "FAST.py" (under the FAST folder), if you already have a pre-processed dataset. If not, please select "FAST_Preprocessing.py" to prepare one.
+1. Download zip folder from GitHub, unzip. Rename unzipped folder from "FAST-master" to "FAST".
 
-3. Place your input .csv file in the "UDF" folder under your install. Place your rasters (.tiff) under the "rasters" folder under your install.
+2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.
 
-4. Please refer to the FAST_ReadMe.pdf under the Help folder for additional details on the .bat files.
+3. Double-click "FAST.py"
+*To review the default assignment of damage functions prior to running FAST, double-click "FAST-Preprocessing.py" and supply your building data. Damage function parameters can be edited using the DDF spreadsheets in the "Lookuptables" subfolder.*
+
+4. Click "Browse to Inventory Input (.csv)" to select your formatted building data.
+
+5. Select "Riverine", "CoastalA", or "CoastalV" from the "Coastal Flooding Attribute" window according to your analysis requirements.
+
+6. Select a flood depth dataset from the "Depth Grid" window.
+
+7. Click "Execute"
 
 ## Requirements
 
 The Flood Assessment Structure Tool requires Anaconda to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-nhrap.s3.amazonaws.com/Hazus/Python/build/html/index.html
 
-Go to https://www.anaconda.com/distribution/
+1. Go to https://www.anaconda.com/distribution/
 
-Download Anaconda for Python 3
+2. Download Anaconda for Python 3
 
-Complete the installation. During installation, make sure the following options are checked:
+3. Complete the installation. During installation, make sure the following options are checked:
 
- - [x] Add Anaconda to my PATH environment variable
- - [x] Register Anaconda as my default Python
- - [x] Install Anaconda for local user, rather than all users
+   - [x] **Add Anaconda to my PATH environment variable**
+   - [x] Register Anaconda as my default Python
+   - [x] Install Anaconda for local user, rather than all users
 
 ## Documentation
 
