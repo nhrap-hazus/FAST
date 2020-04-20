@@ -167,4 +167,3 @@ def process(input,fmap):
             return(True, [counter,counter2], countie, countie2, countie3)
     except Exception as e:
         print(e)
-        return(False, counter, countie, countie2)
