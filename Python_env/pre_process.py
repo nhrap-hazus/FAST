@@ -1,8 +1,11 @@
 import os, csv
 
+#dir = os.getcwd()
+#dir = os.path.dirname(dir)
 dir = os.getcwd()
-dir = os.path.dirname(dir)
-
+print(dir)
+if (dir.find('Python_env')!= -1):
+     dir = os.path.dirname(dir)
 def process(input,fmap):
     try:
         output = input.split('.')[0]+'_pre_processed.csv'
