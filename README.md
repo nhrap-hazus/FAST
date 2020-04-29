@@ -22,7 +22,7 @@ The Flood Assessment Structure Tool requires Anaconda to be installed on your co
 
 ## Documentation
 
-Please see the Help folder for building data guidance, FAST case study information (coming soon), and a brief video demonstration of FAST.
+Please see the Help folder for building data guidance, FAST case study information (coming soon), and a brief video demonstration of FAST: https://github.com/nhrap-hazus/FAST/tree/master/Help
 
 ## Contact
 
