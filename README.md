@@ -19,7 +19,9 @@ The Flood Assessment Structure Tool requires Anaconda to be installed on your co
    - [x] **Add Anaconda to my PATH environment variable**
    - [x] Register Anaconda as my default Python
    - [x] Install Anaconda for local user, rather than all users
-
+   
+ 4. FAST will automatically check for HazPy updates each time it is opened. If you experience errors during this process, please try uninstalling Anaconda and reinstalling the latest version.
+ 
 ## Documentation
 
 Please see the Help folder for building data guidance, FAST case study information (coming soon), and a brief video demonstration of FAST: https://github.com/nhrap-hazus/FAST/tree/master/Help
