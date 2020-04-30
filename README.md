@@ -39,11 +39,11 @@ Follow the steps below to run FAST. To ensure .py files run when double-clicked,
 ![Download FAST](Images/Step1.png "Download FAST")
 
 **2. Place your formatted building data in the "UDF" subfolder. Place your flood depth data in the "Rasters" subfolder.
-*Guidance for formatting building data can be found here: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTBuildingData.pdf***
+Guidance for formatting building data can be found here: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTBuildingData.pdf***
 
 ![Store input data](Images/Step2.png "Store input data")
 
-**3. Double-click "FAST.py" If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.py" again.
+**3. Double-click "FAST.py" If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.py" again.**
 
 To review the default assignment of damage functions to each building type prior to running FAST, double-click "FAST-Preprocessing.py" and supply your building data. To customize the damage functions used by FAST to calculate losses, review these guidelines: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTDamageFunctions.pdf
 
