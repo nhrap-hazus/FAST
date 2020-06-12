@@ -1,0 +1,197 @@
+Occupancy,SpecificOccupId,Source,Description,Stories,Comment,m4,m3,m2,m1,p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,DDF_ID,Basement,HazardRiverine,HazardCV,HazardCA,SortOrder
+RES1,R11N,USACE - IWR,"one story, no basement, Structure",1 Story,,0,0,0,3,13,23,32,40,47,53,59,63,67,71,73,75,77,79,80,81,81,82,82,83,83,83,84,84,84,129,,1,,,101
+RES1,R11B,BCAR - Jan 2011,"one story, w/ basement, Structure  (B14)",1 Story,RAMPP Inserted,0,0,14,19,26,32,39,46,52,59,65,70,74,78,80,81,81,81,81,81,81,81,81,81,81,81,81,81,81,704,1,1,,,102
+RES1,R12N,FIA,"two floors, no basement, Structure, A-Zone",2 Story,,0,0,0,0,11,12,14,18,20,22,24,26,30,34,38,39,40,42,43,44,45,47,48,49,50,52,53,54,56,107,,1,,1,103
+RES1,R12B,FIA (MOD.),"two floors, w/ basement, Structure, A-Zone",2 Story,,4,4,8,14,19,21,26,29,34,39,44,50,55,57,59,61,63,65,66,68,69,71,72,74,75,77,79,80,82,108,1,1,,1,104
+RES1,R13N,FIA,"three or more floors, no basement, Structure, A-Zone",3 Story,,0,0,0,0,5,8,12,17,19,22,24,25,30,35,38,39,40,42,43,44,45,47,48,49,50,52,53,54,56,109,,1,,1,105
+RES1,R13B,FIA (MOD.),"three or more floors, w/ basement, Structure, A-Zone",3 Story,,3,3,6,10,12,14,20,25,31,36,38,41,44,48,50,52,54,56,57,59,61,63,65,67,69,71,73,75,77,110,1,1,,1,106
+RES1,R1SN,FIA,"split level, no basement, Structure, A-Zone",Split Level,,0,0,0,0,3,9,13,25,27,28,33,34,41,43,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,111,,1,,,107
+RES1,R1SB,FIA (MOD.),"split level, w/ basement, Structure, A-Zone",Split Level,,6,6,9,14,15,24,27,30,35,40,43,44,52,56,58,60,62,64,66,68,70,72,74,76,78,81,83,85,87,112,1,1,,1,108
+RES2,R21N,FIA,"Mobile home, structure, A-Zone",1 Story,,0,0,0,0,11,44,63,73,78,79,81,82,83,84,85,86,88,89,90,91,92,94,95,96,97,98,99,100,100,189,,1,,,109
+RES2,R21B,FIA,"Mobile home, structure, A-Zone",1 Story,,0,0,0,0,11,44,63,73,78,79,81,82,83,84,85,86,88,89,90,91,92,94,95,96,97,98,99,100,100,189,1,1,,1,110
+RES3A,R3A1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,,,211
+RES3A,R3A1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,212
+RES3A,R3A3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,213
+RES3A,R3A3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,214
+RES3A,R3A5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,215
+RES3A,R3A5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,216
+RES3B,R3B1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,,,217
+RES3B,R3B1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,218
+RES3B,R3B3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,219
+RES3B,R3B3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,220
+RES3B,R3B5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,221
+RES3B,R3B5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,222
+RES3C,R3C1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,223
+RES3C,R3C1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,224
+RES3C,R3C3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,225
+RES3C,R3C3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,226
+RES3C,R3C5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,227
+RES3C,R3C5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,228
+RES3D,R3D1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,229
+RES3D,R3D1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,230
+RES3D,R3D3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,231
+RES3D,R3D3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,232
+RES3D,R3D5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,233
+RES3D,R3D5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,234
+RES3E,R3E1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,235
+RES3E,R3E1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,236
+RES3E,R3E3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,237
+RES3E,R3E3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,238
+RES3E,R3E5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,239
+RES3E,R3E5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,240
+RES3F,R3F1N,USACE - Chicago,"Apartment Unit Grade, Structure",1to2 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,241
+RES3F,R3F1B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",1to2 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,242
+RES3F,R3F3N,USACE - Chicago,"Apartment Unit Grade, Structure",3to4 Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,243
+RES3F,R3F3B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",3to4 Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,244
+RES3F,R3F5N,USACE - Chicago,"Apartment Unit Grade, Structure",5Plus Stories,,0,0,0,0,15,16,25,28,29,31,40,43,43,45,46,47,47,49,50,51,52,53,54,55,56,57,58,59,60,204,,1,1,1,245
+RES3F,R3F5B,USACE - Chicago,"Apartment Unit Sub-Grade, Structure",5Plus Stories,,0,0,4,8,12,15,20,23,28,33,37,43,48,51,53,55,57,59,60,61,62,63,64,65,66,67,68,69,70,205,1,1,1,1,246
+RES4,R4LN,USACE - Galveston,"Average Hotel & Motel, structure",Low Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,,1,1,1,337
+RES4,R4LB,USACE - Galveston,"Average Hotel & Motel, structure",Low Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,1,1,1,1,338
+RES4,R4MN,USACE - Galveston,"Average Hotel & Motel, structure",Mid Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,,1,1,1,339
+RES4,R4MB,USACE - Galveston,"Average Hotel & Motel, structure",Mid Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,1,1,1,1,340
+RES4,R4HN,USACE - Galveston,"Average Hotel & Motel, structure",High Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,,1,1,1,341
+RES4,R4HB,USACE - Galveston,"Average Hotel & Motel, structure",High Rise,,0,0,0,0,0,3,5,6,7,9,12,14,18,21,26,31,36,41,46,50,54,58,62,66,70,74,78,82,86,209,1,1,1,1,342
+RES5,R5LN,USACE - Galveston,"Nursing Home, structure",Low Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,,1,1,1,343
+RES5,R5LB,USACE - Galveston,"Nursing Home, structure",Low Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,1,1,1,1,344
+RES5,R5MN,USACE - Galveston,"Nursing Home, structure",Mid Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,,1,1,1,345
+RES5,R5MB,USACE - Galveston,"Nursing Home, structure",Mid Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,1,1,1,1,346
+RES5,R5HN,USACE - Galveston,"Nursing Home, structure",High Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,,1,1,1,347
+RES5,R5HB,USACE - Galveston,"Nursing Home, structure",High Rise,RES6 default,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,214,1,1,1,1,348
+RES6,R6LN,USACE - Galveston,"Nursing Home, structure",Low Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,,1,1,1,349
+RES6,R6LB,USACE - Galveston,"Nursing Home, structure",Low Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,1,1,1,1,350
+RES6,R6MN,USACE - Galveston,"Nursing Home, structure",Mid Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,,1,1,1,351
+RES6,R6MB,USACE - Galveston,"Nursing Home, structure",Mid Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,1,1,1,1,352
+RES6,R6HN,USACE - Galveston,"Nursing Home, structure",High Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,,1,1,1,353
+RES6,R6HB,USACE - Galveston,"Nursing Home, structure",High Rise,,0,0,0,0,0,7,10,14,15,15,16,18,20,23,26,30,34,38,42,47,52,57,62,67,72,77,82,87,92,215,1,1,1,1,354
+COM1,C1LN,USACE - Galveston,"Average Retail, Structure",Low Rise,,0,0,0,0,1,9,14,16,18,20,23,26,30,34,38,42,47,51,55,58,61,64,67,69,71,74,76,78,80,217,,1,1,1,355
+COM1,C1LB,USACE - Galveston,"Average Retail, Structure",Low Rise,,0,0,0,0,1,9,14,16,18,20,23,26,30,34,38,42,47,51,55,58,61,64,67,69,71,74,76,78,80,217,1,1,1,1,356
+COM1,C1MN,USACE - Galveston,"Average Retail, Structure",Mid Rise,,0,0,0,0,1,9,14,16,18,20,23,26,30,34,38,42,47,51,55,58,61,64,67,69,71,74,76,78,80,217,,1,1,1,357
+COM1,C1MB,USACE - Galveston,"Average Retail, Structure",Mid Rise,,0,0,0,0,1,9,14,16,18,20,23,26,30,34,38,42,47,51,55,58,61,64,67,69,71,74,76,78,80,217,1,1,1,1,358
+COM1,C1HN,USACE - Galveston,"Average Retail, Structure",High Rise,,0,0,0,0,1,9,14,16,18,20,23,26,30,34,38,42,47,51,55,58,61,64,67,69,71,74,76,78,80,217,,1,1,1,359
+COM1,C1HB,USACE - Galveston,"Average Retail, Structure",High Rise,,0,0,0,0,1,9,14,16,18,20,23,26,30,34,38,42,47,51,55,58,61,64,67,69,71,74,76,78,80,217,1,1,1,1,360
+COM2,C2LN,USACE - Galveston,"Average wholesale, Structure",Low Rise,,0,0,0,0,0,5,8,11,13,16,19,22,25,29,32,37,41,45,49,52,55,58,61,63,66,68,70,71,73,341,,1,1,1,361
+COM2,C2LB,USACE - Galveston,"Average wholesale, Structure",Low Rise,,0,0,0,0,0,5,8,11,13,16,19,22,25,29,32,37,41,45,49,52,55,58,61,63,66,68,70,71,73,341,1,1,1,1,362
+COM2,C2MN,USACE - Galveston,"Average wholesale, Structure",Mid Rise,,0,0,0,0,0,5,8,11,13,16,19,22,25,29,32,37,41,45,49,52,55,58,61,63,66,68,70,71,73,341,,1,1,1,363
+COM2,C2MB,USACE - Galveston,"Average wholesale, Structure",Mid Rise,,0,0,0,0,0,5,8,11,13,16,19,22,25,29,32,37,41,45,49,52,55,58,61,63,66,68,70,71,73,341,1,1,1,1,364
+COM2,C2HN,USACE - Galveston,"Average wholesale, Structure",High Rise,,0,0,0,0,0,5,8,11,13,16,19,22,25,29,32,37,41,45,49,52,55,58,61,63,66,68,70,71,73,341,,1,1,1,365
+COM2,C2HB,USACE - Galveston,"Average wholesale, Structure",High Rise,,0,0,0,0,0,5,8,11,13,16,19,22,25,29,32,37,41,45,49,52,55,58,61,63,66,68,70,71,73,341,1,1,1,1,366
+COM3,C3LN,USACE - Galveston,"Average Personal & Repair Services, Structure",Low Rise,,0,0,0,0,0,9,12,13,16,19,22,25,28,32,35,39,43,47,50,54,57,61,64,68,71,75,78,82,85,375,,1,1,1,367
+COM3,C3LB,USACE - Galveston,"Average Personal & Repair Services, Structure",Low Rise,,0,0,0,0,0,9,12,13,16,19,22,25,28,32,35,39,43,47,50,54,57,61,64,68,71,75,78,82,85,375,1,1,1,1,368
+COM3,C3MN,USACE - Galveston,"Average Personal & Repair Services, Structure",Mid Rise,,0,0,0,0,0,9,12,13,16,19,22,25,28,32,35,39,43,47,50,54,57,61,64,68,71,75,78,82,85,375,,1,1,1,369
+COM3,C3MB,USACE - Galveston,"Average Personal & Repair Services, Structure",Mid Rise,,0,0,0,0,0,9,12,13,16,19,22,25,28,32,35,39,43,47,50,54,57,61,64,68,71,75,78,82,85,375,1,1,1,1,370
+COM3,C3HN,USACE - Galveston,"Average Personal & Repair Services, Structure",High Rise,,0,0,0,0,0,9,12,13,16,19,22,25,28,32,35,39,43,47,50,54,57,61,64,68,71,75,78,82,85,375,,1,1,1,371
+COM3,C3HB,USACE - Galveston,"Average Personal & Repair Services, Structure",High Rise,,0,0,0,0,0,9,12,13,16,19,22,25,28,32,35,39,43,47,50,54,57,61,64,68,71,75,78,82,85,375,1,1,1,1,372
+COM4,C4LN,USACE - Galveston,"Average Prof/Tech Services, Structure",Low Rise,,0,0,0,0,2,11,16,22,28,35,38,41,44,47,50,54,57,59,62,66,68,70,72,74,76,77,78,79,80,431,,1,1,1,373
+COM4,C4LB,USACE - Galveston,"Average Prof/Tech Services, Structure",Low Rise,,0,0,0,0,2,11,16,22,28,35,38,41,44,47,50,54,57,59,62,66,68,70,72,74,76,77,78,79,80,431,1,1,1,1,374
+COM4,C4MN,USACE - Galveston,"Average Prof/Tech Services, Structure",Mid Rise,,0,0,0,0,2,11,16,22,28,35,38,41,44,47,50,54,57,59,62,66,68,70,72,74,76,77,78,79,80,431,,1,1,1,375
+COM4,C4MB,USACE - Galveston,"Average Prof/Tech Services, Structure",Mid Rise,,0,0,0,0,2,11,16,22,28,35,38,41,44,47,50,54,57,59,62,66,68,70,72,74,76,77,78,79,80,431,1,1,1,1,376
+COM4,C4HN,USACE - Galveston,"Average Prof/Tech Services, Structure",High Rise,,0,0,0,0,2,11,16,22,28,35,38,41,44,47,50,54,57,59,62,66,68,70,72,74,76,77,78,79,80,431,,1,1,1,377
+COM4,C4HB,USACE - Galveston,"Average Prof/Tech Services, Structure",High Rise,,0,0,0,0,2,11,16,22,28,35,38,41,44,47,50,54,57,59,62,66,68,70,72,74,76,77,78,79,80,431,1,1,1,1,378
+COM5,C5LN,USACE - Galveston,"Bank, Structure",Low Rise,,0,0,0,0,0,11,11,12,13,15,17,19,22,24,28,31,34,37,40,44,48,51,55,59,63,67,71,75,79,467,,1,1,1,379
+COM5,C5LB,USACE - Galveston,"Bank, Structure",Low Rise,,0,0,0,0,0,11,11,12,13,15,17,19,22,24,28,31,34,37,40,44,48,51,55,59,63,67,71,75,79,467,1,1,1,1,380
+COM5,C5MN,USACE - Galveston,"Bank, Structure",Mid Rise,,0,0,0,0,0,11,11,12,13,15,17,19,22,24,28,31,34,37,40,44,48,51,55,59,63,67,71,75,79,467,,1,1,1,381
+COM5,C5MB,USACE - Galveston,"Bank, Structure",Mid Rise,,0,0,0,0,0,11,11,12,13,15,17,19,22,24,28,31,34,37,40,44,48,51,55,59,63,67,71,75,79,467,1,1,1,1,382
+COM5,C5HN,USACE - Galveston,"Bank, Structure",High Rise,,0,0,0,0,0,11,11,12,13,15,17,19,22,24,28,31,34,37,40,44,48,51,55,59,63,67,71,75,79,467,,1,1,1,383
+COM5,C5HB,USACE - Galveston,"Bank, Structure",High Rise,,0,0,0,0,0,11,11,12,13,15,17,19,22,24,28,31,34,37,40,44,48,51,55,59,63,67,71,75,79,467,1,1,1,1,384
+COM6,C6LN,USACE - Galveston,"Hospital, Structure",Low Rise,,0,0,0,0,0,0,0,20,25,30,35,40,43,47,50,53,55,57,60,60,60,60,60,60,60,60,60,60,60,474,,1,1,1,385
+COM6,C6LB,USACE - Galveston,"Hospital, Structure",Low Rise,,0,0,0,0,0,0,0,20,25,30,35,40,43,47,50,53,55,57,60,60,60,60,60,60,60,60,60,60,60,474,1,1,1,1,386
+COM6,C6MN,USACE - Galveston,"Hospital, Structure",Mid Rise,,0,0,0,0,0,0,0,20,25,30,35,40,43,47,50,53,55,57,60,60,60,60,60,60,60,60,60,60,60,474,,1,1,1,387
+COM6,C6MB,USACE - Galveston,"Hospital, Structure",Mid Rise,,0,0,0,0,0,0,0,20,25,30,35,40,43,47,50,53,55,57,60,60,60,60,60,60,60,60,60,60,60,474,1,1,1,1,388
+COM6,C6HN,USACE - Galveston,"Hospital, Structure",High Rise,,0,0,0,0,0,0,0,20,25,30,35,40,43,47,50,53,55,57,60,60,60,60,60,60,60,60,60,60,60,474,,1,1,1,389
+COM6,C6HB,USACE - Galveston,"Hospital, Structure",High Rise,,0,0,0,0,0,0,0,20,25,30,35,40,43,47,50,53,55,57,60,60,60,60,60,60,60,60,60,60,60,474,1,1,1,1,390
+COM7,C7LN,USACE - Galveston,"Average Medical Office, Structure",Low Rise,,0,0,0,0,2,11,12,13,14,16,17,18,20,22,24,27,30,34,37,41,44,48,51,54,56,59,61,64,66,475,,1,1,1,391
+COM7,C7LB,USACE - Galveston,"Average Medical Office, Structure",Low Rise,,0,0,0,0,2,11,12,13,14,16,17,18,20,22,24,27,30,34,37,41,44,48,51,54,56,59,61,64,66,475,1,1,1,1,392
+COM7,C7MN,USACE - Galveston,"Average Medical Office, Structure",Mid Rise,,0,0,0,0,2,11,12,13,14,16,17,18,20,22,24,27,30,34,37,41,44,48,51,54,56,59,61,64,66,475,,1,1,1,393
+COM7,C7MB,USACE - Galveston,"Average Medical Office, Structure",Mid Rise,,0,0,0,0,2,11,12,13,14,16,17,18,20,22,24,27,30,34,37,41,44,48,51,54,56,59,61,64,66,475,1,1,1,1,394
+COM7,C7HN,USACE - Galveston,"Average Medical Office, Structure",High Rise,,0,0,0,0,2,11,12,13,14,16,17,18,20,22,24,27,30,34,37,41,44,48,51,54,56,59,61,64,66,475,,1,1,1,395
+COM7,C7HB,USACE - Galveston,"Average Medical Office, Structure",High Rise,,0,0,0,0,2,11,12,13,14,16,17,18,20,22,24,27,30,34,37,41,44,48,51,54,56,59,61,64,66,475,1,1,1,1,396
+COM8,C8LN,USACE - Galveston,"Average Entertainment/Recreation, Structure",Low Rise,,0,0,0,0,1,9,11,12,14,16,18,20,22,26,29,33,37,41,45,50,53,57,60,63,66,69,73,76,78,493,,1,1,1,397
+COM8,C8LB,USACE - Galveston,"Average Entertainment/Recreation, Structure",Low Rise,,0,0,0,0,1,9,11,12,14,16,18,20,22,26,29,33,37,41,45,50,53,57,60,63,66,69,73,76,78,493,1,1,1,1,398
+COM8,C8MN,USACE - Galveston,"Average Entertainment/Recreation, Structure",Mid Rise,,0,0,0,0,1,9,11,12,14,16,18,20,22,26,29,33,37,41,45,50,53,57,60,63,66,69,73,76,78,493,,1,1,1,399
+COM8,C8MB,USACE - Galveston,"Average Entertainment/Recreation, Structure",Mid Rise,,0,0,0,0,1,9,11,12,14,16,18,20,22,26,29,33,37,41,45,50,53,57,60,63,66,69,73,76,78,493,1,1,1,1,400
+COM8,C8HN,USACE - Galveston,"Average Entertainment/Recreation, Structure",High Rise,,0,0,0,0,1,9,11,12,14,16,18,20,22,26,29,33,37,41,45,50,53,57,60,63,66,69,73,76,78,493,,1,1,1,401
+COM8,C8HB,USACE - Galveston,"Average Entertainment/Recreation, Structure",High Rise,,0,0,0,0,1,9,11,12,14,16,18,20,22,26,29,33,37,41,45,50,53,57,60,63,66,69,73,76,78,493,1,1,1,1,402
+COM9,C9LN,USACE - Galveston,"Average theatre, Structure",Low Rise,,0,0,0,0,0,2,4,5,5,5,6,8,10,12,15,20,24,29,35,42,49,56,62,68,74,80,86,92,98,532,,1,1,1,403
+COM9,C9LB,USACE - Galveston,"Average theatre, Structure",Low Rise,,0,0,0,0,0,2,4,5,5,5,6,8,10,12,15,20,24,29,35,42,49,56,62,68,74,80,86,92,98,532,1,1,1,1,404
+COM9,C9MN,USACE - Galveston,"Average theatre, Structure",Mid Rise,,0,0,0,0,0,2,4,5,5,5,6,8,10,12,15,20,24,29,35,42,49,56,62,68,74,80,86,92,98,532,,1,1,1,405
+COM9,C9MB,USACE - Galveston,"Average theatre, Structure",Mid Rise,,0,0,0,0,0,2,4,5,5,5,6,8,10,12,15,20,24,29,35,42,49,56,62,68,74,80,86,92,98,532,1,1,1,1,406
+COM9,C9HN,USACE - Galveston,"Average theatre, Structure",High Rise,,0,0,0,0,0,2,4,5,5,5,6,8,10,12,15,20,24,29,35,42,49,56,62,68,74,80,86,92,98,532,,1,1,1,407
+COM9,C9HB,USACE - Galveston,"Average theatre, Structure",High Rise,,0,0,0,0,0,2,4,5,5,5,6,8,10,12,15,20,24,29,35,42,49,56,62,68,74,80,86,92,98,532,1,1,1,1,408
+COM10,C10LN,USACE - Galveston,"Garage, structure",Low Rise,,0,0,0,0,0,3,5,6,7,8,10,13,17,21,25,30,35,41,47,52,58,65,71,76,81,86,91,96,100,543,,1,1,1,409
+COM10,C10LB,USACE - Galveston,"Garage, structure",Low Rise,,0,0,0,0,0,3,5,6,7,8,10,13,17,21,25,30,35,41,47,52,58,65,71,76,81,86,91,96,100,543,1,1,1,1,410
+COM10,C10MN,USACE - Galveston,"Garage, structure",Mid Rise,,0,0,0,0,0,3,5,6,7,8,10,13,17,21,25,30,35,41,47,52,58,65,71,76,81,86,91,96,100,543,,1,1,1,411
+COM10,C10MB,USACE - Galveston,"Garage, structure",Mid Rise,,0,0,0,0,0,3,5,6,7,8,10,13,17,21,25,30,35,41,47,52,58,65,71,76,81,86,91,96,100,543,1,1,1,1,412
+COM10,C10HN,USACE - Galveston,"Garage, structure",High Rise,,0,0,0,0,0,3,5,6,7,8,10,13,17,21,25,30,35,41,47,52,58,65,71,76,81,86,91,96,100,543,,1,1,1,413
+COM10,C10HB,USACE - Galveston,"Garage, structure",High Rise,,0,0,0,0,0,3,5,6,7,8,10,13,17,21,25,30,35,41,47,52,58,65,71,76,81,86,91,96,100,543,1,1,1,1,414
+IND1,I1LN,USACE - Galveston,"Average heavy industrial, Structure",Low Rise,,0,0,0,0,1,10,12,15,19,22,26,30,35,39,42,48,50,51,53,54,55,55,56,56,57,57,57,58,58,545,,1,1,1,415
+IND1,I1LB,USACE - Galveston,"Average heavy industrial, Structure",Low Rise,,0,0,0,0,1,10,12,15,19,22,26,30,35,39,42,48,50,51,53,54,55,55,56,56,57,57,57,58,58,545,1,1,1,1,416
+IND1,I1MN,USACE - Galveston,"Average heavy industrial, Structure",Mid Rise,,0,0,0,0,1,10,12,15,19,22,26,30,35,39,42,48,50,51,53,54,55,55,56,56,57,57,57,58,58,545,,1,1,1,417
+IND1,I1MB,USACE - Galveston,"Average heavy industrial, Structure",Mid Rise,,0,0,0,0,1,10,12,15,19,22,26,30,35,39,42,48,50,51,53,54,55,55,56,56,57,57,57,58,58,545,1,1,1,1,418
+IND1,I1HN,USACE - Galveston,"Average heavy industrial, Structure",High Rise,,0,0,0,0,1,10,12,15,19,22,26,30,35,39,42,48,50,51,53,54,55,55,56,56,57,57,57,58,58,545,,1,1,1,419
+IND1,I1HB,USACE - Galveston,"Average heavy industrial, Structure",High Rise,,0,0,0,0,1,10,12,15,19,22,26,30,35,39,42,48,50,51,53,54,55,55,56,56,57,57,57,58,58,545,1,1,1,1,420
+IND2,I2LN,USACE - Galveston,"Average light industrial, structure",Low Rise,,0,0,0,0,1,9,14,17,22,26,30,32,35,37,39,43,46,48,50,51,54,55,57,59,60,62,63,65,66,559,,1,1,1,421
+IND2,I2LB,USACE - Galveston,"Average light industrial, structure",Low Rise,,0,0,0,0,1,9,14,17,22,26,30,32,35,37,39,43,46,48,50,51,54,55,57,59,60,62,63,65,66,559,1,1,1,1,422
+IND2,I2MN,USACE - Galveston,"Average light industrial, structure",Mid Rise,,0,0,0,0,1,9,14,17,22,26,30,32,35,37,39,43,46,48,50,51,54,55,57,59,60,62,63,65,66,559,,1,1,1,423
+IND2,I2MB,USACE - Galveston,"Average light industrial, structure",Mid Rise,,0,0,0,0,1,9,14,17,22,26,30,32,35,37,39,43,46,48,50,51,54,55,57,59,60,62,63,65,66,559,1,1,1,1,424
+IND2,I2HN,USACE - Galveston,"Average light industrial, structure",High Rise,,0,0,0,0,1,9,14,17,22,26,30,32,35,37,39,43,46,48,50,51,54,55,57,59,60,62,63,65,66,559,,1,1,1,425
+IND2,I2HB,USACE - Galveston,"Average light industrial, structure",High Rise,,0,0,0,0,1,9,14,17,22,26,30,32,35,37,39,43,46,48,50,51,54,55,57,59,60,62,63,65,66,559,1,1,1,1,426
+IND3,I3LN,USACE - Galveston,"Average Food/Drug/Chem, Structure",Low Rise,,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,575,,1,1,1,427
+IND3,I3LB,USACE - Galveston,"Average Food/Drug/Chem, Structure",Low Rise,,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,575,1,1,1,1,428
+IND3,I3MN,USACE - Galveston,"Average Food/Drug/Chem, Structure",Mid Rise,,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,575,,1,1,1,429
+IND3,I3MB,USACE - Galveston,"Average Food/Drug/Chem, Structure",Mid Rise,,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,575,1,1,1,1,430
+IND3,I3HN,USACE - Galveston,"Average Food/Drug/Chem, Structure",High Rise,,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,575,,1,1,1,431
+IND3,I3HB,USACE - Galveston,"Average Food/Drug/Chem, Structure",High Rise,,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,575,1,1,1,1,432
+IND4,I4LN,USACE - Galveston,"Average Metals/Minerals processing, structure",Low Rise,,0,0,0,0,0,10,14,18,22,26,34,41,42,42,45,47,49,50,50,50,50,50,50,50,50,50,50,50,50,586,,1,1,1,433
+IND4,I4LB,USACE - Galveston,"Average Metals/Minerals processing, structure",Low Rise,,0,0,0,0,0,10,14,18,22,26,34,41,42,42,45,47,49,50,50,50,50,50,50,50,50,50,50,50,50,586,1,1,1,1,434
+IND4,I4MN,USACE - Galveston,"Average Metals/Minerals processing, structure",Mid Rise,,0,0,0,0,0,10,14,18,22,26,34,41,42,42,45,47,49,50,50,50,50,50,50,50,50,50,50,50,50,586,,1,1,1,435
+IND4,I4MB,USACE - Galveston,"Average Metals/Minerals processing, structure",Mid Rise,,0,0,0,0,0,10,14,18,22,26,34,41,42,42,45,47,49,50,50,50,50,50,50,50,50,50,50,50,50,586,1,1,1,1,436
+IND4,I4HN,USACE - Galveston,"Average Metals/Minerals processing, structure",High Rise,,0,0,0,0,0,10,14,18,22,26,34,41,42,42,45,47,49,50,50,50,50,50,50,50,50,50,50,50,50,586,,1,1,1,437
+IND4,I4HB,USACE - Galveston,"Average Metals/Minerals processing, structure",High Rise,,0,0,0,0,0,10,14,18,22,26,34,41,42,42,45,47,49,50,50,50,50,50,50,50,50,50,50,50,50,586,1,1,1,1,438
+IND5,I5LN,USACE - Galveston,"Average High Technology, structure",Low Rise,IND3 Default,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,591,,1,1,1,439
+IND5,I5LB,USACE - Galveston,"Average High Technology, structure",Low Rise,IND3 Default,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,591,1,1,1,1,440
+IND5,I5MN,USACE - Galveston,"Average High Technology, structure",Mid Rise,IND3 Default,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,591,,1,1,1,441
+IND5,I5MB,USACE - Galveston,"Average High Technology, structure",Mid Rise,IND3 Default,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,591,1,1,1,1,442
+IND5,I5HN,USACE - Galveston,"Average High Technology, structure",High Rise,IND3 Default,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,591,,1,1,1,443
+IND5,I5HB,USACE - Galveston,"Average High Technology, structure",High Rise,IND3 Default,0,0,0,0,0,13,14,19,22,25,28,30,33,34,36,39,40,42,42,43,43,44,44,44,44,44,45,45,45,591,1,1,1,1,444
+IND6,I6LN,USACE - Galveston,"Average Construction, structure",Low Rise,,0,0,0,0,0,22,31,37,43,47,50,54,57,61,63,64,65,67,68,69,70,71,72,73,74,75,76,76,77,592,,1,1,1,445
+IND6,I6LB,USACE - Galveston,"Average Construction, structure",Low Rise,,0,0,0,0,0,22,31,37,43,47,50,54,57,61,63,64,65,67,68,69,70,71,72,73,74,75,76,76,77,592,1,1,1,1,446
+IND6,I6MN,USACE - Galveston,"Average Construction, structure",Mid Rise,,0,0,0,0,0,22,31,37,43,47,50,54,57,61,63,64,65,67,68,69,70,71,72,73,74,75,76,76,77,592,,1,1,1,447
+IND6,I6MB,USACE - Galveston,"Average Construction, structure",Mid Rise,,0,0,0,0,0,22,31,37,43,47,50,54,57,61,63,64,65,67,68,69,70,71,72,73,74,75,76,76,77,592,1,1,1,1,448
+IND6,I6HN,USACE - Galveston,"Average Construction, structure",High Rise,,0,0,0,0,0,22,31,37,43,47,50,54,57,61,63,64,65,67,68,69,70,71,72,73,74,75,76,76,77,592,,1,1,1,449
+IND6,I6HB,USACE - Galveston,"Average Construction, structure",High Rise,,0,0,0,0,0,22,31,37,43,47,50,54,57,61,63,64,65,67,68,69,70,71,72,73,74,75,76,76,77,592,1,1,1,1,450
+AGR1,A1LN,USACE - Galveston,"Average Agriculture, structure",Low Rise,,0,0,0,0,0,6,11,15,19,25,30,35,41,46,51,57,63,70,75,79,82,84,87,89,90,92,93,95,96,616,,1,1,1,451
+AGR1,A1LB,USACE - Galveston,"Average Agriculture, structure",Low Rise,,0,0,0,0,0,6,11,15,19,25,30,35,41,46,51,57,63,70,75,79,82,84,87,89,90,92,93,95,96,616,1,1,1,1,452
+AGR1,A1MN,USACE - Galveston,"Average Agriculture, structure",Mid Rise,,0,0,0,0,0,6,11,15,19,25,30,35,41,46,51,57,63,70,75,79,82,84,87,89,90,92,93,95,96,616,,1,1,1,453
+AGR1,A1MB,USACE - Galveston,"Average Agriculture, structure",Mid Rise,,0,0,0,0,0,6,11,15,19,25,30,35,41,46,51,57,63,70,75,79,82,84,87,89,90,92,93,95,96,616,1,1,1,1,454
+AGR1,A1HN,USACE - Galveston,"Average Agriculture, structure",High Rise,,0,0,0,0,0,6,11,15,19,25,30,35,41,46,51,57,63,70,75,79,82,84,87,89,90,92,93,95,96,616,,1,1,1,455
+AGR1,A1HB,USACE - Galveston,"Average Agriculture, structure",High Rise,,0,0,0,0,0,6,11,15,19,25,30,35,41,46,51,57,63,70,75,79,82,84,87,89,90,92,93,95,96,616,1,1,1,1,456
+REL1,RE1LN,USACE - Galveston,"Church, structure",Low Rise,,0,0,0,0,0,10,11,11,12,12,13,14,14,15,17,19,24,30,38,45,52,58,64,69,74,78,82,85,88,624,,1,1,1,457
+REL1,RE1LB,USACE - Galveston,"Church, structure",Low Rise,,0,0,0,0,0,10,11,11,12,12,13,14,14,15,17,19,24,30,38,45,52,58,64,69,74,78,82,85,88,624,1,1,1,1,458
+REL1,RE1MN,USACE - Galveston,"Church, structure",Mid Rise,,0,0,0,0,0,10,11,11,12,12,13,14,14,15,17,19,24,30,38,45,52,58,64,69,74,78,82,85,88,624,,1,1,1,459
+REL1,RE1MB,USACE - Galveston,"Church, structure",Mid Rise,,0,0,0,0,0,10,11,11,12,12,13,14,14,15,17,19,24,30,38,45,52,58,64,69,74,78,82,85,88,624,1,1,1,1,460
+REL1,RE1HN,USACE - Galveston,"Church, structure",High Rise,,0,0,0,0,0,10,11,11,12,12,13,14,14,15,17,19,24,30,38,45,52,58,64,69,74,78,82,85,88,624,,1,1,1,461
+REL1,RE1HB,USACE - Galveston,"Church, structure",High Rise,,0,0,0,0,0,10,11,11,12,12,13,14,14,15,17,19,24,30,38,45,52,58,64,69,74,78,82,85,88,624,1,1,1,1,462
+GOV1,G1LN,USACE - Galveston,"Average government services, structure",Low Rise,,0,0,0,0,0,5,8,13,14,14,15,17,19,22,26,31,37,44,51,59,65,70,74,79,83,87,91,95,98,631,,1,1,1,463
+GOV1,G1LB,USACE - Galveston,"Average government services, structure",Low Rise,,0,0,0,0,0,5,8,13,14,14,15,17,19,22,26,31,37,44,51,59,65,70,74,79,83,87,91,95,98,631,1,1,1,1,464
+GOV1,G1MN,USACE - Galveston,"Average government services, structure",Mid Rise,,0,0,0,0,0,5,8,13,14,14,15,17,19,22,26,31,37,44,51,59,65,70,74,79,83,87,91,95,98,631,,1,1,1,465
+GOV1,G1MB,USACE - Galveston,"Average government services, structure",Mid Rise,,0,0,0,0,0,5,8,13,14,14,15,17,19,22,26,31,37,44,51,59,65,70,74,79,83,87,91,95,98,631,1,1,1,1,466
+GOV1,G1HN,USACE - Galveston,"Average government services, structure",High Rise,,0,0,0,0,0,5,8,13,14,14,15,17,19,22,26,31,37,44,51,59,65,70,74,79,83,87,91,95,98,631,,1,1,1,467
+GOV1,G1HB,USACE - Galveston,"Average government services, structure",High Rise,,0,0,0,0,0,5,8,13,14,14,15,17,19,22,26,31,37,44,51,59,65,70,74,79,83,87,91,95,98,631,1,1,1,1,468
+GOV2,G2LN,USACE - Galveston,"Average emergency response, Structure",Low Rise,,0,0,0,0,0,7,10,11,12,15,17,20,23,27,31,35,40,44,48,52,56,60,64,68,72,76,80,84,88,640,,1,1,1,469
+GOV2,G2LB,USACE - Galveston,"Average emergency response, Structure",Low Rise,,0,0,0,0,0,7,10,11,12,15,17,20,23,27,31,35,40,44,48,52,56,60,64,68,72,76,80,84,88,640,1,1,1,1,470
+GOV2,G2MN,USACE - Galveston,"Average emergency response, Structure",Mid Rise,,0,0,0,0,0,7,10,11,12,15,17,20,23,27,31,35,40,44,48,52,56,60,64,68,72,76,80,84,88,640,,1,1,1,471
+GOV2,G2MB,USACE - Galveston,"Average emergency response, Structure",Mid Rise,,0,0,0,0,0,7,10,11,12,15,17,20,23,27,31,35,40,44,48,52,56,60,64,68,72,76,80,84,88,640,1,1,1,1,472
+GOV2,G2HN,USACE - Galveston,"Average emergency response, Structure",High Rise,,0,0,0,0,0,7,10,11,12,15,17,20,23,27,31,35,40,44,48,52,56,60,64,68,72,76,80,84,88,640,,1,1,1,473
+GOV2,G2HB,USACE - Galveston,"Average emergency response, Structure",High Rise,,0,0,0,0,0,7,10,11,12,15,17,20,23,27,31,35,40,44,48,52,56,60,64,68,72,76,80,84,88,640,1,1,1,1,474
+EDU1,E1LN,USACE - Galveston,"Average school, structure",Low Rise,,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,643,,1,1,1,475
+EDU1,E1LB,USACE - Galveston,"Average school, structure",Low Rise,,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,643,1,1,1,1,476
+EDU1,E1MN,USACE - Galveston,"Average school, structure",Mid Rise,,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,643,,1,1,1,477
+EDU1,E1MB,USACE - Galveston,"Average school, structure",Mid Rise,,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,643,1,1,1,1,478
+EDU1,E1HN,USACE - Galveston,"Average school, structure",High Rise,,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,643,,1,1,1,479
+EDU1,E1HB,USACE - Galveston,"Average school, structure",High Rise,,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,643,1,1,1,1,480
+EDU2,E2LN,USACE - Galveston,"Average college/university, structure",Low Rise,EDU1 default,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,652,,1,1,1,481
+EDU2,E2LB,USACE - Galveston,"Average college/university, structure",Low Rise,EDU1 default,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,652,1,1,1,1,482
+EDU2,E2MN,USACE - Galveston,"Average college/university, structure",Mid Rise,EDU1 default,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,652,,1,1,1,483
+EDU2,E2MB,USACE - Galveston,"Average college/university, structure",Mid Rise,EDU1 default,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,652,1,1,1,1,484
+EDU2,E2HN,USACE - Galveston,"Average college/university, structure",High Rise,EDU1 default,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,652,,1,1,1,485
+EDU2,E2HB,USACE - Galveston,"Average college/university, structure",High Rise,EDU1 default,0,0,0,0,0,5,7,9,9,10,11,13,15,17,20,24,28,33,39,45,52,59,64,69,74,79,84,89,94,652,1,1,1,1,486

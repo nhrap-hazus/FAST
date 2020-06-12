@@ -1,0 +1,45 @@
+{
+  "activeThemeId": 0,
+  "themes": {
+    "light": {
+      "themeId": 0,
+      "style": {
+        "backgroundColor": "#fff",
+        "foregroundColor": "#000",
+        "hoverColor": "#f8f8f8",
+        "fontColor": "#303030",
+        "textEntryColor": "#fff",
+        "textBorderColor": "#808080",
+        "textHighlightColor": "#1a73ea",
+        "starColor": "red"
+      }
+    },
+    "dark": {
+      "themeId": 1,
+      "style": {
+        "backgroundColor": "#282a36",
+        "foregroundColor": "#fff",
+        "hoverColor": "#44475a",
+        "fontColor": "#fff",
+        "textEntryColor": "#fff",
+        "textBorderColor": "#fff",
+        "textHighlightColor": "#fff",
+        "starColor": "red"
+      }
+    }
+  },
+  "release": "dev",
+  "prod": {
+    "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/hazus/master/hazus/__init__.py",
+    "repoZipfileUrl": "https://github.com/nhrap-hazus/FAST/archive/master.zip",
+    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/FAST/src/__init__.py"
+  },
+  "dev": {
+    "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-dev/hazus/master/hazpy/__init__.py",
+    "repoZipfileUrl": "https://github.com/nhrap-dev/FAST/archive/master.zip",
+    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/master/src/__init__.py"
+  },
+  "proxies": {
+    "fema": "http://proxy.apps.dhs.gov:80"
+  }
+}

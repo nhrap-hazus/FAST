@@ -1,0 +1,197 @@
+SOccupId,Occupancy,NumStories,NumStoriesInt,Basement,SortOrder
+R11B ,RES1 ,1 Story,1,1,102
+R11N ,RES1 ,1 Story,1,0,101
+R12B ,RES1 ,2 Story,2,1,104
+R12N ,RES1 ,2 Story,2,0,103
+R13B ,RES1 ,3 Story,>2,1,106
+R13N ,RES1 ,3 Story,>2,0,105
+R1SB ,RES1 ,Split Level,99,1,108
+R1SN ,RES1 ,Split Level,99,0,107
+R21B ,RES2 ,1 Story,any,1,110
+R21N ,RES2 ,1 Story,any,0,109
+R3A1B,RES3A,1to2 Stories,<3,1,212
+R3A1N,RES3A,1to2 Stories,<3,0,211
+R3A3B,RES3A,3to4 Stories,3-4,1,214
+R3A3N,RES3A,3to4 Stories,3-4,0,213
+R3A5B,RES3A,5Plus Stories,>4,1,216
+R3A5N,RES3A,5Plus Stories,>4,0,215
+R3B1B,RES3B,1to2 Stories,<3,1,218
+R3B1N,RES3B,1to2 Stories,<3,0,217
+R3B3B,RES3B,3to4 Stories,3-4,1,220
+R3B3N,RES3B,3to4 Stories,3-4,0,219
+R3B5B,RES3B,5Plus Stories,>4,1,222
+R3B5N,RES3B,5Plus Stories,>4,0,221
+R3C1B,RES3C,1to2 Stories,<3,1,224
+R3C1N,RES3C,1to2 Stories,<3,0,223
+R3C3B,RES3C,3to4 Stories,3-4,1,226
+R3C3N,RES3C,3to4 Stories,3-4,0,225
+R3C5B,RES3C,5Plus Stories,>4,1,228
+R3C5N,RES3C,5Plus Stories,>4,0,227
+R3D1B,RES3D,1to2 Stories,<3,1,230
+R3D1N,RES3D,1to2 Stories,<3,0,229
+R3D3B,RES3D,3to4 Stories,3-4,1,232
+R3D3N,RES3D,3to4 Stories,3-4,0,231
+R3D5B,RES3D,5Plus Stories,>4,1,234
+R3D5N,RES3D,5Plus Stories,>4,0,233
+R3E1B,RES3E,1to2 Stories,<3,1,236
+R3E1N,RES3E,1to2 Stories,<3,0,235
+R3E3B,RES3E,3to4 Stories,3-4,1,238
+R3E3N,RES3E,3to4 Stories,3-4,0,237
+R3E5B,RES3E,5Plus Stories,>4,1,240
+R3E5N,RES3E,5Plus Stories,>4,0,239
+R3F1B,RES3F,1to2 Stories,<3,1,242
+R3F1N,RES3F,1to2 Stories,<3,0,241
+R3F3B,RES3F,3to4 Stories,3-4,1,244
+R3F3N,RES3F,3to4 Stories,3-4,0,243
+R3F5B,RES3F,5Plus Stories,>4,1,246
+R3F5N,RES3F,5Plus Stories,>4,0,245
+A1HB ,AGR1 ,High Rise,>7,1,456
+A1HN ,AGR1 ,High Rise,>7,0,455
+A1LB ,AGR1 ,Low Rise,<4,1,452
+A1LN ,AGR1 ,Low Rise,<4,0,451
+A1MB ,AGR1 ,Mid Rise,4-7,1,454
+A1MN ,AGR1 ,Mid Rise,4-7,0,453
+C10HB,COM10,High Rise,>7,1,414
+C10HN,COM10,High Rise,>7,0,413
+C10LB,COM10,Low Rise,<4,1,410
+C10LN,COM10,Low Rise,<4,0,409
+C10MB,COM10,Mid Rise,4-7,1,412
+C10MN,COM10,Mid Rise,4-7,0,411
+C1HB ,COM1 ,High Rise,>7,1,360
+C1HN ,COM1 ,High Rise,>7,0,359
+C1LB ,COM1 ,Low Rise,<4,1,356
+C1LN ,COM1 ,Low Rise,<4,0,355
+C1MB ,COM1 ,Mid Rise,4-7,1,358
+C1MN ,COM1 ,Mid Rise,4-7,0,357
+C2HB ,COM2 ,High Rise,>7,1,366
+C2HN ,COM2 ,High Rise,>7,0,365
+C2LB ,COM2 ,Low Rise,<4,1,362
+C2LN ,COM2 ,Low Rise,<4,0,361
+C2MB ,COM2 ,Mid Rise,4-7,1,364
+C2MN ,COM2 ,Mid Rise,4-7,0,363
+C3HB ,COM3 ,High Rise,>7,1,372
+C3HN ,COM3 ,High Rise,>7,0,371
+C3LB ,COM3 ,Low Rise,<4,1,368
+C3LN ,COM3 ,Low Rise,<4,0,367
+C3MB ,COM3 ,Mid Rise,4-7,1,370
+C3MN ,COM3 ,Mid Rise,4-7,0,369
+C4HB ,COM4 ,High Rise,>7,1,378
+C4HN ,COM4 ,High Rise,>7,0,377
+C4LB ,COM4 ,Low Rise,<4,1,374
+C4LN ,COM4 ,Low Rise,<4,0,373
+C4MB ,COM4 ,Mid Rise,4-7,1,376
+C4MN ,COM4 ,Mid Rise,4-7,0,375
+C5HB ,COM5 ,High Rise,>7,1,384
+C5HN ,COM5 ,High Rise,>7,0,383
+C5LB ,COM5 ,Low Rise,<4,1,380
+C5LN ,COM5 ,Low Rise,<4,0,379
+C5MB ,COM5 ,Mid Rise,4-7,1,382
+C5MN ,COM5 ,Mid Rise,4-7,0,381
+C6HB ,COM6 ,High Rise,>7,1,390
+C6HN ,COM6 ,High Rise,>7,0,389
+C6LB ,COM6 ,Low Rise,<4,1,386
+C6LN ,COM6 ,Low Rise,<4,0,385
+C6MB ,COM6 ,Mid Rise,4-7,1,388
+C6MN ,COM6 ,Mid Rise,4-7,0,387
+C7HB ,COM7 ,High Rise,>7,1,396
+C7HN ,COM7 ,High Rise,>7,0,395
+C7LB ,COM7 ,Low Rise,<4,1,392
+C7LN ,COM7 ,Low Rise,<4,0,391
+C7MB ,COM7 ,Mid Rise,4-7,1,394
+C7MN ,COM7 ,Mid Rise,4-7,0,393
+C8HB ,COM8 ,High Rise,>7,1,402
+C8HN ,COM8 ,High Rise,>7,0,401
+C8LB ,COM8 ,Low Rise,<4,1,398
+C8LN ,COM8 ,Low Rise,<4,0,397
+C8MB ,COM8 ,Mid Rise,4-7,1,400
+C8MN ,COM8 ,Mid Rise,4-7,0,399
+C9HB ,COM9 ,High Rise,>7,1,408
+C9HN ,COM9 ,High Rise,>7,0,407
+C9LB ,COM9 ,Low Rise,<4,1,404
+C9LN ,COM9 ,Low Rise,<4,0,403
+C9MB ,COM9 ,Mid Rise,4-7,1,406
+C9MN ,COM9 ,Mid Rise,4-7,0,405
+E1HB ,EDU1 ,High Rise,>7,1,480
+E1HN ,EDU1 ,High Rise,>7,0,479
+E1LB ,EDU1 ,Low Rise,<4,1,476
+E1LN ,EDU1 ,Low Rise,<4,0,475
+E1MB ,EDU1 ,Mid Rise,4-7,1,478
+E1MN ,EDU1 ,Mid Rise,4-7,0,477
+E2HB ,EDU2 ,High Rise,>7,1,486
+E2HN ,EDU2 ,High Rise,>7,0,485
+E2LB ,EDU2 ,Low Rise,<4,1,482
+E2LN ,EDU2 ,Low Rise,<4,0,481
+E2MB ,EDU2 ,Mid Rise,4-7,1,484
+E2MN ,EDU2 ,Mid Rise,4-7,0,483
+G1HB ,GOV1 ,High Rise,>7,1,468
+G1HN ,GOV1 ,High Rise,>7,0,467
+G1LB ,GOV1 ,Low Rise,<4,1,464
+G1LN ,GOV1 ,Low Rise,<4,0,463
+G1MB ,GOV1 ,Mid Rise,4-7,1,466
+G1MN ,GOV1 ,Mid Rise,4-7,0,465
+G2HB ,GOV2 ,High Rise,>7,1,474
+G2HN ,GOV2 ,High Rise,>7,0,473
+G2LB ,GOV2 ,Low Rise,<4,1,470
+G2LN ,GOV2 ,Low Rise,<4,0,469
+G2MB ,GOV2 ,Mid Rise,4-7,1,472
+G2MN ,GOV2 ,Mid Rise,4-7,0,471
+I1HB ,IND1 ,High Rise,>7,1,420
+I1HN ,IND1 ,High Rise,>7,0,419
+I1LB ,IND1 ,Low Rise,<4,1,416
+I1LN ,IND1 ,Low Rise,<4,0,415
+I1MB ,IND1 ,Mid Rise,4-7,1,418
+I1MN ,IND1 ,Mid Rise,4-7,0,417
+I2HB ,IND2 ,High Rise,>7,1,426
+I2HN ,IND2 ,High Rise,>7,0,425
+I2LB ,IND2 ,Low Rise,<4,1,422
+I2LN ,IND2 ,Low Rise,<4,0,421
+I2MB ,IND2 ,Mid Rise,4-7,1,424
+I2MN ,IND2 ,Mid Rise,4-7,0,423
+I3HB ,IND3 ,High Rise,>7,1,432
+I3HN ,IND3 ,High Rise,>7,0,431
+I3LB ,IND3 ,Low Rise,<4,1,428
+I3LN ,IND3 ,Low Rise,<4,0,427
+I3MB ,IND3 ,Mid Rise,4-7,1,430
+I3MN ,IND3 ,Mid Rise,4-7,0,429
+I4HB ,IND4 ,High Rise,>7,1,438
+I4HN ,IND4 ,High Rise,>7,0,437
+I4LB ,IND4 ,Low Rise,<4,1,434
+I4LN ,IND4 ,Low Rise,<4,0,433
+I4MB ,IND4 ,Mid Rise,4-7,1,436
+I4MN ,IND4 ,Mid Rise,4-7,0,435
+I5HB ,IND5 ,High Rise,>7,1,444
+I5HN ,IND5 ,High Rise,>7,0,443
+I5LB ,IND5 ,Low Rise,<4,1,440
+I5LN ,IND5 ,Low Rise,<4,0,439
+I5MB ,IND5 ,Mid Rise,4-7,1,442
+I5MN ,IND5 ,Mid Rise,4-7,0,441
+I6HB ,IND6 ,High Rise,>7,1,450
+I6HN ,IND6 ,High Rise,>7,0,449
+I6LB ,IND6 ,Low Rise,<4,1,446
+I6LN ,IND6 ,Low Rise,<4,0,445
+I6MB ,IND6 ,Mid Rise,4-7,1,448
+I6MN ,IND6 ,Mid Rise,4-7,0,447
+R4HB ,RES4 ,High Rise,>7,1,342
+R4HN ,RES4 ,High Rise,>7,0,341
+R4LB ,RES4 ,Low Rise,<4,1,338
+R4LN ,RES4 ,Low Rise,<4,0,337
+R4MB ,RES4 ,Mid Rise,4-7,1,340
+R4MN ,RES4 ,Mid Rise,4-7,0,339
+R5HB ,RES5 ,High Rise,>7,1,348
+R5HN ,RES5 ,High Rise,>7,0,347
+R5LB ,RES5 ,Low Rise,<4,1,344
+R5LN ,RES5 ,Low Rise,<4,0,343
+R5MB ,RES5 ,Mid Rise,4-7,1,346
+R5MN ,RES5 ,Mid Rise,4-7,0,345
+R6HB ,RES6 ,High Rise,>7,1,354
+R6HN ,RES6 ,High Rise,>7,0,353
+R6LB ,RES6 ,Low Rise,<4,1,350
+R6LN ,RES6 ,Low Rise,<4,0,349
+R6MB ,RES6 ,Mid Rise,4-7,1,352
+R6MN ,RES6 ,Mid Rise,4-7,0,351
+RE1HB,REL1 ,High Rise,>7,1,462
+RE1HN,REL1 ,High Rise,>7,0,461
+RE1LB,REL1 ,Low Rise,<4,1,458
+RE1LN,REL1 ,Low Rise,<4,0,457
+RE1MB,REL1 ,Mid Rise,4-7,1,460
+RE1MN,REL1 ,Mid Rise,4-7,0,459

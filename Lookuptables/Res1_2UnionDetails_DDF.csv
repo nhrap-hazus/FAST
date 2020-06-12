@@ -1,0 +1,11 @@
+SOccupId,Occupancy,NumStories,Basement,SortOrder
+R11B ,RES1 ,1 Story,1,102
+R11N ,RES1 ,1 Story,0,101
+R12B ,RES1 ,2 Story,1,104
+R12N ,RES1 ,2 Story,0,103
+R13B ,RES1 ,3 Story,1,106
+R13N ,RES1 ,3 Story,0,105
+R1SB ,RES1 ,Split Level,1,108
+R1SN ,RES1 ,Split Level,0,107
+R21B ,RES2 ,1 Story,1,110
+R21N ,RES2 ,1 Story,0,109
