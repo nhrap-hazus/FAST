@@ -1,0 +1,20 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: update manage.py
+      run: |
+        git config --global user.email "jraines521@gmail.com"
+        git config --global user.name "lorax521"
+        git clone https://github.com/nhrap-dev/manage.git
+        cp ./manage/manage.py ./src/manage.py
+        rm -rf manage
+        git add .
+        git commit -m "update manage.py"
+        git push & ls

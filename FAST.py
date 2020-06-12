@@ -5,7 +5,11 @@
 # call conda.bat activate hazus_env & start /min python .\src\FAST_run.py && exit
 from subprocess import call
 import os
+<<<<<<< HEAD
 call('conda.bat activate hazus_env & start /min python ./src/FAST_run.py', shell=True)
+=======
+call('CALL conda.bat activate hazus_env & start /min python ./src/FAST_run.py', shell=True)
+>>>>>>> 0fa523095caa118a9662c3efc82cf4a817bcb19c
 if os.path.exists("FAST.bat"):
     os.remove("FAST.bat")
 else:

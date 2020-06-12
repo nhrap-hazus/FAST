@@ -35,7 +35,11 @@
     "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/FAST/src/__init__.py"
   },
   "dev": {
+<<<<<<< HEAD
     "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-dev/hazus/master/hazpy/__init__.py",
+=======
+    "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-dev/hazus/master/hazus/__init__.py",
+>>>>>>> 0fa523095caa118a9662c3efc82cf4a817bcb19c
     "repoZipfileUrl": "https://github.com/nhrap-dev/FAST/archive/master.zip",
     "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/master/src/__init__.py"
   },

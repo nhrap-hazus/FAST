@@ -7,7 +7,11 @@ try:
 
     from subprocess import check_call
     try:
+<<<<<<< HEAD
         check_call('CALL conda activate hazus_env && python .\Python_env\gui_program.py', shell=True)
+=======
+        check_call('conda activate hazus_env && python .\Python_env\gui_program.py', shell=True)
+>>>>>>> 0fa523095caa118a9662c3efc82cf4a817bcb19c
     except:
         check_call('activate hazus_env && python .\Python_env\gui_program.py', shell=True)
 except: 
