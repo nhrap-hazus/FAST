@@ -7,3 +7,12 @@
 __pycache__/
 _Python_env
 GDAL/
+UDF/HI_Honolulu_UDF_TestErrors.csv
+rasters/HI_Honolulu_GAT.ovr
+rasters/HI_Honolulu_GAT.tfw
+rasters/HI_Honolulu_GAT.tif
+rasters/HI_Honolulu_GAT.tif.aux.xml
+rasters/HI_Honolulu_GAT.tif.ovr
+rasters/HI_Honolulu_GAT.xml
+UDF/HI_Honolulu_UDF_HI_Honolulu_GAT.csv
+UDF/HI_Honolulu_UDF_HI_Honolulu_GAT_sorted.csv
