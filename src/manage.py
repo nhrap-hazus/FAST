@@ -22,8 +22,8 @@ tool_version_url = config[release]['toolInitUrl']
 tool_zipfile_url = config[release]['repoZipfileUrl']
 tool_version_local = './src/__init__.py'
 conda_env = 'hazus_env'
-conda_channel = 'nhrap'
-python_package = 'hazus'
+conda_channel = 'nhrap-dev'
+python_package = 'hazpy'
 httpTimeout = 0.6  # in seconds
 
 
