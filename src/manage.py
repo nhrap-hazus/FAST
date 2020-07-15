@@ -22,7 +22,7 @@ tool_version_url = config[release]['toolInitUrl']
 tool_zipfile_url = config[release]['repoZipfileUrl']
 tool_version_local = './src/__init__.py'
 conda_env = 'hazus_env'
-conda_channel = 'nhrap-dev'
+conda_channel = 'nhrap'
 python_package = 'hazpydev'
 
 def createProxyEnv():

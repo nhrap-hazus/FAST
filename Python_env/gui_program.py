@@ -5,7 +5,7 @@ import os, csv
 #import pandas as pd
 from os import listdir
 from os.path import isfile, join
-from hazpydev.flood import UDF
+from hazpy.flood import UDF
 
 dir = os.getcwd()
 # print(dir)
