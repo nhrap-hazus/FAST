@@ -1,6 +1,6 @@
 try:
     from manage import internetConnected, checkForHazusUpdates, checkForToolUpdates
-        
+   
     if internetConnected():
         checkForHazusUpdates()
         checkForToolUpdates()
