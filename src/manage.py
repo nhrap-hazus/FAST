@@ -92,6 +92,9 @@ def installHazus():
         if not conda_channel in channels:
             call('conda config --add channels ' + conda_channel)
             print(conda_channel + ' channel added')
+        if not 'nsls2forge' in channels:
+            call('conda config --add channels nsls2forge')
+            print('nsls2forge channel added')
         ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 1)
         print("Installing " + python_package + " - hold your horses, this could take a few minutes... but it's totally worth it")
         try:
