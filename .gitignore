@@ -16,3 +16,4 @@ rasters/HI_Honolulu_GAT.tif.ovr
 rasters/HI_Honolulu_GAT.xml
 UDF/HI_Honolulu_UDF_HI_Honolulu_GAT.csv
 UDF/HI_Honolulu_UDF_HI_Honolulu_GAT_sorted.csv
+rasters/__init__.py
