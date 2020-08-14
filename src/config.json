@@ -28,9 +28,9 @@
       }
     }
   },
-  "release": "dev",
+  "release": "prod",
   "prod": {
-    "hazpyInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/hazus/master/hazus/__init__.py",
+    "hazpyInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/hazpy/master/hazpy/__init__.py",
     "repoZipfileUrl": "https://github.com/nhrap-hazus/FAST/archive/master.zip",
     "toolInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/FAST/master/src/__init__.py",
     "virtualEnvironment": "hazus_env",
