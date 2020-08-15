@@ -1,7 +1,6 @@
 try:
     from manage import internetConnected, checkForHazPyUpdates, checkForToolUpdates
     checkForHazPyUpdates()
-    print(3)
     checkForToolUpdates()
 
 except:
