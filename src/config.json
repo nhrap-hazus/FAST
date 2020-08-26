@@ -30,24 +30,14 @@
   },
   "release": "prod",
   "prod": {
-    "hazpyInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/hazpy/master/hazpy/__init__.py",
+    "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/hazus/master/hazus/__init__.py",
     "repoZipfileUrl": "https://github.com/nhrap-hazus/FAST/archive/master.zip",
-    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/FAST/master/src/__init__.py",
-    "virtualEnvironment": "hazus_env",
-    "condaChannel": "nhrap",
-    "pythonPackage": "hazpy",
-    "pythonVersion": "3.7",
-    "httpTimeout": 5
+    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-hazus/FAST/master/src/__init__.py"
   },
   "dev": {
-    "hazpyInitUrl": "https://raw.githubusercontent.com/nhrap-dev/hazpy/master/hazpy/__init__.py",
+    "hazusInitUrl": "https://raw.githubusercontent.com/nhrap-dev/hazus/master/hazus/__init__.py",
     "repoZipfileUrl": "https://github.com/nhrap-dev/FAST/archive/master.zip",
-    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/master/src/__init__.py",
-    "virtualEnvironment": "hazus_env",
-    "condaChannel": "nhrap-dev",
-    "pythonPackage": "hazpy",
-    "pythonVersion": "3.7",
-    "httpTimeout": 5
+    "toolInitUrl": "https://raw.githubusercontent.com/nhrap-dev/FAST/master/src/__init__.py"
   },
   "proxies": {
     "fema": "http://proxy.apps.dhs.gov:80"
