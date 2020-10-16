@@ -16,7 +16,7 @@ The Flood Assessment Structure Tool requires Anaconda to be installed on your co
 
 3. Complete the installation. During installation, make sure the following options are checked:
 
-   - [x] **Add Anaconda to my PATH environment variable**
+   - [x] Add Anaconda to my PATH environment variable
    - [x] Register Anaconda as my default Python
    - [x] Install Anaconda for local user, rather than all users
    
