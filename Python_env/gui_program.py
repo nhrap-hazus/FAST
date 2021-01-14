@@ -5,7 +5,7 @@ import os, csv
 #import pandas as pd
 from os import listdir
 from os.path import isfile, join
-from hazus.flood import UDF
+from hazpy.flood import UDF
 
 dir = os.getcwd()
 # print(dir)
@@ -194,6 +194,7 @@ def sortandsavecsv(inputCSVName, outputCSVName, sortFieldName, sortDesc=True):
     
 if __name__ == '__main__':
     root = Tk()
+    root.wm_iconbitmap('Images/Hazus.ico')
     root.csvFields = []# Input csv file fields
     root.fields = {key:''for key, value in fields.items()}
     root.valid = {}

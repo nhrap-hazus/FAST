@@ -1,7 +1,5 @@
 import os, csv
 
-#dir = os.getcwd()
-#dir = os.path.dirname(dir)
 dir = os.getcwd()
 print(dir)
 if (dir.find('Python_env')!= -1):

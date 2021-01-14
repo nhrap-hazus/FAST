@@ -111,6 +111,7 @@ def popupmsg(msg):
                   
 if __name__ == '__main__':
     root = Tk()
+    root.wm_iconbitmap('Images/Hazus.ico')
     root.csvFields = []# Input csv file fields
     root.fields = {key:''for key, value in fields.items()}
     root.valid = {}

@@ -7,27 +7,62 @@ import pkg_resources
 import json
 import socket
 
+
 try:
     with open('./src/config.json') as configFile:
         config = json.load(configFile)
+        tool_version_local = './src/__init__.py'
+        envYaml = './src/environment.yaml'
 except:
     with open('./config.json') as configFile:
         config = json.load(configFile)
+        tool_version_local = './__init__.py'
+        envYaml = './environment.yaml'
 
 # environmental variables
-release = config['release']
 proxy = config['proxies']['fema']
-hazus_version_url = config[release]['hazusInitUrl']
+release = config['release']
+hazpy_version_url = config[release]['hazpyInitUrl']
 tool_version_url = config[release]['toolInitUrl']
 tool_zipfile_url = config[release]['repoZipfileUrl']
-tool_version_local = './src/__init__.py'
-conda_env = 'hazus_env'
-conda_channel = 'nhrap'
-python_package = 'hazus'
-httpTimeout = 0.6  # in seconds
+conda_channel = config[release]['condaChannel']
+python_package = config[release]['pythonPackage']
+python_version = config[release]['pythonVersion']
+virtual_environment = config[release]['virtualEnvironment']
+http_timeout = config[release]['httpTimeout']  # in seconds
+
+def getCondaActivate():
+    # determine how to call conda and if it's in the system path
+    if call('activate', shell=True) == 0:
+        return 'activate'
+    if call('conda activate', shell=True) == 0:
+        return 'conda activate'
+    if call('call conda activate', shell=True) == 0:
+        return 'call conda activate'
+    return ''
+conda_activate = getCondaActivate()
+
+def getCondaActivateDeactivate():
+    # determine how to call conda and if it's in the system path
+    if call('activate', shell=True) == 0:
+        return 'activate', 'deactivate'
+    if call('conda activate', shell=True) == 0:
+        return 'conda activate', 'conda deactivate'
+    if call('call conda activate', shell=True) == 0:
+        return 'call conda activate', 'call conda deactivate'
+    return ''
+conda_activate, conda_deactivate = getCondaActivateDeactivate()
+
+# init message dialog box
+messageBox = ctypes.windll.user32.MessageBoxW
 
 
 def createProxyEnv():
+    """ Creates a copy of the os environmental variables with updated proxies
+
+    Returns:
+        newEnv: os.environ -- a copy of the os.environ that can be used in subprocess calls
+    """
     newEnv = os.environ.copy()
     newEnv["HTTP_PROXY"] = proxy
     newEnv["HTTPS_PROXY"] = proxy
@@ -35,118 +70,121 @@ def createProxyEnv():
 
 
 def setProxies():
+    """ Temporarily updates the local environmental variables with updated proxies
+    """
     call('set HTTP_PROXY=' + proxy, shell=True)
     call('set HTTPS_PROXY=' + proxy, shell=True)
     os.environ["HTTP_PROXY"] = proxy
     os.environ["HTTPS_PROXY"] = proxy
 
 
-def condaInstallHazus():
-    messageBox = ctypes.windll.user32.MessageBoxW
-    print('Checking for the conda environment ' + conda_env)
+def condaInstallHazPy():
+    """ Uses conda to install the latest version of hazpy
+    """
+
+    print(f'Checking for the conda environment {virtual_environment}')
     try:
         try:
-            check_call('CALL conda.bat activate ' + conda_env, shell=True)
+            check_call(f'{conda_activate} {virtual_environment}', shell=True)
         except:
-            print('Creating the conda ' + conda_env)
+            try:
+                print(f'Creating the conda {virtual_environment}')
+                handleProxy()
+                call(f'echo y | conda create -y -n {virtual_environment} python={python_version}', shell=True)
+            except:
+                call(f'{conda_deactivate} && conda env remove -n {virtual_environment}', shell=True)
+
+        print(f'Installing {python_package}')
+        handleProxy()
+        try:
+            check_call(f'{conda_activate} {virtual_environment} && echo y | conda env update -n {virtual_environment} --file {envYaml}', shell=True)
+        except:
+            call(f'echo y | conda create -y -n {virtual_environment} python={python_version}', shell=True)
+            check_call(f'{conda_activate} {virtual_environment} && echo y | conda env update -n {virtual_environment} --file {envYaml}', shell=True)
+
+        messageBox(0, u'The ' + python_package +
+                   u" python package was successfully installed! The update will take effect when the tool is reopened.", u"HazPy", 0x1000)
+    except:
+        messageBox(0, u'Unable to install ' + python_package +
+                   u'. If this error persists, contact hazus-support@riskmapcds.com for assistance.', u"HazPy", 0x1000)
+
+
+def createHazPyEnvironment():
+
+    returnValue = messageBox(None, u'The ' + python_package +
+                             u" python package is required to run this tool. Would you like to install it now?", u"HazPy", 0x1000 | 0x4)
+    try:
+        if returnValue == 6:
+            ctypes.windll.user32.ShowWindow(
+                ctypes.windll.kernel32.GetConsoleWindow(), 1)
+            print(f"Installing {python_package} - hold your horses, this could take a few minutes... but it's totally worth it")
+            print(f'Conda is installing {python_package}')
+            condaInstallHazPy()
+    except:
+        messageBox(0, u"An error occured. " + python_package +
+                   u" was not installed. Please check your network settings and try again.", u"HazPy", 0x1000)
+
+
+def checkForHazPyUpdates():
+    try:
+        installedVersion = pkg_resources.get_distribution(python_package).version
+        try:
             handleProxy()
-            call('echo y | conda create -y -n ' + conda_env, shell=True)
-
-        print('Installing ' + python_package)
-        handleProxy()
-        try:
-            check_call('CALL conda.bat activate ' + conda_env +
-                       ' && echo y | conda install ' + python_package, shell=True)
+            req = requests.get(hazpy_version_url, timeout=http_timeout)
         except:
-            call('echo y | conda create -y -n ' + conda_env, shell=True)
-            check_call('CALL conda.bat activate ' + conda_env +
-                       ' && echo y | conda install ' + python_package, shell=True)
-
-        messageBox(0, python_package +
-                   " was successfully installed!", "Hazus", 0x1000)
-    except:
-        messageBox(0, 'Unable to install ' + python_package +
-                   '. If this error persists, contact hazus-support@riskmapcds.com for assistance.', "Hazus", 0x1000)
-
-
-def installHazus():
-    messageBox = ctypes.windll.user32.MessageBoxW
-    returnValue = messageBox(None, 'The ' + python_package +
-                             " Python package is required to run this tool. Would you like to install it now?", "Hazus", 0x1000 | 0x4)
-    if returnValue == 6:
-        output = check_output('conda config --show channels')
-        channels = list(map(lambda x: x.strip(), str(
-            output).replace('\\r\\n', '').split('-')))[1:]
-        if not 'anaconda' in channels:
-            call('conda config --add channels anaconda')
-            print('anaconda channel added')
-        if not 'conda' in channels and not 'forge' in channels:
-            call('conda config --add channels conda-forge')
-            print('conda-forge channel added')
-        if not conda_channel in channels:
-            call('conda config --add channels ' + conda_channel)
-            print(conda_channel + ' channel added')
-        ctypes.windll.user32.ShowWindow(
-            ctypes.windll.kernel32.GetConsoleWindow(), 1)
-        print("Installing " + python_package +
-              " - hold your horses, this could take a few minutes... but it's totally worth it")
-        try:
-            print('Conda is installing ' + python_package)
-            condaInstallHazus()
-        except:
-            messageBox(0, "An error occured. " + python_package +
-                       " was not installed. Please check your network settings and try again.", "Hazus", 0x1000)
-
-
-def checkForHazusUpdates():
-    messageBox = ctypes.windll.user32.MessageBoxW
-    try:
-        installedVersion = pkg_resources.get_distribution(
-            python_package).version
-
-        handleProxy()
-        req = requests.get(hazus_version_url, timeout=httpTimeout)
-
-        newestVersion = parseVersionFromInit(req.text)
-        if newestVersion != installedVersion:
-            returnValue = messageBox(None, "A newer version of " + python_package +
-                                     " was found. Would you like to install it now?", "Hazus", 0x1000 | 0x4)
-            if returnValue == 6:
-                messageBox(
-                    0, 'Hazus updates are installing. We will let you know when its done!', "Hazus", 0x1000)
-                condaInstallHazus()
+            removeProxy()
+            req = requests.get(hazpy_version_url, timeout=http_timeout)
+        status = req.status_code
+        if status == 200:
+            newestVersion = parseVersionFromInit(req.text)
+            if newestVersion != installedVersion:
+                returnValue = messageBox(None, u"A new version of the " + python_package +
+                                        u" python package was found. Would you like to install it now?", u"HazPy", 0x1000 | 0x4)
+                if returnValue == 6:
+                    messageBox(
+                        0, u'Updates are installing. We will let you know when its done!', u"HazPy", 0x1000)
+                    condaInstallHazPy()
+            else:
+                print(python_package + ' is up to date')
         else:
-            print(python_package + ' is up to date')
+            print('Unable to connect to the url: ' + hazpy_version_url)
     except:
-        installHazus()
+        createHazPyEnvironment()
 
 
 def checkForToolUpdates():
-    messageBox = ctypes.windll.user32.MessageBoxW
+
     try:
         with open(tool_version_local) as init:
             text = init.readlines()
             textBlob = ''.join(text)
             installedVersion = parseVersionFromInit(textBlob)
+        try:
+            handleProxy()
+            req = requests.get(tool_version_url, timeout=http_timeout)
+        except:
+            removeProxy()
+            req = requests.get(tool_version_url, timeout=http_timeout)
+        status = req.status_code
 
-        handleProxy()
-        req = requests.get(tool_version_url, timeout=httpTimeout)
-
-        newestVersion = parseVersionFromInit(req.text)
-        if newestVersion != installedVersion:
-            returnValue = messageBox(
-                None, "A newer version of the tool was found. Would you like to install it now?", "Hazus", 0x1000 | 0x4)
-            if returnValue == 6:
-                print('updating tool')
-                updateTool()
+        if status == 200:
+            newestVersion = parseVersionFromInit(req.text)
+            if newestVersion != installedVersion:
+                returnValue = messageBox(
+                    None, u"A new version of the tool was found. Would you like to install it now?", u"HazPy", 0x1000 | 0x4)
+                if returnValue == 6:
+                    print('updating tool')
+                    updateTool()
+            else:
+                print('Tool is up to date')
         else:
-            print('Tool is up to date')
+            print('Unable to connect to url: ' + tool_version_url)
     except:
-        messageBox(0, 'Unable to check for tool updates. If this error persists, contact hazus-support@riskmapcds.com for assistance.', "Hazus", 0x1000)
+        messageBox(0, 'Unable to check for tool updates. If this error persists, contact hazus-support@riskmapcds.com for assistance.', "HazPy", 0x1000)
 
 
 def updateTool():
-    messageBox = ctypes.windll.user32.MessageBoxW
+
     try:
         from distutils.dir_util import copy_tree
         from shutil import rmtree
@@ -163,10 +201,10 @@ def updateTool():
         copy_tree(fromDirectory, toDirectory)
         rmtree(fromDirectory)
         messageBox(
-            0, 'Tools was successfully updated! I hope that was quick enough for you.', "Hazus", 0x1000)
+            0, u'The tool was successfully updated! I hope that was quick enough for you. The update will take effect when the tool is reopened.', u"HazPy", 0x1000)
     except:
         messageBox(
-            0, 'The tool update failed. If this error persists, contact hazus-support@riskmapcds.com for assistance.', "Hazus", 0x1000)
+            0, u'The tool update failed. If this error persists, contact hazus-support@riskmapcds.com for assistance.', u"HazPy", 0x1000)
 
 
 def parseVersionFromInit(textBlob):
@@ -189,7 +227,7 @@ def internetConnected():
 
 def handleProxy():
     try:
-        socket.setdefaulttimeout(httpTimeout)
+        socket.setdefaulttimeout(http_timeout)
         port = 80
         try:
             # try without the proxy
@@ -210,3 +248,7 @@ def handleProxy():
         # 0 indicates there is no internet connection
         # or the method was unable to connect using the hosts and ports
         return -1
+
+def removeProxy():
+    os.environ['HTTP_PROXY'] = ''
+    os.environ['HTTPS_PROXY'] = ''
