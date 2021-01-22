@@ -31,16 +31,6 @@ python_version = config[release]['pythonVersion']
 virtual_environment = config[release]['virtualEnvironment']
 http_timeout = config[release]['httpTimeout']  # in seconds
 
-def getCondaActivate():
-    # determine how to call conda and if it's in the system path
-    if call('activate', shell=True) == 0:
-        return 'activate'
-    if call('conda activate', shell=True) == 0:
-        return 'conda activate'
-    if call('call conda activate', shell=True) == 0:
-        return 'call conda activate'
-    return ''
-conda_activate = getCondaActivate()
 
 def getCondaActivateDeactivate():
     # determine how to call conda and if it's in the system path
@@ -50,12 +40,20 @@ def getCondaActivateDeactivate():
         return 'conda activate', 'conda deactivate'
     if call('call conda activate', shell=True) == 0:
         return 'call conda activate', 'call conda deactivate'
-    return ''
+    return None, None
 conda_activate, conda_deactivate = getCondaActivateDeactivate()
 
 # init message dialog box
 messageBox = ctypes.windll.user32.MessageBoxW
 
+def isCondaInPath():
+    """
+    """
+    path = os.environ['PATH']
+    condaPaths = [x for x in path.split(';') if 'conda' in x]
+    if len(condaPaths) > 0:
+        return True
+    return False
 
 def createProxyEnv():
     """ Creates a copy of the os environmental variables with updated proxies
@@ -252,3 +250,28 @@ def handleProxy():
 def removeProxy():
     os.environ['HTTP_PROXY'] = ''
     os.environ['HTTPS_PROXY'] = ''
+
+def startApp(app_path, update_path):
+    print('Opening the app and checking for updates')
+
+    if isCondaInPath():
+        if conda_activate != None:
+            try:
+                # check if the virtual environment has been created
+                release = config['release']
+                virtual_env = config[release]['virtualEnvironment']
+                res = call(f'{conda_activate} {virtual_env}', shell=True)
+                if res != 0:
+                    # create the virtual environment
+                    createHazPyEnvironment()
+                else:
+                    call(f'{conda_activate} {virtual_env} && start /min python {update_path}', shell=True)
+                    call(f'{conda_activate} {virtual_env} && start python {app_path}', shell=True)             
+            except Exception as e:
+                error = str(sys.exc_info()[0])
+                messageBox(0, u"Unexpected error: {er} | If this problem persists, contact hazus-support@riskmapcds.com.".format(er=error), u"HazPy", 0x1000)
+                raise(e)
+        else:
+            messageBox(0, u"Error: Anaconda was found in your system PATH variable, but was unable to activate. Please check to make sure your system PATH variable is pointing to the correct Anaconda root, bin, and scripts directories and try again.\nIf this problem persists, contact hazus-support@riskmapcds.com.", u"HazPy", 0x1000)
+    else:
+        messageBox(0, u"Error: Unable to find conda in the system PATH variable. Add conda to your PATH and try again.\n If this problem persists, contact hazus-support@riskmapcds.com.", u"HazPy", 0x1000)

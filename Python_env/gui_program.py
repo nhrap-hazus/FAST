@@ -1,3 +1,4 @@
+print('Starting FAST...')
 from tkinter import *
 from tkinter import filedialog
 import os, csv
@@ -6,6 +7,8 @@ import os, csv
 from os import listdir
 from os.path import isfile, join
 from hazpy.flood import UDF
+import ctypes
+
 
 dir = os.getcwd()
 # print(dir)
@@ -239,4 +242,6 @@ if __name__ == '__main__':
     
     
     root.after(100, checkform)# Recheck fields every 0.1 second
+     # minimize the console window
+    ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 6)
     root.mainloop()
