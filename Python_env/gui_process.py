@@ -111,30 +111,30 @@ def popupmsg(msg):
     B1.pack(side=BOTTOM, padx=5, pady=5)
     popup.mainloop()
             
-if __name__ == '__main__':
-    root = Tk()
-    root.wm_iconbitmap('Images/Hazus.ico')
-    root.csvFields = []# Input csv file fields
-    root.fields = {key:''for key, value in fields.items()}
-    root.valid = {}
-    #UKS - Modified Title
-    root.title("FAST - Pre-Processing....")
-    
-    ents = makeform(root, fields)
-    lab = Label(root, text="* indicates required field.")
-    lab.pack()
-    lab = Label(root, text="Red fields are required and must be mapped.")
-    lab.pack()
-    lab = Label(root, text="Yellow fields have not been mapped, but are not required.")
-    lab.pack()
-    lab = Label(root, text="Green fields have been mapped successfully.")
-    lab.pack()
-    b1 = Button(root, text='Execute', command=runHazus)# Run button to start processing
-    b1.pack(side=LEFT, padx=5, pady=5)
-    b2 = Button(root, text="Browse to Inventory Input (.csv)", command=browse_button)# Browse for input csv file
-    b2.pack(side=LEFT, padx=5, pady=5)
-    b3 = Button(root, text='Quit', command=root.destroy)
-    b3.pack(side=LEFT, padx=5, pady=5)
-    root.after(100, checkform)# Recheck fields every 0.1 second
-    ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 6)
-    root.mainloop()
+# if __name__ == '__main__':
+root = Tk()
+root.wm_iconbitmap('Images/Hazus.ico')
+root.csvFields = []# Input csv file fields
+root.fields = {key:''for key, value in fields.items()}
+root.valid = {}
+#UKS - Modified Title
+root.title("FAST - Pre-Processing....")
+
+ents = makeform(root, fields)
+lab = Label(root, text="* indicates required field.")
+lab.pack()
+lab = Label(root, text="Red fields are required and must be mapped.")
+lab.pack()
+lab = Label(root, text="Yellow fields have not been mapped, but are not required.")
+lab.pack()
+lab = Label(root, text="Green fields have been mapped successfully.")
+lab.pack()
+b1 = Button(root, text='Execute', command=runHazus)# Run button to start processing
+b1.pack(side=LEFT, padx=5, pady=5)
+b2 = Button(root, text="Browse to Inventory Input (.csv)", command=browse_button)# Browse for input csv file
+b2.pack(side=LEFT, padx=5, pady=5)
+b3 = Button(root, text='Quit', command=root.destroy)
+b3.pack(side=LEFT, padx=5, pady=5)
+root.after(100, checkform)# Recheck fields every 0.1 second
+ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 6)
+root.mainloop()
