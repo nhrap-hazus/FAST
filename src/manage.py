@@ -90,8 +90,7 @@ class Manage:
                 try:
                     print('Creating the conda virtual environment {ve}'.format(ve=self.virtual_environment))
                     self.handleProxy()
-                    # call('echo y | conda create -y -n {ve} python={pv}'.format(ve=self.virtual_environment, pv=self.python_version), shell=True)
-                    call('echo y | conda env -y create --file {ey}'.format(ey=self.env_yaml), shell=True)
+                    call('echo y | conda env create --file {ey}'.format(ey=self.env_yaml), shell=True)
                 except:
                     call('{cd} && conda env remove -n {ve}'.format(cd=self.conda_deactivate, ve=self.virtual_environment), shell=True)
 
@@ -99,9 +98,8 @@ class Manage:
             self.handleProxy()
             try:
                 check_call('{ca} {ve} && echo y | conda env update -n {ve} --file {ey}'.format(ca=self.conda_activate, ve=self.virtual_environment, ey=self.env_yaml), shell=True)
-                # call('echo y | conda create -y -n {ve} python={pv}'.format(ve=self.virtual_environment, pv=self.python_version), shell=True)
             except:
-                call('echo y | conda env -y create --file {ey}'.format(ey=self.env_yaml), shell=True)
+                call('echo y | conda env create --file {ey}'.format(ey=self.env_yaml), shell=True)
                 check_call('{ca} {ve} && echo y | conda env update -n {ve} --file {ey}'.format(ca=self.conda_activate, ve=self.virtual_environment, ey=self.env_yaml), shell=True)
 
             self.messageBox(0, u'The ' + self.python_package +
