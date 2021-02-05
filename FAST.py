@@ -1,12 +1,7 @@
-# REM cd python_env - not needed because we are changing the directory while activating the conda env
-# REM start /min .\python_env\gui_program.bat
-# REM start /min python .\python_env\FAST_run.py
-# REM A single & sign executes the first command and moves forwards regardless
-# call conda.bat activate hazus_env & start /min python .\src\FAST_run.py && exit
-from subprocess import call
-import os
-call('CALL conda.bat activate hazus_env & start /min python ./src/FAST_run.py', shell=True)
-if os.path.exists("FAST.bat"):
-    os.remove("FAST.bat")
-else:
-    exit(0)
+from src.manage import Manage
+
+if __name__=='__main__':
+    manage = Manage()
+    app_path = 'Python_env/gui_program.py'
+    update_path = 'src/update.py'
+    manage.startApp(app_path, update_path)
