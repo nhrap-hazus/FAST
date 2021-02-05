@@ -1,3 +1,4 @@
+print('Starting FAST...')
 from tkinter import *
 from tkinter import filedialog
 import os, csv
@@ -6,6 +7,8 @@ import os, csv
 from os import listdir
 from os.path import isfile, join
 from hazpy.flood import UDF
+import ctypes
+
 
 dir = os.getcwd()
 # print(dir)
@@ -192,50 +195,53 @@ def sortandsavecsv(inputCSVName, outputCSVName, sortFieldName, sortDesc=True):
 #    plt.legend(sums[0],labels=sums.index, bbox_to_anchor=(1,0), loc="lower right", bbox_transform=plt.gcf().transFigure)
 #    plt.show()
     
-if __name__ == '__main__':
-    root = Tk()
-    root.csvFields = []# Input csv file fields
-    root.fields = {key:''for key, value in fields.items()}
-    root.valid = {}
-    #UKS
-    root.title("FAST - Flood Assessment Structure Tool")
-    ents = makeform(root, fields)
+# if __name__ == '__main__':
+root = Tk()
+root.wm_iconbitmap('Images/Hazus.ico')
+root.csvFields = []# Input csv file fields
+root.fields = {key:''for key, value in fields.items()}
+root.valid = {}
+#UKS
+root.title("FAST - Flood Assessment Structure Tool")
+ents = makeform(root, fields)
 
-    # calculate x and y coordinates for the Tk root window
+# calculate x and y coordinates for the Tk root window
 
-    ws = root.winfo_screenwidth() # width of the screen
-    hs = root.winfo_screenheight() # height of the screen
-    w = ws * 0.25
-    h = hs * 0.87
-    x = (ws/2) - (w/2)
-    y = (hs/2) - (h/2) - 50
-    
-    # set the dimensions of the screen and where it is placed
-    #x = 0
-    #y = 0
-    #root.geometry('+%d+%d'%(x,y))  
-    root.geometry('%dx%d+%d+%d' % (w, h, x, y))
+ws = root.winfo_screenwidth() # width of the screen
+hs = root.winfo_screenheight() # height of the screen
+w = ws * 0.25
+h = hs * 0.87
+x = (ws/2) - (w/2)
+y = (hs/2) - (h/2) - 50
 
-    lab = Label(root, text="* indicates required field.", anchor = 'w').pack(fill='both')
-    lab = Label(root, text="**Press the ctrl key to process multiple depth grids.", anchor = 'w').pack(fill='both')
-    #lab.pack() 
-    lab = Label(root, text="Fields named similar to defaults are searched for.", anchor = 'w').pack(fill='both')
-    #lab.pack()    
-    lab = Label(root, text="Red fields are required and must be mapped.", anchor = 'w').pack(fill='both')
-    #lab.pack()
-    lab = Label(root, text="Green fields have been mapped successfully.", anchor = 'w').pack(fill='both')
-    #lab.pack()
-    lab = Label(root, text="Yellow fields have not been mapped, but are not required.", anchor = 'w').pack(fill='both')
-    #lab.pack()
-    b1 = Button(root, text='Execute', command=runHazus, fg = 'Grey')# Run button to start processing
-    b1.pack(side=LEFT, padx=5, pady=5)
-    b2 = Button(root, text="Browse to Inventory Input (.csv)", command=browse_button)# Browse for input csv file
-    b2.pack(side=LEFT, padx=5, pady=5)
-    b3 = Button(root, text='Quit', command=root.destroy)
-    b3.pack(side=LEFT, padx=5, pady=5)
-    #b4 = Button(root, text='Visualize', command=visualize, fg = 'Grey')
-    #b4.pack(side=LEFT, padx=5, pady=5)
-    
-    
-    root.after(100, checkform)# Recheck fields every 0.1 second
-    root.mainloop()
+# set the dimensions of the screen and where it is placed
+#x = 0
+#y = 0
+#root.geometry('+%d+%d'%(x,y))  
+# root.geometry('%dx%d+%d+%d' % (w, h, x, y))
+
+lab = Label(root, text="* indicates required field.", anchor = 'w').pack(fill='both')
+lab = Label(root, text="**Press the ctrl key to process multiple depth grids.", anchor = 'w').pack(fill='both')
+#lab.pack() 
+lab = Label(root, text="Fields named similar to defaults are searched for.", anchor = 'w').pack(fill='both')
+#lab.pack()    
+lab = Label(root, text="Red fields are required and must be mapped.", anchor = 'w').pack(fill='both')
+#lab.pack()
+lab = Label(root, text="Green fields have been mapped successfully.", anchor = 'w').pack(fill='both')
+#lab.pack()
+lab = Label(root, text="Yellow fields have not been mapped, but are not required.", anchor = 'w').pack(fill='both')
+#lab.pack()
+b1 = Button(root, text='Execute', command=runHazus, fg = 'Grey')# Run button to start processing
+b1.pack(side=LEFT, padx=5, pady=5)
+b2 = Button(root, text="Browse to Inventory Input (.csv)", command=browse_button)# Browse for input csv file
+b2.pack(side=LEFT, padx=5, pady=5)
+b3 = Button(root, text='Quit', command=root.destroy)
+b3.pack(side=LEFT, padx=5, pady=5)
+#b4 = Button(root, text='Visualize', command=visualize, fg = 'Grey')
+#b4.pack(side=LEFT, padx=5, pady=5)
+
+
+root.after(100, checkform)# Recheck fields every 0.1 second
+# minimize the console window
+ctypes.windll.user32.ShowWindow( ctypes.windll.kernel32.GetConsoleWindow(), 6)
+root.mainloop()
