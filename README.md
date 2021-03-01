@@ -62,3 +62,23 @@ To review the default assignment of damage functions to each building type prior
 **6. Click "Execute". Review the summary window after FAST finishes to confirm data were analyzed.**
 
 ![Run FAST](Images/Step6.jpg "Run FAST")
+
+## Troubleshooting
+
+If you are experiencing problems with FAST or Hazpy failing to update and you had downloaded and installed FAST before 2021 or FAST version 0.0.5 in the src/__init__.py then you may need to delete your hazus_env Conda environment. Here are two methods to do this:
+
+
+**Using Anaconda:**
+1. Open Anaconda.
+2. Select the 'hazus_env'.
+3. Click the 'Remove' button.
+4. A popup will appear asking you to confirm. Click the 'Remove' button.
+5. Download the latest FAST and it will create the hazus_env and install hazpy.
+![Anaconda Remove Environment](Images/AnacondaRemoveEnv.jpg "Anaconda Remove hazus_env")
+
+**Using Command Line:**
+1. Open a command line
+2. Enter the following without qoutes 'conda info --envs' to see your environments. 'hazus_env' should be listed.
+3. Enter the following without quotes 'conda env remove --name hazus_env' to remove the environment.
+4. Enter the following without qoutes 'conda info --envs' to see your environments again and hazus_env should not be listed.
+![Command Line Remove Environment](Images/CommandLineRemoveEnv.jpg "Command Line Remove hazus_env")
