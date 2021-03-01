@@ -81,4 +81,5 @@ If you are experiencing problems with FAST or Hazpy failing to update and you ha
 2. Enter the following without qoutes 'conda info --envs' to see your environments. 'hazus_env' should be listed.
 3. Enter the following without quotes 'conda env remove --name hazus_env' to remove the environment.
 4. Enter the following without qoutes 'conda info --envs' to see your environments again and hazus_env should not be listed.
+5. Download the latest FAST and it will create the hazus_env and install hazpy.
 ![Command Line Remove Environment](Images/CommandLineRemoveEnv.jpg "Command Line Remove hazus_env")
