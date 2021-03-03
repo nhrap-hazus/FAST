@@ -30,7 +30,7 @@ Please see the Help folder for building data guidance, FAST case study informati
 
 Issues can be reported through the repository on Github: https://github.com/nhrap-dev/FAST/issues
 
-For questions contact us at hazus-support@riskmapcds.com
+For questions contact the Hazus Team at fema-hazus-support@fema.dhs.gov.
 
 ## To Use
 
@@ -65,7 +65,9 @@ To review the default assignment of damage functions to each building type prior
 
 ## Troubleshooting
 
-If you are experiencing problems with FAST or Hazpy failing to update and you had downloaded and installed FAST before 2021 or FAST version 0.0.5 in the src/__init__.py then you may need to delete your hazus_env Conda environment. Here are two methods to do this:
+Please reach out to the Hazus Team any time for help troubleshooting tool issues at fema-hazus-support@fema.dhs.gov.
+
+Hazus open source tools use a centrally managed Python environment added to your machine upon installation. If you downloaded and installed FAST prior to 2021, you may need to delete your old Python environment - called "hazus_env". If you're having issues opening FAST or if the version number in your src/__init__.py file reads '0.0.5' or older, try one of the two options below to delete your old Python environment:
 
 
 **Using Anaconda:**
