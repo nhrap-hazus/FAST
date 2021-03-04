@@ -28,6 +28,8 @@ Please see the Help folder for building data guidance, FAST case study informati
 
 ## Contact
 
+Check out the [Troubleshooting](#troubleshooting) section below for help operating FAST.
+
 Issues can be reported through the repository on Github: https://github.com/nhrap-dev/FAST/issues
 
 For questions contact the Hazus Team at fema-hazus-support@fema.dhs.gov.
