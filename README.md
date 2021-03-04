@@ -83,7 +83,7 @@ Hazus open source tools use a centrally managed Python environment added to your
 
 **Using Command Line:**
 1. Delete FAST from your machine.
-2. Open a command line
+2. Open a command line prompt
 3. Enter the following without qoutes 'conda info --envs' to see your environments. 'hazus_env' should be listed.
 4. Enter the following without quotes 'conda env remove --name hazus_env' to remove the environment.
 5. Enter the following without qoutes 'conda info --envs' to see your environments again and hazus_env should not be listed.
