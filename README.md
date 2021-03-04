@@ -73,17 +73,19 @@ Hazus open source tools use a centrally managed Python environment added to your
 
 
 **Using Anaconda:**
-1. Open Anaconda.
-2. Select the 'hazus_env'.
-3. Click the 'Remove' button.
-4. A popup will appear asking you to confirm. Click the 'Remove' button.
-5. Download the latest FAST and it will create the hazus_env and install hazpy.
+1. Delete FAST from your machine.
+2. Open Anaconda.
+3. Select the 'hazus_env'.
+4. Click the 'Remove' button.
+5. A popup will appear asking you to confirm. Click the 'Remove' button.
+6. Download the latest FAST and it will create the hazus_env and install hazpy.
 ![Anaconda Remove Environment](Images/AnacondaRemoveEnv.jpg "Anaconda Remove hazus_env")
 
 **Using Command Line:**
-1. Open a command line
-2. Enter the following without qoutes 'conda info --envs' to see your environments. 'hazus_env' should be listed.
-3. Enter the following without quotes 'conda env remove --name hazus_env' to remove the environment.
-4. Enter the following without qoutes 'conda info --envs' to see your environments again and hazus_env should not be listed.
-5. Download the latest FAST and it will create the hazus_env and install hazpy.
+1. Delete FAST from your machine.
+2. Open a command line
+3. Enter the following without qoutes 'conda info --envs' to see your environments. 'hazus_env' should be listed.
+4. Enter the following without quotes 'conda env remove --name hazus_env' to remove the environment.
+5. Enter the following without qoutes 'conda info --envs' to see your environments again and hazus_env should not be listed.
+6. Download the latest FAST and it will create the hazus_env and install hazpy.
 ![Command Line Remove Environment](Images/CommandLineRemoveEnv.jpg "Command Line Remove hazus_env")
