@@ -67,7 +67,7 @@ To review the default assignment of damage functions to each building type prior
 
 Please reach out to the Hazus Team any time for help troubleshooting tool issues at fema-hazus-support@fema.dhs.gov.
 
-Hazus open source tools use a centrally managed Python environment added to your machine upon installation. If you downloaded and installed FAST prior to 2021, you may need to delete your old Python environment - called "hazus_env". If you're having issues opening FAST or if the version number in your src/__init__.py file reads '0.0.5' or older, try one of the two options below to delete your old Python environment:
+Hazus open source tools use a centrally managed Python environment added to your machine upon installation. If you downloaded and installed FAST prior to 2021, you may need to delete your old Python environment - called "hazus_env". If you're having issues opening FAST or if the version number in your "src/__init__.py" file reads '0.0.5' or older, try one of the two options below to delete your old Python environment:
 
 
 **Using Anaconda:**
