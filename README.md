@@ -49,7 +49,7 @@ Guidance for formatting building data can be found here: https://github.com/nhra
 
 **3. Double-click "FAST.py" If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.py" again.**
 
-To review the default assignment of damage functions to each building type prior to running FAST, double-click "FAST-Preprocessing.py" and supply your building data. To customize the damage functions used by FAST to calculate losses, review these guidelines: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTDamageFunctions.pdf
+To customize the damage functions used by FAST to calculate losses, review these guidelines: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTDamageFunctions.pdf
 
 ![Open FAST](Images/Step3.png "Open FAST")
 
