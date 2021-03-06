@@ -8,7 +8,7 @@ FAST is developed using the Hazus Python Package, HazPy. HazPy tools automatical
 
 ## Requirements
 
-The Flood Assessment Structure Tool requires Anaconda to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-ftp-snapshot.s3.amazonaws.com/Hazus/hazpy/build/html/index.html **Please note that FAST is not compatible with the Export Tool at this time. If you have the Export Tool installed on your machine, please remove it before downloading and installing FAST**
+The Flood Assessment Structure Tool requires Anaconda to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-nhrap.s3.amazonaws.com/Hazus/Python/build/html/index.html
 
 1. Go to https://www.anaconda.com/distribution/
 
@@ -28,11 +28,9 @@ Please see the Help folder for building data guidance, FAST case study informati
 
 ## Contact
 
-Check out the [Troubleshooting](#troubleshooting) section below for help operating FAST.
-
 Issues can be reported through the repository on Github: https://github.com/nhrap-dev/FAST/issues
 
-For questions contact the Hazus Team at fema-hazus-support@fema.dhs.gov.
+For questions contact us at hazus-support@riskmapcds.com
 
 ## To Use
 
@@ -49,7 +47,7 @@ Guidance for formatting building data can be found here: https://github.com/nhra
 
 **3. Double-click "FAST.py" If you don't have the Hazus Python Library installed, follow the prompt to install, then double-click "FAST.py" again.**
 
-To customize the damage functions used by FAST to calculate losses, review these guidelines: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTDamageFunctions.pdf
+To review the default assignment of damage functions to each building type prior to running FAST, double-click "FAST-Preprocessing.py" and supply your building data. To customize the damage functions used by FAST to calculate losses, review these guidelines: https://github.com/nhrap-hazus/FAST/blob/master/Help/FASTDamageFunctions.pdf
 
 ![Open FAST](Images/Step3.png "Open FAST")
 
@@ -64,28 +62,3 @@ To customize the damage functions used by FAST to calculate losses, review these
 **6. Click "Execute". Review the summary window after FAST finishes to confirm data were analyzed.**
 
 ![Run FAST](Images/Step6.jpg "Run FAST")
-
-## Troubleshooting
-
-Please reach out to the Hazus Team any time for help troubleshooting tool issues at fema-hazus-support@fema.dhs.gov.
-
-Hazus open source tools use a centrally managed Python environment added to your machine upon installation. If you downloaded and installed FAST prior to 2021, you may need to delete your old Python environment - called "hazus_env". If you're having issues opening FAST or if the version number in your "src/__init__.py" file reads '0.0.5' or older, try one of the two options below to delete your old Python environment:
-
-
-**Using Anaconda:**
-1. Delete FAST from your machine.
-2. Open Anaconda.
-3. Select the 'hazus_env'.
-4. Click the 'Remove' button.
-5. A popup will appear asking you to confirm. Click the 'Remove' button. This may take a few minutes.
-6. Download the latest FAST and it will create the hazus_env and install hazpy.
-![Anaconda Remove Environment](Images/AnacondaRemoveEnv.jpg "Anaconda Remove hazus_env")
-
-**Using Command Line:**
-1. Delete FAST from your machine.
-2. Open a command line prompt
-3. Enter the following without qoutes 'conda info --envs' to see your environments. 'hazus_env' should be listed.
-4. Enter the following without quotes 'conda env remove --name hazus_env' to remove the environment. This may take a few minutes.
-5. Enter the following without qoutes 'conda info --envs' to see your environments again and hazus_env should not be listed.
-6. Download the latest FAST and it will create the hazus_env and install hazpy.
-![Command Line Remove Environment](Images/CommandLineRemoveEnv.jpg "Command Line Remove hazus_env")
