@@ -38,7 +38,7 @@ For questions contact the Hazus Team at fema-hazus-support@fema.dhs.gov.
 
 Follow the steps below to run FAST. To ensure .py files run when double-clicked, right-click the .py file and go to Properties. Under the "General" tab next to "Opens With", make sure "python.exe" is selected. If not, click "Change" and select "python.exe" from your Python installation directory.
 
-**1. Download zip folder from GitHub, unzip. Rename unzipped folder from "FAST-master" to "FAST".**
+**1. Download zip folder from GitHub, unzip.**
 
 ![Download FAST](Images/Step1.png "Download FAST")
 
