@@ -12,6 +12,8 @@ dependencies:
   - attrs=20.3.0=pyhd3deb0d_0
   - bcrypt=3.2.0=py39hb82d6ee_1
   - blas=1.0=mkl
+  - boto3=1.17.26=pyhd8ed1ab_0
+  - botocore=1.20.26=pyhd8ed1ab_0
   - brotlipy=0.7.0=py39hb82d6ee_1001
   - bzip2=1.0.8=h8ffe710_4
   - ca-certificates=2020.12.5=h5b45459_0
@@ -48,6 +50,7 @@ dependencies:
   - idna=2.10=pyh9f0ad1d_0
   - intel-openmp=2020.3=h57928b3_311
   - jenkspy=0.1.4=py39h4cdbadb_1002
+  - jmespath=0.10.0=pyh9f0ad1d_0                                
   - joblib=1.0.0=pyhd8ed1ab_0
   - jpeg=9d=h8ffe710_0
   - kealib=1.4.14=ha3510f1_0
@@ -124,11 +127,13 @@ dependencies:
   - python-dateutil=2.8.1=py_0
   - python_abi=3.9=1_cp39
   - pytz=2021.1=pyhd8ed1ab_0
+  - pywin32=300=py39hb82d6ee_0
   - qt=5.12.9=hb2cf2c5_0
   - rasterio=1.1.8=py39hfec4536_0
   - reportlab=3.5.60=py39h12d40c5_0
   - requests=2.25.1=pyhd3deb0d_0
   - rtree=0.9.7=py39h09fdee3_1
+  - s3transfer=0.3.4=pyhd8ed1ab_0
   - scikit-learn=0.23.2=py39he931e04_2
   - scipy=1.5.3=py39hc0c34ad_0
   - seaborn=0.11.1=hd8ed1ab_1
