@@ -10,15 +10,15 @@ FAST is developed using the Hazus Python Package, HazPy. HazPy tools automatical
 
 The Flood Assessment Structure Tool requires Anaconda to be installed on your computer. Anaconda is a free software that automatically manages all Python packages required to run Hazus open source tools - including the Hazus Python package: https://fema-ftp-snapshot.s3.amazonaws.com/Hazus/hazpy/build/html/index.html **Please note that FAST is not compatible with the Export Tool at this time. If you have the Export Tool installed on your machine, please remove it before downloading and installing FAST**
 
-1. Go to https://www.anaconda.com/distribution/
+1. Go to https://github.com/conda-forge/miniforge/#download
 
-2. Download Anaconda for Python 3
+2. Download Minforge3 for your operating system
 
 3. Complete the installation. During installation, make sure the following options are checked:
 
-   - [x] Add Anaconda to my PATH environment variable
-   - [x] Register Anaconda as my default Python
-   - [x] Install Anaconda for local user, rather than all users
+   - [x] Add conda to my PATH environment variable
+   - [x] Register conda as my default Python
+   - [x] Install conda for local user, rather than all users
    
 FAST will automatically check for HazPy updates each time it is opened. If you experience errors during this process, please try uninstalling Anaconda and reinstalling the latest version.
  

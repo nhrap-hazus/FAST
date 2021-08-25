@@ -1,9 +1,8 @@
-name: hazus_env
+name: hazus_fast_env
 channels:
   - nhrap
   - nsls2forge
   - conda-forge
-  - anaconda
   - defaults
 dependencies:
   - affine=2.3.0=py_0

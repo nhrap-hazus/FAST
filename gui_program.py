@@ -176,7 +176,7 @@ def sortandsavecsv(inputCSVName, outputCSVName, sortFieldName, sortDesc=True):
 
     with open('test' + '_sorted.csv', 'w', newline='') as f_output:    
         csv_output = t1.DictWriter(f_output, fieldnames=csv_input.fieldnames)
-        csv_output.writeheader()
+        csv_output.writeheader() 
         csv_output.writerows(data)      
 
 #def visualize():

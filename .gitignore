@@ -106,3 +106,6 @@ venv.bak/
 #custom folders
 _Python_env
 GDAL
+
+# VSCode workspace
+*.code-workspace
