@@ -1,4 +1,4 @@
-from ..common.classes import Base
+from .modules.classes import Base
 from .agriculture import Agriculture
 from .direct_social_losses import DirectSocialLosses
 from .essential_facilities import EssentialFacilities

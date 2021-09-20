@@ -41,7 +41,6 @@ dependencies:
   - geotiff=1.6.0=h8884d1a_3
   - gettext=0.19.8.1=hb01d8f6_1002
   - glib=2.65.0=he4de6d7_0
-  - hazpy=0.0.1=py39_0
   - hdf4=4.2.13=h0e5069d_1004
   - hdf5=1.10.6=nompi_h5268f04_1114
   - html5lib=1.1=pyh9f0ad1d_0

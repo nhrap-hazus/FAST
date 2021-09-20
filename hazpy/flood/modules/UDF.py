@@ -312,6 +312,8 @@ class UDF():
                     print('Is it UTM? ', IsUTM)
                             
                     with open(UDFOrig, newline='') as csvfile:
+                        # reset counter
+                        counter = 0
                         writer = csv.DictWriter(file_out, delimiter=',', lineterminator='\n', fieldnames = field_names)
                         file = csv.DictReader(csvfile)
                         for row in file:
@@ -931,11 +933,11 @@ class UDF():
                                 setValue(Restor_Days_Max,restdays_max)
 
                             # When running multiple grids, sensitivity tests, etc, adding the gridname makes it easier to sort upon an appended dataset             
-                            setValue(GridName,gridroot)
+                            setValue(GridName, gridroot)
                             recCountNonZeroDepth += 1
                             if counter == 1:
                                 writer.writeheader()
-                                writer.writerow(row)                           
+                                writer.writerow(row)
                                 continue
                             writer.writerow(row)
                             """
@@ -954,6 +956,7 @@ class UDF():
                     logger.info('Sorting reults by Depth in structure...')
                     del data
                     csv_input = csv.DictReader(open(outputDir, 'r', newline=''))#csv.DictReader(f_input)
+                    # TODO: Find why this line does not work with multiple return periods - BC
                     data = sorted(csv.DictReader(open(outputDir, 'r', newline='')), key=lambda row:(abs(float(row['Depth_in_Struc']))< 0,float(row['Depth_in_Struc'])), reverse=True)
                     #f_input.close()       
                     
@@ -971,7 +974,7 @@ class UDF():
 
                     #CBH
                     #UKS - modified for complete file name on the final message box           
-                    log.append([counter,counter2,recCountNonZeroDepth,invalidSOID,os.path.basename(dgp),ResultsFile + '.csv'])            
+                    log.append([counter,counter2,recCountNonZeroDepth,invalidSOID,os.path.basename(dgp),ResultsFile + '.csv'])
 
                     #recCountNonZeroDepth counter logged, concatenated to the message and reset
                 message = ''   
@@ -986,6 +989,13 @@ class UDF():
                 #return(True, [counter,counter2,recCountNonZeroDepth,invalidSOID]) #UKS Commented
                 return(True, message)#CBH added
         except Exception as e:
+            print('\n')
+            print(e)
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(fname)
+            print(exc_type, exc_tb.tb_lineno)
+            print('\n')
             logger.info(e)
             print(e)
             return(False, counter)

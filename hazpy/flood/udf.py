@@ -19,8 +19,8 @@
 """
 
 import logging
-import os,csv,sys,time,math,datetime,math,subprocess,numpy as np, utm
-from osgeo import gdal, osr, gdal_array,gdalconst
+import os, csv, sys, time, math, datetime, math, subprocess, numpy as np, utm
+from osgeo import gdal, osr, gdal_array, gdalconst
 from osgeo.gdalconst import *
 
 class UDF():
@@ -28,18 +28,18 @@ class UDF():
         pass
     
     # This test allows the script to be used from the operating
-    # system command prompt (stand-alone), in a Python IDE,
+    # system command prompt (stand-alone), in a Python IDE, 
     # as a geoprocessing script tool, or as a module imported in
     # another script
     @staticmethod
-    def local(spreadsheet,fmap):
+    def local(spreadsheet, fmap):
         raster = fmap[-1]#[-1]
         fmap = fmap[:-1]
         cwd = os.getcwd()
         if (cwd.find('Python_env')!= -1):
             cwd = os.path.dirname(cwd)
         outDir = os.path.dirname(spreadsheet)
-        argv = (spreadsheet,os.path.join(cwd,r"lookuptables"),outDir,[os.path.join(cwd,'rasters',grid) for grid in raster],"False",fmap)        
+        argv = (spreadsheet, os.path.join(cwd, r"lookuptables"), outDir, [os.path.join(cwd, 'rasters', grid) for grid in raster], "False", fmap)        
         objUDF = UDF()
         return objUDF.flood_damage(*argv)
     
@@ -58,7 +58,7 @@ class UDF():
             cdir = os.path.dirname(cdir)
 
         logDirName = "Log"
-        logDir = os.path.join(cdir,logDirName)
+        logDir = os.path.join(cdir, logDirName)
 
         handler = logging.FileHandler(logDir + '\\' + 'app.log')
         handler.setLevel(logging.INFO)
@@ -84,15 +84,15 @@ class UDF():
                 #########################################################################################################
                 # UDF Input Attributes. The following are standard Hazus names/capitalizations.
                 #########################################################################################################
-                UserDefinedFltyId,OccupancyClass,Cost,Area,NumStories,FoundationType,FirstFloorHt,ContentCost,BldgDamageFnID,ContDamageFnId,InvDamageFnId,InvCost,SOI,latitude,longitude,flC = fmap#[map for map in fmap if map != '' else]#[value if value != '' and any(value in s for s in field_names) == True else field for field, value in fmap]
+                UserDefinedFltyId, OccupancyClass, Cost, Area, NumStories, FoundationType, FirstFloorHt, ContentCost, BldgDamageFnID, ContDamageFnId, InvDamageFnId, InvCost, SOI, latitude, longitude, flC = fmap#[map for map in fmap if map != '' else]#[value if value != '' and any(value in s for s in field_names) == True else field for field, value in fmap]
                 
-                # If your UDF Naming Convention differs from the Hazus namings,
+                # If your UDF Naming Convention differs from the Hazus namings, 
                 # you can specify your names here, and override the assignments above
                 # Example: (of course, uncomment this)
                 # UserDefinedFltyId = "UDF_ID"
 
                 # Note that this script has no use for the following Hazus-MH Flood UDF variables:
-                #    Name, Address, City, Statea, Zipcode, Contact, PhoneNumber, YearBuilt, BackupPower,
+                #    Name, Address, City, Statea, Zipcode, Contact, PhoneNumber, YearBuilt, BackupPower, 
                 #    ShelterCapacity, Latitude, Longitude, Comment, BldgType, DesignLevel, FloodProtection
 
                 #########################################################################################################
@@ -156,7 +156,7 @@ class UDF():
                 # The basic need DOGAMI had was to establish the building restoration times -
                 # and that is fundamental information for all other direct economic loss calculations
                 # DOGAMI did not calculate, for example, rental income loss.
-                # You can expand the functionality, if you wish,
+                # You can expand the functionality, if you wish, 
                 # following the methods outlined in the Hazus Flood Technical Manual (2011)
                 #xx = "flBldgEconParamWageCapitalIncome.csv"
                 #xx = "flBldgEconParamRental.csv"
@@ -165,7 +165,7 @@ class UDF():
                 # Process some of the user input.
                 UDFRoot     = os.path.basename(UDFOrig)
 
-                #Resultsfgdb = os.path.join(ResultsDir,y)
+                #Resultsfgdb = os.path.join(ResultsDir, y)
                 Resultsfgdb = ResultsDir
 
                 # Set up the look-up tables
@@ -180,8 +180,8 @@ class UDF():
                 IRP  = os.path.join(LUT_Dir, IR)
                 IFP  = os.path.join(LUT_Dir, IFull)
                 IEP  = os.path.join(LUT_Dir, IEconParams)
-                Debris = os.path.join(LUT_Dir,DebrisX)
-                Rest = os.path.join(LUT_Dir,RestFnc)
+                Debris = os.path.join(LUT_Dir, DebrisX)
+                Rest = os.path.join(LUT_Dir, RestFnc)
 
                 # Process the look-up tables into a list of Dictionary elements
                 # Note the standard (default) Lookup Tables were separately developed.
@@ -214,12 +214,12 @@ class UDF():
                 for x in iddf_lut_full:
                     iddf_lut_full_list.append(x['InvDmgFnId'])
 
-                Content_x_0p5 = ['RES1','RES2','RES3A','RES3B','RES3C','RES3D','RES3E','RES3F','RES4','RES5','RES6','COM10']
-                Content_x_1p0 = ['COM1','COM2','COM3','COM4','COM5','COM8','COM9','IND6','AGR1','REL1','GOV1','EDU1']
-                Content_x_1p5 = ['COM6','COM7','IND1','IND2','IND3','IND4','IND5','GOV2','EDU2']
+                Content_x_0p5 = ['RES1', 'RES2', 'RES3A', 'RES3B', 'RES3C', 'RES3D', 'RES3E', 'RES3F', 'RES4', 'RES5', 'RES6', 'COM10']
+                Content_x_1p0 = ['COM1', 'COM2', 'COM3', 'COM4', 'COM5', 'COM8', 'COM9', 'IND6', 'AGR1', 'REL1', 'GOV1', 'EDU1']
+                Content_x_1p5 = ['COM6', 'COM7', 'IND1', 'IND2', 'IND3', 'IND4', 'IND5', 'GOV2', 'EDU2']
 
                 # Default inventory DDF only defined for a subset. IF not in this set, set default Inventory Cost Basis = 0
-                Inventory_List = ['COM1','COM2','IND1','IND2','IND3','IND4','IND5','IND6','AGR1']
+                Inventory_List = ['COM1', 'COM2', 'IND1', 'IND2', 'IND3', 'IND4', 'IND5', 'IND6', 'AGR1']
 
                 # Check for the presence of optional fields (Coastal Flooding, user-supplied DDFs for Building, Content, Inventory)
                 #
@@ -251,7 +251,7 @@ class UDF():
                     uicost = 1
                     
                 #logger.info('Custom DDF assignment based on tables...')
-                requiredFields = [UserDefinedFltyId,OccupancyClass,Cost,Area,NumStories,FoundationType,FirstFloorHt,latitude,longitude]
+                requiredFields = [UserDefinedFltyId, OccupancyClass, Cost, Area, NumStories, FoundationType, FirstFloorHt, latitude, longitude]
 
                 # Process each depth grid specified by user
                 DGrids = DepthGrids#.split(';')   # Using the interactive window, it's not a list. Make it so.
@@ -269,7 +269,7 @@ class UDF():
                     
                     y = os.path.split(dgp)[1]
                     x = UDFRoot.split('.')[0] + "_" + y.split('.')[0]
-                    ResultsFile = os.path.join(Resultsfgdb,x)
+                    ResultsFile = os.path.join(Resultsfgdb, x)
                     gridroot = y    #  Put into an attribute in the Results file. Redundant, but handy when appending multiple results files together.
 
                     # Some research should go into INTERPOLATE versus NONE in the next function.
@@ -277,7 +277,7 @@ class UDF():
                     # So to better match to the Hazus-MH Flood results, we (for now) choose 'NONE'.            
                     # Process each UDF record, calculating its damage based on depth and building type.
                         
-                    new_fields = [Depth_Grid,Depth_in_Struc,flExp,SOID,BDDF_ID,BldgDmgPct,BldgLossUSD,ContentCostUSD,CDDF_ID,ContDmgPct,ContentLossUSD,InventoryCostUSD,IDDF_ID,InvDmgPct,InventoryLossUSD,DebrisID,Debris_Fin,Debris_Struc,Debris_Found,Debris_Tot,Restor_Days_Min,Restor_Days_Max,GridName]
+                    new_fields = [Depth_Grid, Depth_in_Struc, flExp, SOID, BDDF_ID, BldgDmgPct, BldgLossUSD, ContentCostUSD, CDDF_ID, ContDmgPct, ContentLossUSD, InventoryCostUSD, IDDF_ID, InvDmgPct, InventoryLossUSD, DebrisID, Debris_Fin, Debris_Struc, Debris_Found, Debris_Tot, Restor_Days_Min, Restor_Days_Max, GridName]
                     field_names = field_names + new_fields
                     # counter = 0
                     counter2 = 0
@@ -286,10 +286,10 @@ class UDF():
                     
                     invalidSOID = 0
                     
-                    #file_out = open(os.path.join(Resultsfgdb,x+".csv"), 'w')
+                    #file_out = open(os.path.join(Resultsfgdb, x+".csv"), 'w')
                     
                     #CBH - to display the output directory on the final message
-                    outputDir = os.path.join(Resultsfgdb,x+".csv")
+                    outputDir = os.path.join(Resultsfgdb, x+".csv")
                     file_out = open(outputDir, 'w')
                     raster = gdal.Open(dgp)
                     #fn = 'aster.img'
@@ -312,7 +312,9 @@ class UDF():
                     print('Is it UTM? ', IsUTM)
                             
                     with open(UDFOrig, newline='') as csvfile:
-                        writer = csv.DictWriter(file_out, delimiter=',', lineterminator='\n', fieldnames = field_names)
+                        # reset counter
+                        counter = 0
+                        writer = csv.DictWriter(file_out, delimiter=', ', lineterminator='\n', fieldnames = field_names)
                         file = csv.DictReader(csvfile)
                         for row in file:
                             counter += 1#CBH - counter for unmatched SoccIds
@@ -320,7 +322,7 @@ class UDF():
                             #Check if any required fields are NULL
                             #If NULL do not process the record and do not make an entry in the results file
                             if None in [row[rField] for rField in requiredFields] or '' in [row[rField] for rField in requiredFields]: 
-                                setValue(Depth_in_Struc,-99999)
+                                setValue(Depth_in_Struc, -99999)
                                 writer.writerow(row) #CBH 08/29/19                            
                                 continue #CBH - Change added 8/28/19
                             def getValue(name):# Get value of row from name.
@@ -340,7 +342,7 @@ class UDF():
                                     #PRUSVI
                                     #Fix for index out of range issue that was occuring due to larger depth grids
                                     val = data[roww][col] if abs(col) < abs(cols) and abs(roww) < abs(rows) and data[roww][col] != noData else 0 
-                                    #val = retrieve_pixel_value((Y,X))
+                                    #val = retrieve_pixel_value((Y, X))
                                     #logger = logging.getLogger(str(data[roww][col]) + ' ' + str(abs(col)) + ' ' +str(abs(cols)) +  ' ' + str(abs(roww)) + ' ' + str(abs(rows)))                       
                                     row[name] = val
                                     return(float(val))
@@ -356,7 +358,7 @@ class UDF():
                             # Depth Adjustments
                             ###################################################
                             # Adjust Depth-in-Structure, given the First Floor Height. This will produce the occasional negative value. That is OK
-                            # NOTE: Some users suggest that Coastal Flooding should be adjusted by an additional 1.0 foot, because in coastal flooding,
+                            # NOTE: Some users suggest that Coastal Flooding should be adjusted by an additional 1.0 foot, because in coastal flooding, 
                             # FFH should be considered to be at the freeboard.
                             # However, we confirmed with the Hazus coding team that the Hazus-MH Flood model does NO such adjustment
                             # So for now, we do not do ANY FFH adjustment
@@ -384,7 +386,7 @@ class UDF():
                                 CoastalZoneCode = flC #getValue(flC) # Only acquire if a Coastal Zone is defined for that UDF
                                 CoastalZoneCode = "" if CoastalZoneCode is None else CoastalZoneCode#.strip()
 
-                            # Build up the SpecifOccupId based on OccupancyClass,NumStories,FoundationType:
+                            # Build up the SpecifOccupId based on OccupancyClass, NumStories, FoundationType:
                             # Prefix, Middle Character, Suffix
                             #
                             # Prefix: Take advantage of the Slice feature in Python. Note the negative sign for right() equivalent
@@ -421,7 +423,7 @@ class UDF():
                             #    logger.info('foundation type = ' + str(foundationType) + ' and SOID = ' + SpecificOccupId)
                             #logger.info(SpecificOccupId)
                             
-                            setValue(SOID,SpecificOccupId)
+                            setValue(SOID, SpecificOccupId)
 
                             # Content and Inventory Cost. Determine each, even if structure not exposed to flooding
                             # Content Loss in US$: depends if user supplied a content cost field, and if it is > 0.
@@ -429,7 +431,7 @@ class UDF():
                             CMult =  0.5 if OC in Content_x_0p5 else 1.0 if OC in Content_x_1p0 else 1.5 if OC in Content_x_1p5 else 0
                             if uccost:
                                 xt = int(float(getValue(ContentCost)))
-                                xt = -1 if xt is None else xt     # Null value check. If ContentCost is NULL,use the default value
+                                xt = -1 if xt is None else xt     # Null value check. If ContentCost is NULL, use the default value
                             else:
                                 xt = -1
                             ccost = int(getValue(Cost)) * CMult if xt == -1 else xt
@@ -456,8 +458,8 @@ class UDF():
                             else:
                                 icost =0
 
-                            setValue(ContentCostUSD,ccost)
-                            setValue(InventoryCostUSD,icost)
+                            setValue(ContentCostUSD, ccost)
+                            setValue(InventoryCostUSD, icost)
 
                             #UKS - Negative Depth_in_Struc is OK but Negative depth from raster is not -Modified the logic to check against
                             #rastervalue
@@ -467,37 +469,37 @@ class UDF():
                             
                             #UKS - modified the usage to depth (which is Depth_in_Struc) to rastervalue
                             if rastervalue is None or rastervalue <= 0:    # Depending on Depth Grid format, the Extract_2_Point returns Null or -9999
-                                setValue(flExp,0)    # Structure is NOT exposed.
-                                #setValue(Depth_in_Struc,None)    # Default value, again emphasizing the point is not exposed. Make SummaryStats more straightforward
+                                setValue(flExp, 0)    # Structure is NOT exposed.
+                                #setValue(Depth_in_Struc, None)    # Default value, again emphasizing the point is not exposed. Make SummaryStats more straightforward
                                 
                                 #UKS - Recorded even though negative
                                 if rastervalue is None:
-                                    setValue(Depth_in_Struc,0)
+                                    setValue(Depth_in_Struc, 0)
                                 else:
-                                    setValue(Depth_in_Struc,depth)
+                                    setValue(Depth_in_Struc, depth)
                                 
-                                setValue(BDDF_ID,0)
-                                setValue(BldgDmgPct,0)
-                                setValue(BldgLossUSD,0)
-                                setValue(CDDF_ID,0)
-                                setValue(ContDmgPct,0)
-                                setValue(ContentLossUSD,0)
-                                setValue(IDDF_ID,0)
-                                setValue(InvDmgPct,0)
-                                setValue(InventoryLossUSD,0)
-                                setValue(DebrisID,'')
-                                setValue(Debris_Fin,None) # Partition the Debris into its three components - Table 11.1 Hazus-MH Flood Technical Manual
-                                setValue(Debris_Struc,None)
-                                setValue(Debris_Found,None)
-                                setValue(Debris_Tot,None)
-                                setValue(Restor_Days_Min,0)
-                                setValue(Restor_Days_Max,0)
+                                setValue(BDDF_ID, 0)
+                                setValue(BldgDmgPct, 0)
+                                setValue(BldgLossUSD, 0)
+                                setValue(CDDF_ID, 0)
+                                setValue(ContDmgPct, 0)
+                                setValue(ContentLossUSD, 0)
+                                setValue(IDDF_ID, 0)
+                                setValue(InvDmgPct, 0)
+                                setValue(InventoryLossUSD, 0)
+                                setValue(DebrisID, '')
+                                setValue(Debris_Fin, None) # Partition the Debris into its three components - Table 11.1 Hazus-MH Flood Technical Manual
+                                setValue(Debris_Struc, None)
+                                setValue(Debris_Found, None)
+                                setValue(Debris_Tot, None)
+                                setValue(Restor_Days_Min, 0)
+                                setValue(Restor_Days_Max, 0)
                                 
                                 #UKS
                                 recCountNonZeroDepth -= 1
                             else:
                                 # The UDF is exposed. Calculate Building, Content, Inventory Losses
-                                setValue(flExp,1)                                                    
+                                setValue(flExp, 1)                                                    
                                 setValue(Depth_in_Struc, depth)  # Record the depth in structure.
                                 # (To be considered: optional freeboard adjustment for Coastal Flooding)
                                 # Hazus 4.0 model does *no* adjustment. Some have suggested that one should add a freeboard margin; e.g., adjust FFH by -1 foot.
@@ -536,7 +538,7 @@ class UDF():
                                 # Due to Hazus-MH Flood definitions, this is Text type.
                                 BID = getValue(BldgDamageFnID) if ubddf else None
                                 
-                                #print(',OC=' + OC + ',QC_Warning=' + str(QC_Warning)+ ',BID=' + str(int(BID)))
+                                #print(', OC=' + OC + ', QC_Warning=' + str(QC_Warning)+ ', BID=' + str(int(BID)))
                                 #print(bddf_lut_full_list)
                                 # If BID is specified by the user, and defined, then assume they know what is best, and use the full lookup table.
                                 # Tests are ok if you go left-to-right. Go from most-basic-test-to-more-advanced in the same line.  Can't flip the order here!
@@ -554,7 +556,7 @@ class UDF():
                                             # This is not harmful; DOGAMI script has chosen to just process it (Hazus silently reverts back to the default!)
                                             # Simple notification
                                             OccClsCheck = ddf1['Occupancy']
-                                            #print('Occupancy =' + OccClsCheck + ',OC=' + OC + ',QC_Warning=' + str(QC_Warning))
+                                            #print('Occupancy =' + OccClsCheck + ', OC=' + OC + ', QC_Warning=' + str(QC_Warning))
                                             if OccClsCheck != OC and QC_Warning:
                                                 print("FYI: User-supplied Building DDFID " + BID + " Occupancy Class is inconsistent with UDF Occupancy Class " + OC + " versus "+OccClsCheck+ "  " + userDefinedFltyId)
                                             break
@@ -612,8 +614,8 @@ class UDF():
                                         # This should not occur
                                         print( "something wrong, no match for Specific Occupancy ID :" + SpecificOccupId + "   UDF: " + UserDefinedFltyId)
                                         invalidSOID += 1
-                                        setValue(SOID,SpecificOccupId)#CBH
-                                        setValue(BDDF_ID,'Unmatched')#CBH
+                                        setValue(SOID, SpecificOccupId)#CBH
+                                        setValue(BDDF_ID, 'Unmatched')#CBH
                                         writer.writerow(row)#CBH
                                         logger.info('Unmatched SOID: ' + SpecificOccupId + ' with userDefinedFltyId: ' + str(userDefinedFltyId))#CBH
                                         continue
@@ -641,11 +643,11 @@ class UDF():
                                     damage = 0
 
                                 # Calculate building loss, set other attributes                                    
-                                setValue(BDDF_ID,ddf_id)
-                                setValue(SOID,SpecificOccupId)
-                                setValue(BldgDmgPct,damage*100)  # Hazus convention: percentage
+                                setValue(BDDF_ID, ddf_id)
+                                setValue(SOID, SpecificOccupId)
+                                setValue(BldgDmgPct, damage*100)  # Hazus convention: percentage
                                 bldg_loss = damage * int(getValue(Cost))
-                                setValue(BldgLossUSD,bldg_loss)
+                                setValue(BldgLossUSD, bldg_loss)
 
                                 ###########################################################
                                 # CONTENT LOSS CALCULATION
@@ -744,10 +746,10 @@ class UDF():
                                     CDDF_ID = LR = bldg_loss = -9999
                                     damage = 0
                             
-                                setValue(CDDF_ID,ddf_id)
-                                setValue(ContDmgPct,damage*100)   # Hazus convention: percenage
+                                setValue(CDDF_ID, ddf_id)
+                                setValue(ContDmgPct, damage*100)   # Hazus convention: percenage
                                 content_loss = damage*ccost
-                                setValue(ContentLossUSD,content_loss)
+                                setValue(ContentLossUSD, content_loss)
 
                                 ###########################################################
                                 # INVENTORY LOSS CALCULATION
@@ -838,8 +840,8 @@ class UDF():
                                         damage = 0
                                         ddf_id = 0
                                                         
-                                setValue(IDDF_ID,ddf_id)                
-                                setValue(InvDmgPct,damage*100)  # Hazus convention - percentage
+                                setValue(IDDF_ID, ddf_id)                
+                                setValue(InvDmgPct, damage*100)  # Hazus convention - percentage
 
                                 # Inventory Loss in US$: depends if user supplied an inventory cost field, and if it is > 0.
                                 # If not supplied, or 0, then use the default value based on OccupancyClass and Square Footage
@@ -851,7 +853,7 @@ class UDF():
                                 # USIC = User-supplied Inventory Cost is supplied and non-zero and non-null
 
                                 inventory_loss = damage * icost
-                                setValue(InventoryLossUSD,inventory_loss)
+                                setValue(InventoryLossUSD, inventory_loss)
 
                                 ###########################################################
                                 # DEBRIS CALCULATIONS
@@ -900,11 +902,11 @@ class UDF():
                                 else:
                                     dfin = dstruc = dfound = dtot = debriskey = None
 
-                                setValue(DebrisID,debriskey)
-                                setValue(Debris_Fin,dfin)
-                                setValue(Debris_Struc,dstruc)
-                                setValue(Debris_Found,dfound)
-                                setValue(Debris_Tot,dtot)
+                                setValue(DebrisID, debriskey)
+                                setValue(Debris_Fin, dfin)
+                                setValue(Debris_Struc, dstruc)
+                                setValue(Debris_Found, dfound)
+                                setValue(Debris_Tot, dtot)
 
                                 ###########################################################
                                 # Restoration Time Calculation - the basis for all Direct Economic Loss numbers
@@ -927,11 +929,11 @@ class UDF():
                                     restdays_max =  int(ddf1['Max_Restor_Days']) # This is the maximum days out (flRsFnGBS has a min and a max)
                                 else:
                                     restdays_min = restdays_max = 0   # Or should it be None type?
-                                setValue(Restor_Days_Min,restdays_min)
-                                setValue(Restor_Days_Max,restdays_max)
+                                setValue(Restor_Days_Min, restdays_min)
+                                setValue(Restor_Days_Max, restdays_max)
 
                             # When running multiple grids, sensitivity tests, etc, adding the gridname makes it easier to sort upon an appended dataset             
-                            setValue(GridName,gridroot)
+                            setValue(GridName, gridroot)
                             recCountNonZeroDepth += 1
                             if counter == 1:
                                 writer.writeheader()
@@ -954,7 +956,7 @@ class UDF():
                     logger.info('Sorting reults by Depth in structure...')
                     del data
                     csv_input = csv.DictReader(open(outputDir, 'r', newline=''))#csv.DictReader(f_input)
-                    data = sorted(csv.DictReader(open(outputDir, 'r', newline='')), key=lambda row:(abs(float(row['Depth_in_Struc']))< 0,float(row['Depth_in_Struc'])), reverse=True)
+                    data = sorted(csv.DictReader(open(outputDir, 'r', newline='')), key=lambda row:(abs(float(row['Depth_in_Struc']))< 0, float(row['Depth_in_Struc'])), reverse=True)
                     #f_input.close()       
                     
                     #os.unlink(ResultsFile + '.csv')
@@ -971,7 +973,7 @@ class UDF():
 
                     #CBH
                     #UKS - modified for complete file name on the final message box           
-                    log.append([counter,counter2,recCountNonZeroDepth,invalidSOID,os.path.basename(dgp),ResultsFile + '.csv'])            
+                    log.append([counter, counter2, recCountNonZeroDepth, invalidSOID, os.path.basename(dgp), ResultsFile + '.csv'])            
 
                     #recCountNonZeroDepth counter logged, concatenated to the message and reset
                 message = ''   
@@ -979,13 +981,22 @@ class UDF():
                     message += 'For depth-grid: ' + str(grid[4]) + '\n' + str(grid[0])+' records processed of ' + str(grid[0]) + ' records total.\n' + \
                     'Total records with flooding: ' + str(grid[2]) + '\n' + \
                     'Total number of records with unmatched Specific Occupancy IDs found: ' + \
-                    str(grid[3]) +'\n File saved to: ' + os.path.realpath(os.path.join(os.path.dirname(outputDir),str(grid[5]))) + '\n\n' #UKS - modified for complete file name #CBH - change added 8/28/19
+                    str(grid[3]) +'\n File saved to: ' + os.path.realpath(os.path.join(os.path.dirname(outputDir), str(grid[5]))) + '\n\n' #UKS - modified for complete file name #CBH - change added 8/28/19
                             
                     recCountNonZeroDepth = 0    
 
-                #return(True, [counter,counter2,recCountNonZeroDepth,invalidSOID]) #UKS Commented
+                #return(True, [counter, counter2, recCountNonZeroDepth, invalidSOID]) #UKS Commented
                 return(True, message)#CBH added
         except Exception as e:
+            print('something went wrong...')
+            print('\n')
+            print(e)
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(fname)
+            print(exc_type, exc_tb.tb_lineno)
+            print('\n')
+
             logger.info(e)
             print(e)
             return(False, counter)
