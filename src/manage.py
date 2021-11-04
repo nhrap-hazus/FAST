@@ -1,3 +1,4 @@
+from pathlib import Path
 from subprocess import call, run
 
 import ctypes
@@ -10,6 +11,10 @@ import sys
 
 class Manage:
     def __init__(self):
+
+        # Set script path
+        parent_path = os.path.dirname(os.path.dirname(__file__))
+        os.chdir(parent_path)
 
         try:
             with open('./src/config.json') as configFile:
