@@ -195,18 +195,19 @@ class Manage:
             r = requests.get(self.tool_zipfile_url)
 
             z = ZipFile(BytesIO(r.content))
-            z.extractall()
+            self.safeUnzip(z, extract_path='.')
             fromDirectory = z.namelist()[0]
             toDirectory = './'
             copy_tree(fromDirectory, toDirectory)
             rmtree(fromDirectory)
-        except:
+        except Exception as e:
             self.messageBox(
                 0,
                 u'The tool update failed. If this error persists, contact hazus-support@riskmapcds.com for assistance.',
                 u"HazPy",
                 0x1000 | 0x4,
             )
+            print(e)
 
     def parseVersionFromInit(self, textBlob):
         """Parse tool version from src/__init__.py
@@ -314,5 +315,18 @@ class Manage:
                     'echo y | conda env update --file {ey}'.format(ey=self.env_yaml),
                     shell=True,
                 )
+        except Exception as e:
+            print(e)
+
+    def safeUnzip(self, zip_file, extract_path='.'):
+        ''' Unzip a zip_file while protecting against Path Manipulation: Zip Entry Overwrite
+        Args:
+            zip_file : a Zipfile
+            extract_path : path to unzip files to'''
+        try:
+            for member in zip_file.infolist():
+                file_path = os.path.realpath(os.path.join(extract_path, member.filename))
+                if file_path.startswith(os.path.realpath(extract_path)):
+                    zip_file.extract(member, extract_path)
         except Exception as e:
             print(e)
