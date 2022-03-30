@@ -1,4 +1,4 @@
-# ATTENTION: The latest version of this tool is available at https://msc.fema.gov/portal/resources/hazus This github repository is not receiving any more updates.
+# ATTENTION: The latest version of this tool is available at https://msc.fema.gov/portal/resources/hazus This github repository is no longer receiving updates.
 
 # Hazus Flood Assessment Structure Tool
 
